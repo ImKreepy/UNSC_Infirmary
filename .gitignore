@@ -23,8 +23,4 @@ target/
 .hemtt/missions
 include
 *\pngs
-
-.hemtt
-.vscode
-addons
-LICENSE
+addons/medical

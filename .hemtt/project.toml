@@ -1,0 +1,7 @@
+name = "UNSC Infirmary"
+prefix = "unsci"
+mainprefix = "ik"
+author = "Im Kreepy"
+
+[version]
+git_hash = 0

@@ -1,0 +1,24 @@
+#include "\x\cba\addons\main\script_macros_common.hpp"
+#include "\x\cba\addons\xeh\script_xeh.hpp"
+
+/*
+ A template for how I label class names
+    PREFIX_ITEM_PART_EXTRA
+    unsci_biofoam_base_unsc
+
+ A template for how I label textures
+    prefix_type_part_extra_co
+    unsci_biofoam_base_green_co
+*/
+
+#ifdef DISABLE_COMPILE_CACHE
+    #undef PREP
+    #undef PREPMAIN
+    #define PREP(fncName) FUNC(fncName) = compile preProcessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName))
+    #define PREPMAIN(fncName) FUNCMAIN(fncName) = compile preProcessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName))
+#else
+    #undef PREP
+    #undef PREPMAIN
+    #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName)), QFUNC(fncName)] call CBA_fnc_compileFunction
+    #define PREPMAIN(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName)), QFUNCMAIN(fncName)] call CBA_fnc_compileFunction
+#endif
