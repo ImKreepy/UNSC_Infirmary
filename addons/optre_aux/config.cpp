@@ -5,12 +5,13 @@ class CfgPatches {
         author = AUTHOR;
         authors[] = {"Im Kreepy"};
         name = COMPONENT_NAME;
+        addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"unsci_main"};
+        requiredAddons[] = {QUOTE(ADDON),"OPTRE_FC_Weapons","OPTRE_FC_Weapons_Ammo",NEEDLE_REQS};
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
-
-         
     };
 };
+
+#include "CfgAmmo.hpp"

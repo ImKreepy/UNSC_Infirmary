@@ -22,3 +22,11 @@
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName)), QFUNC(fncName)] call CBA_fnc_compileFunction
     #define PREPMAIN(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName)), QFUNCMAIN(fncName)] call CBA_fnc_compileFunction
 #endif
+
+#define ACE_PREFIX ace
+#define ACEGVAR(module,var) TRIPLES(ACE_PREFIX,module,var)
+#define ACEFUNC(module,var) TRIPLES(ACE_PREFIX,module,fnc_##var)
+#define ACEQGVAR(module,var) QUOTE(ACEGVAR(module,var))
+#define ACEQFUNC(module,var) QUOTE(ACEFUNC(module,var))
+
+#include "script_medical_macros.hpp"

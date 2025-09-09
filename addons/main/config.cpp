@@ -15,8 +15,6 @@ class CfgPatches {
     };
 };
 
-#include "CfgEventHandlers.hpp"
-
 class CfgAddons
 {
     class PreloadAddons 

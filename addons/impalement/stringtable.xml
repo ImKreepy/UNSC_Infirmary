@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="JC">
+    <Package name="Medical">
+        <Key ID="STR_ACE_Medical_Damage_BlamiteWound">
+            <English>Blamite Needle</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_BlamiteWound_Large">
+            <English>Large Blamite Needle</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_BlamiteWound_Medium">
+            <English>Medium Blamite Needle</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_BlamiteWound_Minor">
+            <English>Small Blamite Needle</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_ImpalementWound">
+            <English>Impalement</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_ImpalementWound_Large">
+            <English>Large Impalement</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_ImpalementWound_Medium">
+            <English>Medium Impalement</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_ImpalementWound_Minor">
+            <English>Small Impalement</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_SpikeWound">
+            <English>Spike</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_SpikeWound_Large">
+            <English>Large Spike</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_SpikeWound_Medium">
+            <English>Medium Spike</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_SpikeWound_Minor">
+            <English>Small Spike</English>
+        </Key>
+    </Package>
+</Project>
