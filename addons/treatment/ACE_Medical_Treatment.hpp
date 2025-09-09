@@ -7,7 +7,7 @@ class ACE_Medical_Treatment {
                 reopeningMinDelay = 0;
                 reopeningMaxDelay = 0;
             };
-            REMOVE_IMPALEMENTS
+            REMOVE_IMPALEMENTS;
         };
         class FieldDressing {
             class ImpalementWound {
@@ -16,7 +16,7 @@ class ACE_Medical_Treatment {
                 reopeningMinDelay = 0;
                 reopeningMaxDelay = 0;
             };
-            REMOVE_IMPALEMENTS
+            REMOVE_IMPALEMENTS;
         };
         class PackingBandage : FieldDressing {
             class ImpalementWound {
@@ -25,7 +25,7 @@ class ACE_Medical_Treatment {
                 reopeningMinDelay = 0;
                 reopeningMaxDelay = 0;
             };
-            REMOVE_IMPALEMENTS
+            REMOVE_IMPALEMENTS;
         };
         class ElasticBandage : FieldDressing {
             class ImpalementWound {
@@ -34,7 +34,7 @@ class ACE_Medical_Treatment {
                 reopeningMinDelay = 0;
                 reopeningMaxDelay = 0;
             };
-            REMOVE_IMPALEMENTS
+            REMOVE_IMPALEMENTS;
         };
         class QuikClot : FieldDressing {
             class ImpalementWound {
@@ -43,7 +43,7 @@ class ACE_Medical_Treatment {
                 reopeningMinDelay = 0;
                 reopeningMaxDelay = 0;
             };
-            REMOVE_IMPALEMENTS
+            REMOVE_IMPALEMENTS;
         };
     };
 };

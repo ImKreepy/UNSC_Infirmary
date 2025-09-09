@@ -15,4 +15,4 @@ class BlamiteWoundLarge : BlamiteWound {};  \
 class SpikeWound : ImpalementWound {};  \
 class SpikeWoundMinor : SpikeWound {};  \
 class SpikeWoundMedium : SpikeWound {}; \
-class SpikeWoundLarge : SpikeWound {};
+class SpikeWoundLarge : SpikeWound {}
