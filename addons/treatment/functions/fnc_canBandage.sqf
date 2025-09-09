@@ -41,6 +41,6 @@ private _canBandage = false;
     if ((NOT_IMPALEMENT_AND(_className)) && (_amountOf * _bleeding > 0)) exitWith {
         _canBandage = true;
     };
-} forEach (GRAB_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);
+} forEach (GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);
 
 _canBandage
