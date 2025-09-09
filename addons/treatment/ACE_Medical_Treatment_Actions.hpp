@@ -7,19 +7,19 @@ class ACE_Medical_Treatment_Actions {
     class RemoveImpalement: BasicBandage {
         displayName = "Remove Impalement";
         displayNameProgress = "Removing Impalement...";
-        icon = QPATHTOF(ui\surgical_kit.paa);
+        icon = "";
         category = "bandage";
         items[] = {};
 
-        treatmentLocations = QGVAR(locationRemoval);
-        allowSelfTreatment = QGVAR(allowSelfRemoval);
-        medicRequired = QGVAR(medicRemoval);
+        treatmentLocations = QEGVAR(impalement,locationRemoval);
+        allowSelfTreatment = QEGVAR(impalement,allowSelfRemoval);
+        medicRequired = QEGVAR(impalement,medicRemoval);
 
-        treatmentTime = QFUNC(getRemovalTime);
-        condition = QFUNC(canRemoveImpalement);
+        treatmentTime = QEFUNC(impalement,getRemovalTime);
+        condition = QEFUNC(impalement,canRemove);
         callbackSuccess = "";
         callbackStart = "";
-        callbackProgress = QFUNC(removingProgress);
+        callbackProgress = QEFUNC(impalement,removingProgress);
         
         consumeItem = 0; // setting can be 0,1,2 - only 1 will consume items[]
         litter[] = {{""}};
