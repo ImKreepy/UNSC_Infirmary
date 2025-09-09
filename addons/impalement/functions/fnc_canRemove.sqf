@@ -33,6 +33,6 @@ private _canPluck = false;
     if (IS_IMPALEMENT_OR(_className)) exitWith {
         _canPluck = true;
     };
-} forEach (GRAB_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);
+} forEach (GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);
 
 _canPluck

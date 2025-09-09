@@ -24,7 +24,7 @@ params ["_args", "_elapsedTime", "_totalTime"];
 _args params ["_medic", "_patient", "_bodyPart"];
 TRACE_1("fnc_removingProgress",_this);
 
-private _openWounds = GRAB_OPEN_WOUNDS(_patient);
+private _openWounds = GET_OPEN_WOUNDS(_patient);
 private _openWoundsOnPart = _openWounds get _bodyPart;
 
 private _impalementWounds = [];
@@ -43,10 +43,10 @@ private _impalementWounds = [];
 if (_impalementWounds isEqualTo []) exitWith {false};
 
 // Not enough time has elapsed to stitch a wound
-if (_totalTime - _elapsedTime > ([_patient, _patient, _bodyPart] call FUNC(getRemovalTime))) exitWith {true};
+if (_totalTime - _elapsedTime > ([_patient, _patient, _bodyPart] call FUNC(getRemovalTime)) / GVAR(treatmentTimeRemoval)) exitWith {true};
 
 // Stitch the first possible wound on the body part
-private _plucked = [_medic, _patient, _bodyPart] call FUNC(removeImpalement);
+private _plucked = [_medic, _patient, _bodyPart] call FUNC(remove);
 
 if (!_plucked) exitWith {
     ERROR_1("failed to remove impalement on unit - %1",_patient);

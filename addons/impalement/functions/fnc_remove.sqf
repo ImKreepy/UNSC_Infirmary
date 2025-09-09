@@ -19,7 +19,7 @@
 
 params ["_medic","_patient", "_bodyPart"];
 TRACE_1("fnc_removeImpalement",_this);
-private _openWounds = GRAB_OPEN_WOUNDS(_patient);
+private _openWounds = GET_OPEN_WOUNDS(_patient);
 private _openWoundsOnPart = _openWounds getOrDefault [_bodyPart, []];
 
 private _woundIndex = _openWoundsOnPart findIf {
@@ -30,8 +30,8 @@ private _woundIndex = _openWoundsOnPart findIf {
 };
 
 private _wound = _openWoundsOnPart select _woundIndex;
-_wound params ["","","","_damage"];
-private _addDamage = _damage * GVAR(damageMultiplier);
+_wound params ["","_amountOf","","_damage"];
+private _addDamage = _damage * _amountOf;
 _openWoundsOnPart deleteAt _woundIndex;
 
 _patient setVariable [ACEQGVAR(medical,openWounds), _openWounds, true];

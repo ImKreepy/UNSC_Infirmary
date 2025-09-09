@@ -29,8 +29,8 @@ private _impalementWounds = 0;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
 
     if (IS_IMPALEMENT_OR(_className)) then {
-        _impalementWounds = _impalementWounds + 1;
+        _impalementWounds = _impalementWounds + _amountOf;
     };
-} forEach (GRAB_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);
+} forEach (GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);
 
 _impalementWounds * GVAR(treatmentTimeRemoval)
