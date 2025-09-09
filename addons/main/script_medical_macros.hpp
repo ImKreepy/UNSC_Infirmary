@@ -39,3 +39,8 @@
 #define VAR_IN_PAIN           ACEGVAR(medical,inPain)
 #define VAR_TOURNIQUET        ACEGVAR(medical,tourniquets)
 #define VAR_FRACTURES         ACEGVAR(medical,fractures)
+
+#define IS_IMPALEMENT_OR(var) var isEqualTo "ImpalementWound" || var isEqualTo "BlamiteWound" || var isEqualTo "SpikeWound"
+#define IS_IMPALEMENT_AND(var) var isEqualTo "ImpalementWound" && var isEqualTo "BlamiteWound" && var isEqualTo "SpikeWound"
+#define NOT_IMPALEMENT_OR(var) var isNotEqualTo "ImpalementWound" || var isNotEqualTo "BlamiteWound" || var isNotEqualTo "SpikeWound"
+#define NOT_IMPALEMENT_AND(var) var isNotEqualTo "ImpalementWound" && var isNotEqualTo "BlamiteWound" && var isNotEqualTo "SpikeWound"
