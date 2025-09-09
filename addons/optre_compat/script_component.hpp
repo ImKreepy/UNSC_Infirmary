@@ -1,5 +1,5 @@
-#define COMPONENT optre_aux
-#define COMPONENT_BEAUTIFIED Operation: TREBUCHETE Auxiliary
+#define COMPONENT optre_compat
+#define COMPONENT_BEAUTIFIED Operation: TREBUCHETE Compatability
 
 #include "\ik\unsci\addons\main\script_mod.hpp"
 
