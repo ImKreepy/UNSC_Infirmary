@@ -7,19 +7,7 @@ class ACE_Medical_Treatment {
                 reopeningMinDelay = 0;
                 reopeningMaxDelay = 0;
             };
-            class ImpalementWoundMinor : ImpalementWound {};
-            class ImpalementWoundMedium : ImpalementWound {};
-            class ImpalementWoundLarge : ImpalementWound {};
-
-            class BlamiteWound : ImpalementWound {};
-            class BlamiteWoundMinor : BlamiteWound {};
-            class BlamiteWoundMedium : BlamiteWound {};
-            class BlamiteWoundLarge : BlamiteWound {};
-            
-            class SpikeWound : ImpalementWound {};
-            class SpikeWoundMinor : SpikeWound {};
-            class SpikeWoundMedium : SpikeWound {};
-            class SpikeWoundLarge : SpikeWound {};
+            REMOVE_IMPALEMENTS
         };
         class FieldDressing {
             class ImpalementWound {
@@ -28,19 +16,7 @@ class ACE_Medical_Treatment {
                 reopeningMinDelay = 0;
                 reopeningMaxDelay = 0;
             };
-            class ImpalementWoundMinor : ImpalementWound {};
-            class ImpalementWoundMedium : ImpalementWound {};
-            class ImpalementWoundLarge : ImpalementWound {};
-
-            class BlamiteWound : ImpalementWound {};
-            class BlamiteWoundMinor : BlamiteWound {};
-            class BlamiteWoundMedium : BlamiteWound {};
-            class BlamiteWoundLarge : BlamiteWound {};
-            
-            class SpikeWound : ImpalementWound {};
-            class SpikeWoundMinor : SpikeWound {};
-            class SpikeWoundMedium : SpikeWound {};
-            class SpikeWoundLarge : SpikeWound {};
+            REMOVE_IMPALEMENTS
         };
         class PackingBandage : FieldDressing {
             class ImpalementWound {
@@ -49,19 +25,7 @@ class ACE_Medical_Treatment {
                 reopeningMinDelay = 0;
                 reopeningMaxDelay = 0;
             };
-            class ImpalementWoundMinor : ImpalementWound {};
-            class ImpalementWoundMedium : ImpalementWound {};
-            class ImpalementWoundLarge : ImpalementWound {};
-
-            class BlamiteWound : ImpalementWound {};
-            class BlamiteWoundMinor : BlamiteWound {};
-            class BlamiteWoundMedium : BlamiteWound {};
-            class BlamiteWoundLarge : BlamiteWound {};
-            
-            class SpikeWound : ImpalementWound {};
-            class SpikeWoundMinor : SpikeWound {};
-            class SpikeWoundMedium : SpikeWound {};
-            class SpikeWoundLarge : SpikeWound {};
+            REMOVE_IMPALEMENTS
         };
         class ElasticBandage : FieldDressing {
             class ImpalementWound {
@@ -70,19 +34,7 @@ class ACE_Medical_Treatment {
                 reopeningMinDelay = 0;
                 reopeningMaxDelay = 0;
             };
-            class ImpalementWoundMinor : ImpalementWound {};
-            class ImpalementWoundMedium : ImpalementWound {};
-            class ImpalementWoundLarge : ImpalementWound {};
-
-            class BlamiteWound : ImpalementWound {};
-            class BlamiteWoundMinor : BlamiteWound {};
-            class BlamiteWoundMedium : BlamiteWound {};
-            class BlamiteWoundLarge : BlamiteWound {};
-            
-            class SpikeWound : ImpalementWound {};
-            class SpikeWoundMinor : SpikeWound {};
-            class SpikeWoundMedium : SpikeWound {};
-            class SpikeWoundLarge : SpikeWound {};
+            REMOVE_IMPALEMENTS
         };
         class QuikClot : FieldDressing {
             class ImpalementWound {
@@ -91,19 +43,7 @@ class ACE_Medical_Treatment {
                 reopeningMinDelay = 0;
                 reopeningMaxDelay = 0;
             };
-            class ImpalementWoundMinor : ImpalementWound {};
-            class ImpalementWoundMedium : ImpalementWound {};
-            class ImpalementWoundLarge : ImpalementWound {};
-
-            class BlamiteWound : ImpalementWound {};
-            class BlamiteWoundMinor : BlamiteWound {};
-            class BlamiteWoundMedium : BlamiteWound {};
-            class BlamiteWoundLarge : BlamiteWound {};
-            
-            class SpikeWound : ImpalementWound {};
-            class SpikeWoundMinor : SpikeWound {};
-            class SpikeWoundMedium : SpikeWound {};
-            class SpikeWoundLarge : SpikeWound {};
+            REMOVE_IMPALEMENTS
         };
     };
 };
