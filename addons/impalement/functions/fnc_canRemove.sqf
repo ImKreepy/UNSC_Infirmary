@@ -12,13 +12,13 @@
  * Can Splint <BOOL>
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call jc_medical_fnc_canRemoveImpalement
+ * [player, cursorObject, "LeftLeg"] call unsci_impalement_fnc_canRemove
  *
  * Public: No
  */
 
 params ["_medic","_patient","_bodyPart"];
-TRACE_1("fnc_canRemoveImpalement",_this);
+TRACE_1("fnc_canRemove",_this);
 
 // If patient is swimming, don't allow bandage actions.
 if (_patient call ACEFUNC(common,isSwimming)) exitWith {false};

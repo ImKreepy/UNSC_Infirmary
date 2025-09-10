@@ -9,16 +9,16 @@
  * 2: Wound Array, will close first wound on body part if empty <ARRAY> (default: [])
  *
  * Return Value:
- * Wound was stitched <BOOL>
+ * Wound was removed <BOOL>
  *
  * Example:
- * [player, "head"] call jc_medical_fnc_removeImpalement
+ * [player, "head"] call unsci_impalement_fnc_remove
  *
  * Public: No
  */
 
 params ["_medic","_patient", "_bodyPart"];
-TRACE_1("fnc_removeImpalement",_this);
+TRACE_1("fnc_remove",_this);
 private _openWounds = GET_OPEN_WOUNDS(_patient);
 private _openWoundsOnPart = _openWounds getOrDefault [_bodyPart, []];
 

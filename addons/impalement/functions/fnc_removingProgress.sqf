@@ -15,7 +15,7 @@
  * Continue Treatment <BOOL>
  *
  * Example:
- * [[objNull, player], 5, 10] call jc_medical_fnc_removingProgress
+ * [[objNull, player], 5, 10] call unsci_impalement_fnc_removingProgress
  *
  * Public: No
  */
@@ -41,7 +41,7 @@ private _impalementWounds = [];
 if (_impalementWounds isEqualTo []) exitWith {false};
 
 // Not enough time has elapsed to stitch a wound
-if (_totalTime - _elapsedTime > ([_patient, _patient, _bodyPart] call FUNC(getRemovalTime)) / GVAR(treatmentTimeRemoval)) exitWith {true};
+if (_totalTime - _elapsedTime > ([_patient, _patient, _bodyPart] call FUNC(getRemovalTime))) exitWith {true};
 
 // Stitch the first possible wound on the body part
 private _plucked = [_medic, _patient, _bodyPart] call FUNC(remove);

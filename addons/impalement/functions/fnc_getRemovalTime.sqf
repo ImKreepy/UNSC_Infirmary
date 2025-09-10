@@ -12,7 +12,7 @@
  * Treatment Time <NUMBER>
  *
  * Example:
- * [player, cursorObject, "head"] call jc_medical_fnc_getRemovalTime
+ * [player, cursorObject, "head"] call unsci_impalement_fnc_getRemovalTime
  *
  * Public: No
  */
