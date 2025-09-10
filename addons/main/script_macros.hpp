@@ -23,6 +23,8 @@
     #define PREPMAIN(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName)), QFUNCMAIN(fncName)] call CBA_fnc_compileFunction
 #endif
 
+#define LINKFUNC(var) QUOTE(MAINPREFIX\PREFIX\addons\COMPONENT\functions\FUNC(var))
+
 #define ACE_PREFIX ace
 #define ACEGVAR(module,var) TRIPLES(ACE_PREFIX,module,var)
 #define ACEFUNC(module,var) TRIPLES(ACE_PREFIX,module,fnc_##var)
