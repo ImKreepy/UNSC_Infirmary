@@ -71,7 +71,10 @@ class ACE_Medical_Injuries {
         class RemovedImpalement {
             thresholds[] = {THRESHOLDS};
             selectionSpecific = 1;
-            IMPALEMENT(Puncture);
+            class PunctureWound {
+                weighting[] = {{1, 1}};
+                sizeMultiplier = 0.8;
+            };
         };
         class BlamiteExplosive {
             thresholds[] = {{20, 15}, {8, 7}, {2, 3}, {1.2, 2}, {0.4, 1}, {0,0}};
