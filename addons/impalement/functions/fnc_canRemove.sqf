@@ -26,10 +26,8 @@ if (_patient call ACEFUNC(common,isSwimming)) exitWith {false};
 private _canPluck = false;
 {
     private _woundClassID = _x select 0;
-
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-
     if (IS_IMPALEMENT_OR(_className)) exitWith {
         _canPluck = true;
     };

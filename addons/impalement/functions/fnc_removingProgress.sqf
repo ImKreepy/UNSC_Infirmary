@@ -29,11 +29,9 @@ private _openWoundsOnPart = _openWounds get _bodyPart;
 
 private _impalementWounds = [];
 {
-    _x params ["_woundClassID"];
-
+    private _woundClassID = _x select 0;
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-
     if (IS_IMPALEMENT_OR(_className)) then {
         _impalementWounds pushBack _x;
     };
