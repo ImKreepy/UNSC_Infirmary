@@ -2,9 +2,9 @@
 
 ADDON = false;
 
-INFO("Jaeger Company Medical Scripts Loading");
+INFO("UNSC Infirmary - Impalement Scripts Loading");
 #include "initSettings.inc.sqf"
 #include "XEH_PREP.hpp"
-INFO("Jaeger Company Medical Scripts Loaded");
+INFO("UNSC Infirmary - Impalement Scripts Loaded");
 
 ADDON = true;
