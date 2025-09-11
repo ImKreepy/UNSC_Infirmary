@@ -23,7 +23,8 @@ class ACE_Medical_Injuries {
             selectionSpecific = 1;
             class PunctureWound {
                 weighting[] = {{1, 1}};
-                sizeMultiplier = 0.8;
+                sizeMultiplier = 0.6;
+                bleedingMultiplier = 0.9;
                 painMultiplier = 0.5;
             };
         };
