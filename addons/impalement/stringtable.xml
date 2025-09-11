@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="JC">
-    <Package name="Medical">
+<Project name="UNSC Infirmary">
+    <Package name="Impalement">
         <Key ID="STR_ACE_Medical_Damage_BlamiteWound">
             <English>Blamite Needle</English>
         </Key>
