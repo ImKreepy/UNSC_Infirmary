@@ -1,8 +1,9 @@
-#define IMPALEMENT(type) class type##Wound {  \
+// Impalements will tend to be medium or large
+#define IMPALEMENT(type) class type##Wound {    \
     weighting[] = {{1.5, 0}, {1.5, 1}, {0.35, 1}, {0.35, 0}};   \
     sizeMultiplier = 0.8;   \
 }
-#define THRESHOLDS {{20, 10}, {4.5, 2}, {3, 1}, {0, 1}}
+#define THRESHOLDS {20, 10}, {4.5, 2}, {3, 1}, {0, 1}
 
 class ACE_Medical_Injuries {
     class wounds {
@@ -23,6 +24,7 @@ class ACE_Medical_Injuries {
             class PunctureWound {
                 weighting[] = {{1, 1}};
                 sizeMultiplier = 0.8;
+                painMultiplier = 0.5;
             };
         };
         class Impalement {
