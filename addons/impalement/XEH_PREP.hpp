@@ -1,4 +1,3 @@
-PREP(canBandage);
 PREP(canRemove);
 PREP(getRemovalTime);
 PREP(remove);
