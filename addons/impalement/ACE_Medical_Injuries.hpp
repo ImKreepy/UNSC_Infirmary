@@ -17,6 +17,14 @@ class ACE_Medical_Injuries {
     };
     class damageTypes {
         class woundHandlers;
+        class RemovedImpalement {
+            thresholds[] = {{1,1}};
+            selectionSpecific = 1;
+            class PunctureWound {
+                weighting[] = {{1, 1}};
+                sizeMultiplier = 0.8;
+            };
+        };
         class Impalement {
             thresholds[] = {THRESHOLDS};
             selectionSpecific = 1;
@@ -67,14 +75,6 @@ class ACE_Medical_Injuries {
                 painMultiplier = 2.2;
             };
             IMPALEMENT(Spike);
-        };
-        class RemovedImpalement {
-            thresholds[] = {{1,1}};
-            selectionSpecific = 1;
-            class PunctureWound {
-                weighting[] = {{1, 1}};
-                sizeMultiplier = 0.8;
-            };
         };
         class BlamiteExplosive {
             thresholds[] = {{20, 15}, {8, 7}, {2, 3}, {1.2, 2}, {0.4, 1}, {0,0}};
