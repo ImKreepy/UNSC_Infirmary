@@ -1,6 +1,6 @@
 #define MAINPREFIX ik
 #define PREFIX unsci
-#define PREFIX_BEAUTIFIED UNSC-I
+#define PREFIX_BEAUTIFIED UNSC Infirmary
 
 #include "script_version.hpp"
 #define VERSION MAJOR.MINOR
