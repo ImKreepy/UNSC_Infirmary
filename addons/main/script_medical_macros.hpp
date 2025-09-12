@@ -1,4 +1,4 @@
-#include "/z/ace/addons/medical_engine/script_macros_medical.hpp"
+#include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 
 #undef VAR_BLOOD_PRESS
 #undef VAR_BLOOD_VOL
@@ -20,25 +20,25 @@
 #undef VAR_TOURNIQUET
 #undef VAR_FRACTURES
 
-#define VAR_BLOOD_PRESS       ACEGVAR(medical,bloodPressure)
-#define VAR_BLOOD_VOL         ACEGVAR(medical,bloodVolume)
-#define VAR_WOUND_BLEEDING    ACEGVAR(medical,woundBleeding)
-#define VAR_CRDC_ARRST        ACEGVAR(medical,inCardiacArrest)
-#define VAR_HEART_RATE        ACEGVAR(medical,heartRate)
-#define VAR_SPO2              ACEGVAR(medical,spo2)
-#define VAR_OXYGEN_DEMAND     ACEGVAR(medical,oxygenDemand)
-#define VAR_PAIN              ACEGVAR(medical,pain)
-#define VAR_PAIN_SUPP         ACEGVAR(medical,painSuppress)
-#define VAR_PERIPH_RES        ACEGVAR(medical,peripheralResistance)
-#define VAR_OPEN_WOUNDS       ACEGVAR(medical,openWounds)
-#define VAR_BANDAGED_WOUNDS   ACEGVAR(medical,bandagedWounds)
-#define VAR_STITCHED_WOUNDS   ACEGVAR(medical,stitchedWounds)
-#define VAR_BODYPART_DAMAGE   ACEGVAR(medical,bodyPartDamage)
-#define VAR_MEDICATIONS       ACEGVAR(medical,medications)
-#define VAR_HEMORRHAGE        ACEGVAR(medical,hemorrhage)
-#define VAR_IN_PAIN           ACEGVAR(medical,inPain)
-#define VAR_TOURNIQUET        ACEGVAR(medical,tourniquets)
-#define VAR_FRACTURES         ACEGVAR(medical,fractures)
+#define VAR_BLOOD_PRESS       ACEQGVAR(medical,bloodPressure)
+#define VAR_BLOOD_VOL         ACEQGVAR(medical,bloodVolume)
+#define VAR_WOUND_BLEEDING    ACEQGVAR(medical,woundBleeding)
+#define VAR_CRDC_ARRST        ACEQGVAR(medical,inCardiacArrest)
+#define VAR_HEART_RATE        ACEQGVAR(medical,heartRate)
+#define VAR_SPO2              ACEQGVAR(medical,spo2)
+#define VAR_OXYGEN_DEMAND     ACEQGVAR(medical,oxygenDemand)
+#define VAR_PAIN              ACEQGVAR(medical,pain)
+#define VAR_PAIN_SUPP         ACEQGVAR(medical,painSuppress)
+#define VAR_PERIPH_RES        ACEQGVAR(medical,peripheralResistance)
+#define VAR_OPEN_WOUNDS       ACEQGVAR(medical,openWounds)
+#define VAR_BANDAGED_WOUNDS   ACEQGVAR(medical,bandagedWounds)
+#define VAR_STITCHED_WOUNDS   ACEQGVAR(medical,stitchedWounds)
+#define VAR_BODYPART_DAMAGE   ACEQGVAR(medical,bodyPartDamage)
+#define VAR_MEDICATIONS       ACEQGVAR(medical,medications)
+#define VAR_HEMORRHAGE        ACEQGVAR(medical,hemorrhage)
+#define VAR_IN_PAIN           ACEQGVAR(medical,inPain)
+#define VAR_TOURNIQUET        ACEQGVAR(medical,tourniquets)
+#define VAR_FRACTURES         ACEQGVAR(medical,fractures)
 
 #define IS_IMPALEMENT_OR(var) var isEqualTo "ImpalementWound" || var isEqualTo "BlamiteWound" || var isEqualTo "SpikeWound"
 #define IS_IMPALEMENT_AND(var) var isEqualTo "ImpalementWound" && var isEqualTo "BlamiteWound" && var isEqualTo "SpikeWound"
