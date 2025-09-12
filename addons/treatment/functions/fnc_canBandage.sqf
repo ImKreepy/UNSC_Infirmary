@@ -14,7 +14,7 @@
  * Can Bandage <BOOL>
  *
  * Example:
- * [player, cursorTarget, "Head", "FieldDressing"] call jc_medical_fnc_canBandage
+ * [player, cursorTarget, "Head", "FieldDressing"] call unsci_treatment_fnc_canBandage
  *
  * Public: No
  */
