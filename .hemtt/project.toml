@@ -3,5 +3,26 @@ prefix = "unsci"
 mainprefix = "ik"
 author = "Im Kreepy"
 
+[files]
+include = [
+    "LICENSE",
+    "changelog",
+    "README",
+]
+exclude = [
+    "addons/main/logos/pngs/*.png",
+]
+
 [version]
+path = "addons/main/script_version.hpp"
 git_hash = 0
+
+[hemtt.release]
+sign = false
+archive = true
+
+[hemtt.launch.default]
+presets = [
+    "Modding", # .html presets from .hemtt/presets/
+]
+mission = "MedicTest.VR"
