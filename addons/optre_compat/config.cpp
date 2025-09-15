@@ -9,6 +9,7 @@ class CfgPatches {
         requiredAddons[] = {"unsci_main","OPTRE_FC_Weapons","OPTRE_FC_Weapons_Ammo",NEEDLE_REQS};
         units[] = {};
         weapons[] = {};
+        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
     };
 };

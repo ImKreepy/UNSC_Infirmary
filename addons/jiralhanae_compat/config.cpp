@@ -9,6 +9,7 @@ class CfgPatches {
         requiredAddons[] = {"unsci_main","comp21_common"};
         units[] = {};
         weapons[] = {};
+        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
     };
 };
