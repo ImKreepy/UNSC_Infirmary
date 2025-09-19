@@ -36,7 +36,7 @@ class ACE_Medical_Injuries {
             };
 
             class Avulsion {
-                weighting[] = {{1, 1}, {0.35, 0}};
+                weighting[] = {{0.6, 1}, {0.35, 0}};
             };
             class Contusion {
                 weighting[] = {{0.35, 0}, {0.35, 1}};
@@ -53,7 +53,7 @@ class ACE_Medical_Injuries {
             };
 
             class Avulsion {
-                weighting[] = {{1, 1}, {0.35, 0}};
+                weighting[] = {{0.6, 1}, {0.35, 0}};
             };
             class Contusion {
                 weighting[] = {{0.35, 0}, {0.35, 1}};
@@ -70,7 +70,7 @@ class ACE_Medical_Injuries {
             };
 
             class Avulsion {
-                weighting[] = {{1, 1}, {0.35, 0}};
+                weighting[] = {{0.6, 1}, {0.35, 0}};
             };
             class Contusion {
                 weighting[] = {{0.35, 0}, {0.35, 1}};
