@@ -1,1 +1,9 @@
 PREP(canBandage);
+PREP(canRemoveBlamite);
+PREP(canRemoveSpike);
+PREP(getBlamiteTreatmentTime);
+PREP(getSpikeTreatmentTime);
+PREP(removeBlamite);
+PREP(removeSpike);
+PREP(removingBlamiteProgress);
+PREP(removingSpikeProgress);

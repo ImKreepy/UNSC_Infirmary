@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Im Kreepy
- * Handles the progress of removing an impalement.
+ * Handles the progress of removing Spike.
  *
 * Arguments:
  * 0: Arguments <ARRAY>
@@ -15,14 +15,14 @@
  * Continue Treatment <BOOL>
  *
  * Example:
- * [[objNull, player], 5, 10] call unsci_impalement_fnc_removingProgress
+ * [[objNull, player], 5, 10] call unsci_treatment_fnc_removingSpike
  *
  * Public: No
  */
 
 params ["_args", "_elapsedTime", "_totalTime"];
 _args params ["_medic", "_patient", "_bodyPart"];
-TRACE_1("fnc_removingProgress",_this);
+TRACE_1("fnc_removingSpike",_this);
 
 private _openWounds = GET_OPEN_WOUNDS(_patient);
 private _openWoundsOnPart = _openWounds get _bodyPart;
@@ -32,7 +32,7 @@ private _impalementWounds = [];
     private _woundClassID = _x select 0;
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    if (IS_IMPALEMENT_OR(_className)) then {
+    if (_className isEqualTo "SpikeWound") then {
         _impalementWounds pushBack _x;
     };
 } forEach _openWoundsOnPart;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="UNSC Infirmary">
-    <Package name="Impalement">
+    <Package name="Damage">
         <Key ID="STR_ACE_Medical_Damage_BlamiteWound">
             <English>Blamite Needle</English>
         </Key>
@@ -12,18 +12,6 @@
         </Key>
         <Key ID="STR_ACE_Medical_Damage_BlamiteWound_Minor">
             <English>Small Blamite Needle</English>
-        </Key>
-        <Key ID="STR_ACE_Medical_Damage_ImpalementWound">
-            <English>Impalement</English>
-        </Key>
-        <Key ID="STR_ACE_Medical_Damage_ImpalementWound_Large">
-            <English>Large Impalement</English>
-        </Key>
-        <Key ID="STR_ACE_Medical_Damage_ImpalementWound_Medium">
-            <English>Medium Impalement</English>
-        </Key>
-        <Key ID="STR_ACE_Medical_Damage_ImpalementWound_Minor">
-            <English>Small Impalement</English>
         </Key>
         <Key ID="STR_ACE_Medical_Damage_SpikeWound">
             <English>Spike</English>

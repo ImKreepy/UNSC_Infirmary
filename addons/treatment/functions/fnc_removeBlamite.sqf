@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Im Kreepy
- * Removes impalement and replaces it with a puncture wound.
+ * Removes Blamite and replaces it with a puncture wound.
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -12,13 +12,13 @@
  * Wound was removed <BOOL>
  *
  * Example:
- * [player, "head"] call unsci_impalement_fnc_remove
+ * [player, "head"] call unsci_treatment_fnc_removeBlamite
  *
  * Public: No
  */
 
 params ["_patient", "_bodyPart"];
-TRACE_1("fnc_remove",_this);
+TRACE_1("fnc_removeBlamite",_this);
 private _openWounds = GET_OPEN_WOUNDS(_patient);
 private _openWoundsOnPart = _openWounds getOrDefault [_bodyPart, []];
 
@@ -26,7 +26,7 @@ private _woundIndex = _openWoundsOnPart findIf {
     private _woundClassID = _x select 0;
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    IS_IMPALEMENT_OR(_className);
+    _className isEqualTo "BlamiteWound";
 };
 
 private _wound = _openWoundsOnPart select _woundIndex;

@@ -5,14 +5,11 @@
 
 #include "\ik\unsci\addons\main\script_macros.hpp"
 
-#define REMOVE_IMPALEMENTS class ImpalementWoundMinor : ImpalementWound {};    \
-class ImpalementWoundMedium : ImpalementWound {};   \
-class ImpalementWoundLarge : ImpalementWound {};    \
-class BlamiteWound : ImpalementWound {};    \
+#define REMOVE_IMPALEMENTS class BlamiteWound {};    \
 class BlamiteWoundMinor : BlamiteWound {};  \
 class BlamiteWoundMedium : BlamiteWound {}; \
 class BlamiteWoundLarge : BlamiteWound {};  \
-class SpikeWound : ImpalementWound {};  \
+class SpikeWound : BlamiteWound {};  \
 class SpikeWoundMinor : SpikeWound {};  \
 class SpikeWoundMedium : SpikeWound {}; \
 class SpikeWoundLarge : SpikeWound {}

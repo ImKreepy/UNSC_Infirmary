@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: kymckay
- * Calculates the treatment time to remove impalements.
+ * Calculates the treatment time to remove Blamite.
  *
  * Arguments:
  * 0: Medic (not used) <OBJECT>
@@ -12,13 +12,13 @@
  * Treatment Time <NUMBER>
  *
  * Example:
- * [player, cursorObject, "head"] call unsci_impalement_fnc_getRemovalTime
+ * [player, cursorObject, "head"] call unsci_treatment_fnc_getBlamiteTreatmentTime
  *
  * Public: No
  */
 
 params ["_medic", "_patient", "_bodyPart"];
-TRACE_1("fnc_getRemovalTime",_this);
+TRACE_1("fnc_getBlamiteTreatmentTime",_this);
 _bodyPart = toLowerANSI _bodyPart;
 
 private _impalementWounds = 0;
@@ -28,7 +28,7 @@ private _impalementWounds = 0;
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
 
-    if (IS_IMPALEMENT_OR(_className)) then {
+    if (_className isEqualTo "BlamiteWound") then {
         _impalementWounds = _impalementWounds + 1;
     };
 } forEach (GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);

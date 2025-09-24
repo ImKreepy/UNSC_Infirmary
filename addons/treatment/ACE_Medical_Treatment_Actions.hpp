@@ -2,24 +2,32 @@ class ACE_Medical_Treatment_Actions {
     class BasicBandage {
         condition = QFUNC(canBandage);
     };
-    class RemoveImpalement: BasicBandage {
-        displayName = CSTRING(RemoveImpalement);
-        displayNameProgress = CSTRING(RemovingImpalement);
+    class RemoveBlamite: BasicBandage {
+        displayName = "Remove Blamite";
+        displayNameProgress = "Removing Blamite...";
         icon = "";
         category = "bandage";
         items[] = {};
 
-        treatmentLocations = QEGVAR(impalement,locationRemoval);
-        allowSelfTreatment = QEGVAR(impalement,allowSelfRemoval);
-        medicRequired = QEGVAR(impalement,medicRemoval);
+        treatmentLocations = QGVAR(locationRemoval);
+        allowSelfTreatment = QGVAR(allowSelfRemoval);
+        medicRequired = QGVAR(medicRemoval);
 
-        treatmentTime = QEFUNC(impalement,getRemovalTime);
-        condition = QEFUNC(impalement,canRemove);
+        treatmentTime = QFUNC(getBlamiteTreatmentTime);
+        condition = QFUNC(canRemoveBlamite);
         callbackSuccess = "";
         callbackStart = "";
-        callbackProgress = QEFUNC(impalement,removingProgress);
+        callbackProgress = QFUNC(removingBlamiteProgress);
         
         consumeItem = 0; // setting can be 0,1,2 - only 1 will consume items[]
         litter[] = {{""}};
+    };
+    class RemoveSpike: BasicBandage {
+        displayName = "Remove Spike";
+        displayNameProgress = "Removing Spike...";
+
+        treatmentTime = QFUNC(getSpikeTreatmentTime);
+        condition = QFUNC(canRemoveSpike);
+        callbackProgress = QFUNC(removingSpikeProgress);
     };
 };
