@@ -2,6 +2,7 @@ class CfgAmmo {
     class OPTRE_FC_Bolt_Base;
     class OPTRE_M41_Rocket_ATGM2;
     class OPTRE_B_127x99_Ball;
+	class OPTRE_sticky_explosion_base;
     class APERSBoundingMine_Range_Ammo;
     class M_NLAW_AT_F;
     class M_Titan_AA;
@@ -12,6 +13,9 @@ class CfgAmmo {
     class ammo_Missile_LongRangeAABase;
 
     // ----- Plasma Ammo Types -----
+	class OPTRE_sticky_plasma_explosion: OPTRE_sticky_explosion_base {
+        ACE_damageType = "UNSCI_PlasmaGrenade";
+    };
     class OPTRE_FC_T51_Repeater_Bolt : OPTRE_FC_Bolt_Base {
         ACE_damageType = "UNSCI_PlasmaBolt";
     };
