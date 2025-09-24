@@ -6,7 +6,7 @@ class ACE_Medical_Treatment {
         class FieldDressing {
             REMOVE_IMPALEMENTS;
         };
-        class UNSCI_BioFoam : FieldDressing {
+        class UNSCI_Biofoam : FieldDressing {
             // ----- UNSCI Wound Treatments -----
             class UNSCI_PlasmaBurn {
                 effectiveness = 0.8;
@@ -345,20 +345,6 @@ class ACE_Medical_Treatment {
 
         class UNSCI_Medkit : FieldDressing {
             // ----- UNSCI Wound Treatments -----
-            class BlamiteWound {
-                effectiveness = 10;
-                reopeningChance = 0;
-                reopeningMinDelay = 0;
-                reopeningMaxDelay = 0;
-            };
-            class BlamiteWoundMinor : BlamiteWound {};
-            class BlamiteWoundMedium : BlamiteWound {};
-            class BlamiteWoundLarge : BlamiteWound {};
-            class SpikeWound : BlamiteWound {};
-            class SpikeWoundMinor : SpikeWound {};
-            class SpikeWoundMedium : SpikeWound {};
-            class SpikeWoundLarge : SpikeWound {};
-
             class UNSCI_PlasmaBurn {
                 effectiveness = 10;
                 reopeningChance = 0.3;
