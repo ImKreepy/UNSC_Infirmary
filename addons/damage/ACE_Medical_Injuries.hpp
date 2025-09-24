@@ -49,16 +49,18 @@ class ACE_Medical_Injuries {
             };
 
             class Avulsion {
-                weighting[] = {{1, 0}, {1, 0.2}, {0.35, 0}};
-                sizeMultiplier = 0.6;
+                weighting[] = {{1, 1}, {0.8, 0}};
+            };
+            class Cut {
+                weighting[] = {{1.5, 0}, {0.35, 1}, {0, 0}};
             };
             class Contusion {
-                weighting[] = {{0.35, 0}, {0.35, 1}};
-                sizeMultiplier = 3.2;
-                painMultiplier = 2.2;
+                weighting[] = {{0.5, 0}, {0.35, 1}};
+                sizeMultiplier = 2;
+                painMultiplier = 0.9;
             };
             class UNSCI_BlamiteWound {
-                weighting[] = {{1.5, 0}, {1.5, 1}, {0.35, 1}, {0.35, 0}};
+                weighting[] = {{1.5, 1}, {0.35, 1}};
                 sizeMultiplier = 0.5;
             };
         };
@@ -70,17 +72,19 @@ class ACE_Medical_Injuries {
             };
 
             class Avulsion {
-                weighting[] = {{1, 0}, {1, 0.2}, {0.35, 0}};
-                sizeMultiplier = 0.6;
+                weighting[] = {{1, 1}, {0.8, 0}};
+            };
+            class Cut {
+                weighting[] = {{1.5, 0}, {0.35, 1}, {0, 0}};
             };
             class Contusion {
-                weighting[] = {{0.35, 0}, {0.35, 1}};
-                sizeMultiplier = 3.2;
-                painMultiplier = 2.2;
+                weighting[] = {{0.5, 0}, {0.35, 1}};
+                sizeMultiplier = 2;
+                painMultiplier = 0.9;
             };
             class UNSCI_SpikeWound {
-                weighting[] = {{1.5, 0}, {1.5, 1}, {0.35, 1}, {0.35, 0}};
-                sizeMultiplier = 0.6;
+                weighting[] = {{1.5, 1}, {0.35, 1}};
+                sizeMultiplier = 0.5;
             };
         };
         class UNSCI_BlamiteExplosive {
