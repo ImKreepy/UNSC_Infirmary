@@ -2,7 +2,7 @@ class ACE_Medical_Treatment_Actions {
     class BasicBandage {
         condition = QFUNC(canBandage);
     };
-    class RemoveBlamite: BasicBandage {
+    class UNSCI_RemoveBlamite: BasicBandage {
         displayName = "Remove Blamite";
         displayNameProgress = "Removing Blamite...";
         icon = "";
@@ -22,7 +22,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 0; // setting can be 0,1,2 - only 1 will consume items[]
         litter[] = {{""}};
     };
-    class RemoveSpike: BasicBandage {
+    class UNSCI_RemoveSpike: UNSCI_RemoveBlamite {
         displayName = "Remove Spike";
         displayNameProgress = "Removing Spike...";
 

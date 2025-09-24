@@ -7,23 +7,23 @@
 
 class ACE_Medical_Injuries {
     class wounds {
-        class BlamiteWound {
+        class UNSCI_BlamiteWound {
             bleeding = 0.05;
             pain = 0.8;
             causeLimping = 1;
             causeFracture = 1;
         };
-        class SpikeWound {
+        class UNSCI_SpikeWound {
             bleeding = 0.05;
             pain = 0.8;
             causeLimping = 1;
             causeFracture = 1;
         };
-        class PlasmaBurn {
+        class UNSCI_PlasmaBurn {
             bleeding = 0.009;
             pain = 0.6;
         };
-        class PlasmaAvulsion {
+        class UNSCI_PlasmaAvulsion {
             bleeding = 0.08;
             pain = 1.0;
             causeLimping = 1;
@@ -31,7 +31,7 @@ class ACE_Medical_Injuries {
     };
     class damageTypes {
         class woundHandlers;
-        class RemovedImpalement {
+        class UNSCI_RemovedImpalement {
             thresholds[] = {{1,1}};
             selectionSpecific = 1;
             class PunctureWound {
@@ -41,7 +41,7 @@ class ACE_Medical_Injuries {
                 painMultiplier = 2;
             };
         };
-        class Blamite {
+        class UNSCI_Blamite {
             thresholds[] = {THRESHOLDS};
             selectionSpecific = 1;
             class woundHandlers: woundHandlers {
@@ -57,12 +57,12 @@ class ACE_Medical_Injuries {
                 sizeMultiplier = 3.2;
                 painMultiplier = 2.2;
             };
-            class BlamiteWound {
+            class UNSCI_BlamiteWound {
                 weighting[] = {{1.5, 0}, {1.5, 1}, {0.35, 1}, {0.35, 0}};
                 sizeMultiplier = 0.5;
             };
         };
-        class Spike {
+        class UNSCI_Spike {
             thresholds[] = {THRESHOLDS};
             selectionSpecific = 1;
             class woundHandlers: woundHandlers {
@@ -78,12 +78,12 @@ class ACE_Medical_Injuries {
                 sizeMultiplier = 3.2;
                 painMultiplier = 2.2;
             };
-            class SpikeWound {
+            class UNSCI_SpikeWound {
                 weighting[] = {{1.5, 0}, {1.5, 1}, {0.35, 1}, {0.35, 0}};
                 sizeMultiplier = 0.6;
             };
         };
-        class BlamiteExplosive {
+        class UNSCI_BlamiteExplosive {
             thresholds[] = {{20, 15}, {8, 7}, {2, 3}, {1.2, 2}, {0.4, 1}, {0,0}};
             selectionSpecific = 0;
             class Avulsion {
@@ -97,12 +97,12 @@ class ACE_Medical_Injuries {
                 sizeMultiplier = 2;
                 painMultiplier = 0.9;
             };
-            class BlamiteWound {
+            class UNSCI_BlamiteWound {
                 weighting[] = {{0.9, 0}, {0.7, 1}, {0.35, 0}};
                 sizeMultiplier = 0.6;
             };
         };
-        class SpikeGrenade {
+        class UNSCI_SpikeGrenade {
             thresholds[] = {{20, 10}, {10, 5}, {4, 3}, {1.5, 2}, {0.8, 2}, {0.3, 1}, {0, 0}};
             selectionSpecific = 0;
             class Avulsion {
@@ -116,16 +116,16 @@ class ACE_Medical_Injuries {
                 sizeMultiplier = 2;
                 painMultiplier = 0.9;
             };
-            class SpikeWound {
+            class UNSCI_SpikeWound {
                 weighting[] = {{0.9, 0}, {0.7, 1}, {0.35, 0}};
                 sizeMultiplier = 0.6;
             };
         };
     };
-    class PlasmaBolt {
+    class UNSCI_PlasmaBolt {
         thresholds[] = {{20, 10}, {4.5, 2}, {3, 1}, {0, 1}};
         selectionSpecific = 1;
-        class PlasmaBurn {
+        class UNSCI_PlasmaBurn {
             weighting[] = {{1, 1}, {0.35, 0}};
             sizeMultiplier = 0.6;
         };
@@ -134,15 +134,15 @@ class ACE_Medical_Injuries {
             sizeMultiplier = 3.2;
             painMultiplier = 2.2;
         };
-        class PlasmaAvulsion {
+        class UNSCI_PlasmaAvulsion {
             weighting[] = {{1.5, 0}, {1.5, 1}, {0.35, 1}, {0.35, 0}};
             sizeMultiplier = 0.8;
         };
     };
-    class PlasmaExplosive {
+    class UNSCI_PlasmaExplosive {
         thresholds[] = {{20, 15}, {8, 7}, {2, 3}, {1.2, 2}, {0.4, 1}, {0,0}};
         selectionSpecific = 0;
-        class PlasmaBurn {
+        class UNSCI_PlasmaBurn {
             weighting[] = {{1, 1}, {0.8, 0}};
         };
         class Cut {
@@ -153,7 +153,7 @@ class ACE_Medical_Injuries {
             sizeMultiplier = 2;
             painMultiplier = 0.9;
         };
-        class PlasmaAvulsion {
+        class UNSCI_PlasmaAvulsion {
             weighting[] = {{1.5, 0}, {1.5, 1}, {0.35, 1}, {0.35, 0}};
             sizeMultiplier = 0.8;
         };

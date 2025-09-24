@@ -6,37 +6,37 @@ class ACE_Medical_Treatment {
         class FieldDressing {
             REMOVE_IMPALEMENTS;
         };
-        class AOR_BioFoam : FieldDressing {
-            // ----- AOR Wound Treatments -----
-            class PlasmaBurn {
+        class UNSCI_BioFoam : FieldDressing {
+            // ----- UNSCI Wound Treatments -----
+            class UNSCI_PlasmaBurn {
                 effectiveness = 0.8;
                 reopeningChance = 0.2;
                 reopeningMinDelay = 50;
                 reopeningMaxDelay = 100;
             };
-            class PlasmaBurnMinor: PlasmaBurn {
+            class UNSCI_PlasmaBurnMinor: UNSCI_PlasmaBurn {
                 effectiveness = 0.8;
             };
-            class PlasmaBurnMedium: PlasmaBurn {
+            class UNSCI_PlasmaBurnMedium: UNSCI_PlasmaBurn {
                 effectiveness = 0.6;
             };
-            class PlasmaBurnLarge: PlasmaBurn {
+            class UNSCI_PlasmaBurnLarge: UNSCI_PlasmaBurn {
                 effectiveness = 0.4;
             };
 
-            class PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsion {
                 effectiveness = 0.3;
                 reopeningChance = 0.5;
                 reopeningMinDelay = 80;
                 reopeningMaxDelay = 150;
             };
-            class PlasmaAvulsionMinor: PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsionMinor: UNSCI_PlasmaAvulsion {
                 effectiveness = 0.3;
             };
-            class PlasmaAvulsionMedium: PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsionMedium: UNSCI_PlasmaAvulsion {
                 effectiveness = 0.2;
             };
-            class PlasmaAvulsionLarge: PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsionLarge: UNSCI_PlasmaAvulsion {
                 effectiveness = 0.1;
             };
 
@@ -174,37 +174,37 @@ class ACE_Medical_Treatment {
                 effectiveness = 1.5;
             };
         };
-        class AOR_Medigel : FieldDressing {
-            // ----- AOR Wound Treatments -----
-            class PlasmaBurn {
+        class UNSCI_Medigel : FieldDressing {
+            // ----- UNSCI Wound Treatments -----
+            class UNSCI_PlasmaBurn {
                 effectiveness = 0.8;
                 reopeningChance = 0.2;
                 reopeningMinDelay = 50;
                 reopeningMaxDelay = 100;
             };
-            class PlasmaBurnMinor: PlasmaBurn {
+            class UNSCI_PlasmaBurnMinor: UNSCI_PlasmaBurn {
                 effectiveness = 0.8;
             };
-            class PlasmaBurnMedium: PlasmaBurn {
+            class UNSCI_PlasmaBurnMedium: UNSCI_PlasmaBurn {
                 effectiveness = 0.6;
             };
-            class PlasmaBurnLarge: PlasmaBurn {
+            class UNSCI_PlasmaBurnLarge: UNSCI_PlasmaBurn {
                 effectiveness = 0.4;
             };
 
-            class PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsion {
                 effectiveness = 0.3;
                 reopeningChance = 0.5;
                 reopeningMinDelay = 80;
                 reopeningMaxDelay = 150;
             };
-            class PlasmaAvulsionMinor: PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsionMinor: UNSCI_PlasmaAvulsion {
                 effectiveness = 0.3;
             };
-            class PlasmaAvulsionMedium: PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsionMedium: UNSCI_PlasmaAvulsion {
                 effectiveness = 0.2;
             };
-            class PlasmaAvulsionLarge: PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsionLarge: UNSCI_PlasmaAvulsion {
                 effectiveness = 0.1;
             };
 
@@ -343,8 +343,8 @@ class ACE_Medical_Treatment {
             };
         };
 
-        class AOR_Medkit : FieldDressing {
-            // ----- AOR Wound Treatments -----
+        class UNSCI_Medkit : FieldDressing {
+            // ----- UNSCI Wound Treatments -----
             class BlamiteWound {
                 effectiveness = 10;
                 reopeningChance = 0;
@@ -359,35 +359,35 @@ class ACE_Medical_Treatment {
             class SpikeWoundMedium : SpikeWound {};
             class SpikeWoundLarge : SpikeWound {};
 
-            class PlasmaBurn {
+            class UNSCI_PlasmaBurn {
                 effectiveness = 10;
                 reopeningChance = 0.3;
                 reopeningMinDelay = 50;
                 reopeningMaxDelay = 100;
             };
-            class PlasmaBurnMinor: PlasmaBurn {
+            class UNSCI_PlasmaBurnMinor: UNSCI_PlasmaBurn {
                 effectiveness = 10;
             };
-            class PlasmaBurnMedium: PlasmaBurn {
+            class UNSCI_PlasmaBurnMedium: UNSCI_PlasmaBurn {
                 effectiveness = 10;
             };
-            class PlasmaBurnLarge: PlasmaBurn {
+            class UNSCI_PlasmaBurnLarge: UNSCI_PlasmaBurn {
                 effectiveness = 10;
             };
 
-            class PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsion {
                 effectiveness = 10;
                 reopeningChance = 0.3;
                 reopeningMinDelay = 80;
                 reopeningMaxDelay = 150;
             };
-            class PlasmaAvulsionMinor: PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsionMinor: UNSCI_PlasmaAvulsion {
                 effectiveness = 10;
             };
-            class PlasmaAvulsionMedium: PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsionMedium: UNSCI_PlasmaAvulsion {
                 effectiveness = 10;
             };
-            class PlasmaAvulsionLarge: PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsionLarge: UNSCI_PlasmaAvulsion {
                 effectiveness = 10;
             };
 

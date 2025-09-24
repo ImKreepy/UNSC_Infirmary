@@ -26,7 +26,7 @@ private _woundIndex = _openWoundsOnPart findIf {
     private _woundClassID = _x select 0;
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    _className isEqualTo "SpikeWound";
+    _className isEqualTo "UNSCI_SpikeWound";
 };
 
 private _wound = _openWoundsOnPart select _woundIndex;
@@ -38,7 +38,7 @@ _openWoundsOnPart deleteAt _woundIndex;
 _patient setVariable [ACEQGVAR(medical,openWounds), _openWounds, true];
 
 for "_i" from 1 to _amountToAdd do {
-    [_patient, _damageToAdd, _bodyPart, "RemovedImpalement"] call ACEFUNC(medical,addDamageToUnit);
+    [_patient, _damageToAdd, _bodyPart, "UNSCI_RemovedImpalement"] call ACEFUNC(medical,addDamageToUnit);
 };
 
 true
