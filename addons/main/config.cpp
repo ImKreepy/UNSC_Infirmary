@@ -6,7 +6,7 @@ class CfgPatches {
         authors[] = {"Im Kreepy"};
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cba_main","cba_xeh",ACE_Medical};
+        requiredAddons[] = {"cba_main","cba_xeh",ACE_Medical,"OPTRE_ACE_Compat"};
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
