@@ -1,28 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="UNSC Infirmary">
     <Package name="Damage">
-        <Key ID="STR_ACE_Medical_Damage_BlamiteWound">
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_BlamiteWound">
             <English>Blamite Needle</English>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_BlamiteWound_Large">
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_BlamiteWound_Large">
             <English>Large Blamite Needle</English>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_BlamiteWound_Medium">
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_BlamiteWound_Medium">
             <English>Medium Blamite Needle</English>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_BlamiteWound_Minor">
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_BlamiteWound_Minor">
             <English>Small Blamite Needle</English>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_SpikeWound">
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_PlasmaAvulsion">
+            <English>Plasma Avulsion</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_PlasmaAvulsion_Large">
+            <English>Large Plasma Avulsion</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_PlasmaAvulsion_Medium">
+            <English>Medium Plasma Avulsion</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_PlasmaAvulsion_Minor">
+            <English>Small Plasma Avulsion</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_PlasmaBurn">
+            <English>Plasma Burn</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_PlasmaBurn_Large">
+            <English>Large Plasma Burn</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_PlasmaBurn_Medium">
+            <English>Medium Plasma Burn</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_PlasmaBurn_Minor">
+            <English>Small Plasma Burn</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_SpikeWound">
             <English>Spike</English>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_SpikeWound_Large">
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_SpikeWound_Large">
             <English>Large Spike</English>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_SpikeWound_Medium">
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_SpikeWound_Medium">
             <English>Medium Spike</English>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_SpikeWound_Minor">
+        <Key ID="STR_ACE_Medical_Damage_UNSCI_SpikeWound_Minor">
             <English>Small Spike</English>
         </Key>
     </Package>
