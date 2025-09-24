@@ -1,8 +1,13 @@
+PREP(biofoam);
 PREP(canBandage);
+PREP(canMedigel);
 PREP(canRemoveBlamite);
 PREP(canRemoveSpike);
 PREP(getBlamiteTreatmentTime);
+PREP(getMedkitTreatmentTime);
 PREP(getSpikeTreatmentTime);
+PREP(medigel);
+PREP(medkit);
 PREP(removeBlamite);
 PREP(removeSpike);
 PREP(removingBlamiteProgress);

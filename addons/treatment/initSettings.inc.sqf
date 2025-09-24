@@ -1,39 +1,62 @@
+// ----- Blamite and Spikes Settings -----
 [
-    QGVAR(locationRemoval),
+    QGVAR(locationTreat_Impalement),
     "LIST",
-    ["Remove Impalement Locations", "Areas where impalements can be removed"],
-    [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
+    ["Remove Impalement Locations", "Areas where Blamite and Spikes can be removed"],
+    [COMPONENT_NAME, "Blamite and Spikes"],
     [[0, 1, 2, 3, 4], ["Anywhere", "Vehicle", "Medical Facilities", "Vehicles And Facilities", "Disabled"], 0],
     true,
     {},
     true
 ] call CBA_fnc_addSetting;
 [
-    QGVAR(allowSelfRemoval),
+    QGVAR(allowSelfTreat_Impalement),
     "LIST",
-    ["Allow Self Impalement Removal", "Can a unit remove their own impalements"],
-    [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
+    ["Allow Self Impalement Removal", "Can a unit remove their own Blamite and Spikes."],
+    [COMPONENT_NAME, "Blamite and Spikes"],
     [[0, 1, 2], ["No", "Yes", "Doctors"], 1],
     true,
     {},
     true
 ] call CBA_fnc_addSetting;
 [
-    QGVAR(medicRemoval),
+    QGVAR(medicRequired_Impalement),
     "LIST",
-    ["Medic Required", "Is a medic required to remove impalements"],
-    [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
+    ["Medic Required", "Is a medic required to remove Blamite and Spikes."],
+    [COMPONENT_NAME, "Blamite and Spikes"],
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
     true,
     {},
     true
 ] call CBA_fnc_addSetting;
 [
-    QGVAR(treatmentTimeRemoval),
+    QGVAR(treatmentTime_Imapalement),
     "SLIDER",
-    ["Remove Impalement Time", "Time to remove a impalement"],
-    [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
+    ["Time To Remove a Impalement", "Time to remove a single Blamite and Spikes."],
+    [COMPONENT_NAME, "Blamite and Spikes"],
     [0.1, 60, 5, 1],
+    true,
+    {},
+    true
+] call CBA_fnc_addSetting;
+
+// ----- Medical Kit Settings -----
+[
+    QGVAR(treatmentTime_medkit),
+    "SLIDER",
+    ["Medical Kit Treatment Time", "Time to treat a single wound with a Medical Kit."],
+    [COMPONENT_NAME, "Medical Kits"],
+    [0.1, 5, 1, 1],
+    true,
+    {},
+    true
+] call CBA_fnc_addSetting;
+[
+    QGVAR(medkitFullHeals),
+    "CHECKBOX",
+    ["Full Heal Medical Kit", "If enabled, Medical Kits will fully heal the patient."],
+    [COMPONENT_NAME, "Medical Kits"],
+    true,
     true,
     {},
     true
