@@ -6,12 +6,13 @@ class CfgPatches {
         authors[] = {"Im Kreepy"};
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"unsci_main","OPTRE_FC_Weapons","OPTRE_FC_Weapons_Ammo",NEEDLE_REQS};
+        requiredAddons[] = {"unsci_main"};
         units[] = {};
         weapons[] = {};
-        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
+
+        skipWhenMissingDependancies = 1;
     };
 };
 
-#include "CfgAmmo.hpp"
+#include "ACE_Medical_Injuries.hpp"

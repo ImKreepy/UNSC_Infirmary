@@ -6,7 +6,7 @@ class CfgPatches {
         authors[] = {"Im Kreepy"};
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"unsci_main"};
+        requiredAddons[] = {"unsci_main","OPTRE_FC_Weapons_Ammo"};
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
@@ -17,3 +17,4 @@ class CfgPatches {
 
 //#include "CfgEventHandlers.hpp"
 #include "ACE_Medical_Injuries.hpp"
+#include "CfgAmmo.hpp"
