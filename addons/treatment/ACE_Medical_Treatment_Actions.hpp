@@ -48,7 +48,6 @@ class ACE_Medical_Treatment_Actions {
         icon = "\OPTRE_weapons\items\icons\biofoam.paa";
         items[] = {"UNSCI_Medigel"};
 
-        condition = QFUNC(canMedigel);
         callbackSuccess = QFUNC(medigel);
 
         //sounds[] = {{QPATHTO_R(sounds\Inject.ogg),1,1,50}};
