@@ -59,7 +59,7 @@ class ACE_Medical_Treatment_Actions {
         icon = "\OPTRE_weapons\items\icons\medkit.paa";
         items[] = {"UNSCI_Medkit"};
 
-        condition = ACEQFUNC(medical_treatment,canBandage);
+        condition = QFUNC(canMedkit);
         treatmentTime = QFUNC(getMedkitTreatmentTime);
         callbackSuccess = QFUNC(medkit);
 
