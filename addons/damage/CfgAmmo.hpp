@@ -1,9 +1,9 @@
 class CfgAmmo {
+    class OPTRE_FC_Bolt_Base;
     class OPTRE_M41_Rocket_ATGM2;
     class OPTRE_B_127x99_Ball;
 	class OPTRE_sticky_explosion_base;
     class APERSBoundingMine_Range_Ammo;
-    class B_762x51_Ball;
     class M_NLAW_AT_F;
     class M_Titan_AA;
     class Rocket_04_HE_F;
@@ -13,11 +13,37 @@ class CfgAmmo {
     class ammo_Missile_LongRangeAABase;
 
     // ----- Plasma Ammo Types -----
-    class OPTRE_FC_Bolt_Base : B_762x51_Ball {
+    // ----- Blue Plasma -----
+    class OPTRE_FC_T51_Repeater_Bolt : OPTRE_FC_Bolt_Base {
         ACE_damageType ="UNSCI_PlasmaBolt";
     };
-    
-	class OPTRE_sticky_plasma_explosion: OPTRE_sticky_explosion_base {
+    class OPTRE_FC_T25_Rifle_Bolt : OPTRE_FC_T51_Repeater_Bolt {
+        ACE_damageType ="UNSCI_PlasmaBolt";
+    };
+
+    // ----- Red Plasma -----
+    class OPTRE_FC_T51J_Repeater_Bolt : OPTRE_FC_T51_Repeater_Bolt {
+        ACE_damageType ="UNSCI_PlasmaBolt";
+    };
+    class OPTRE_FC_T25J_Rifle_Bolt : OPTRE_FC_T51J_Repeater_Bolt {
+        ACE_damageType ="UNSCI_PlasmaBolt";
+    };
+
+    // ----- Green Plasma -----
+    class OPTRE_FC_PlasmaPistol_Bolt : OPTRE_FC_Bolt_Base {
+        ACE_damageType ="UNSCI_PlasmaBolt";
+    };
+    class OPTRE_FC_T51_Rod : OPTRE_FC_Bolt_Base {
+        ACE_damageType ="UNSCI_PlasmaBolt";
+    };
+
+    // ----- Pink Plasma -----
+    class OPTRE_FC_T50_SRS_Bolt : OPTRE_FC_T51_Rod {
+        ACE_damageType ="UNSCI_PlasmaBolt";
+    };
+
+    // ----- Explosives -----
+	class OPTRE_sticky_plasma_explosion : OPTRE_sticky_explosion_base {
         ACE_damageType = "UNSCI_PlasmaGrenade";
     };
     class OPTRE_FC_T33_FuelRod : M_NLAW_AT_F {
@@ -49,11 +75,11 @@ class CfgAmmo {
     };
 
     // ----- Blamite Ammo Types -----
-	class OPTRE_FC_Needler_ammo: OPTRE_FC_Bolt_Base {
+	class OPTRE_FC_Needler_ammo : OPTRE_FC_Bolt_Base {
         ACE_damageType = "UNSCI_Blamite";
     };
 
-	class OPTRE_FC_NeedleMine_Dispenser_Needle_Mine: APERSBoundingMine_Range_Ammo {
+	class OPTRE_FC_NeedleMine_Dispenser_Needle_Mine : APERSBoundingMine_Range_Ammo {
         ACE_damageType = "UNSCI_BlamiteExplosive";
     };
     class OPTRE_AA_Big_Needler_ammo : M_Air_AA {
