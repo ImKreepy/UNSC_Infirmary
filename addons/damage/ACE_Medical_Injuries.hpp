@@ -164,7 +164,7 @@ class ACE_Medical_Injuries {
         class UNSCI_PlasmaGrenade {
             thresholds[] = {{20, 10}, {10, 5}, {4, 3}, {1.5, 2}, {0.8, 2}, {0.3, 1}, {0, 0}};
             selectionSpecific = 0;
-            class PlasmaAvulsion {
+            class UNSCI_PlasmaAvulsion {
                 weighting[] = {{1.5, 1}, {1.1, 0}};
             };
             class Cut {
@@ -175,7 +175,7 @@ class ACE_Medical_Injuries {
                 sizeMultiplier = 2;
                 painMultiplier = 0.9;
             };
-            class PlasmaBurn {
+            class UNSCI_PlasmaBurn {
                 weighting[] = {{0.9, 0}, {0.7, 1}, {0.35, 0}};
             };
         };
