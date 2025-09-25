@@ -21,8 +21,8 @@ class CfgWeapons {
         model = "\OPTRE_Weapons\items\Medigel.p3d";
         picture = "\OPTRE_weapons\items\icons\biofoam.paa";
         displayName = "[UNSCI] Medigel";
-        descriptionShort = "Used to treat surface level wounds and radiation burns";
-        descriptionUse = "Used to treat surface level wounds and radiation burns";
+        descriptionShort = "Used to treat surface level wounds.";
+        descriptionUse = "Used to treat surface level wounds.";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.6;
