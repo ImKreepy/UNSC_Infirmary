@@ -23,6 +23,6 @@ archive = true
 
 [hemtt.launch.default]
 presets = [
-    "Modding", # .html presets from .hemtt/presets/
+    "AoR", # .html presets from .hemtt/presets/
 ]
-mission = "MedicTest.VR"
+mission = "Test.VR"
