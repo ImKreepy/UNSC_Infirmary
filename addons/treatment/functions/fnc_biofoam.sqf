@@ -18,6 +18,7 @@
  * Public: No
  */
 
+_this set [7, _this param [7, 1]];
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "", "", "_bandageEffectiveness"];
 TRACE_1("fnc_biofoam",_this);
 
