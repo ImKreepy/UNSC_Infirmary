@@ -41,6 +41,19 @@ class CfgVehicles
             };
         };
     };
+    class UNSCI_MedkitPlasmaIV_Item: Item_Base_F {
+        scope = 1;
+        scopeCurator = 1;
+        displayName = "[UNSCI] Plasma IV (2500ml)";
+        author = AUTHOR;
+        vehicleClass = "Items";
+        class TransportItems {
+            class _xx_UNSCI_MedkitPlasmaIV {
+                name = "UNSCI_MedkitPlasmaIV";
+                count = 1;
+            };
+        };
+    };
 
     // ----- Litter -----
     class ACE_MedicalLitterBase;

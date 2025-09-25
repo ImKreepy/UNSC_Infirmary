@@ -522,4 +522,10 @@ class ACE_Medical_Treatment {
             REMOVE_IMPALEMENTS;
         };
     };
+    class IV {
+        class PlasmaIV;
+        class UNSCI_MedkitPlasmaIV: PlasmaIV {
+            volume = 2500;
+        };
+    };
 };

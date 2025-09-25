@@ -28,4 +28,5 @@ if (GVAR(medkitFullHeals)) then {
     [ACEQGVAR(medical_treatment,fullHealLocal), _patient, _patient] call CBA_fnc_targetEvent;
 } else {
     [ACEQGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, _classname, _bandageEffectiveness], _patient] call CBA_fnc_targetEvent;
+    [ACEQGVAR(medical_treatment,ivBagLocal), [_patient, _bodyPart, _classname, _medic, _itemUser, "UNSCI_MedkitPlasmaIV"], _patient] call CBA_fnc_targetEvent;
 };

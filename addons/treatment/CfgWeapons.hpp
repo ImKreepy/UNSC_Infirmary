@@ -41,4 +41,17 @@ class CfgWeapons {
             mass = 0.6;
         };
     };
+    class UNSCI_MedkitPlasmaIV: ACE_ItemCore {
+        scope = 1;
+        author = AUTHOR;
+        displayName = "[UNSCI] Plasma IV (2500ml)";
+        model = "\z\ace\addons\medical_treatment\data\IVBag_1000ml.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ace\addons\medical_treatment\data\IVBag_plasma_1000ml_ca.paa"};
+        picture = "\z\ace\addons\medical_treatment\ui\plasmaIV_ca.paa";
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 10;
+        };
+    };
 };
