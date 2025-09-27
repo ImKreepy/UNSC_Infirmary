@@ -30,7 +30,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(canRemoveSpike);
         callbackProgress = QFUNC(removingSpikeProgress);
     };
-    class UNSCI_Biofoam_Treatment: BasicBandage {
+    class UNSCI_Biofoam: BasicBandage {
         displayName = "Biofoam";
         displayNameProgress = "Applying Biofoam...";
         icon = "\OPTRE_weapons\items\icons\biofoam.paa";
@@ -42,7 +42,7 @@ class ACE_Medical_Treatment_Actions {
         //sounds[] = {{QPATHTO_R(sounds\Inject.ogg),1,1,50}};
         litter[] = {{"UNSCI_Biofoam_Item"}};
     };
-    class UNSCI_Medigel_Treatment: UNSCI_Biofoam_Treatment {
+    class UNSCI_Medigel: BasicBandage {
         displayName = "Medigel";
         displayNameProgress = "Applying Medigel...";
         icon = "\OPTRE_weapons\items\icons\biofoam.paa";
@@ -53,7 +53,7 @@ class ACE_Medical_Treatment_Actions {
         //sounds[] = {{QPATHTO_R(sounds\Inject.ogg),1,1,50}};
         litter[] = {{"UNSCI_Medigel_Item"}};
     };
-    class UNSCI_Medkit_Treatment: UNSCI_Medigel_Treatment {
+    class UNSCI_Medkit: BasicBandage {
         displayName = "Medical Kit";
         displayNameProgress = "Applying Medical Kit...";
         icon = "\OPTRE_weapons\items\icons\medkit.paa";
