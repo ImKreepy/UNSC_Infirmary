@@ -25,19 +25,19 @@ class ACE_Medical_Treatment {
             };
 
             class UNSCI_PlasmaAvulsion {
-                effectiveness = 0.3;
+                effectiveness = 5;
                 reopeningChance = 0.5;
                 reopeningMinDelay = 80;
                 reopeningMaxDelay = 150;
             };
             class UNSCI_PlasmaAvulsionMinor: UNSCI_PlasmaAvulsion {
-                effectiveness = 0.3;
+                effectiveness = 4;
             };
             class UNSCI_PlasmaAvulsionMedium: UNSCI_PlasmaAvulsion {
-                effectiveness = 0.2;
+                effectiveness = 3.5;
             };
             class UNSCI_PlasmaAvulsionLarge: UNSCI_PlasmaAvulsion {
-                effectiveness = 0.1;
+                effectiveness = 3;
             };
 
             // ----- ACE Wound Treatments -----
@@ -177,19 +177,19 @@ class ACE_Medical_Treatment {
         class UNSCI_Medigel : FieldDressing {
             // ----- UNSCI Wound Treatments -----
             class UNSCI_PlasmaBurn {
-                effectiveness = 0.8;
+                effectiveness = 5;
                 reopeningChance = 0.2;
                 reopeningMinDelay = 50;
                 reopeningMaxDelay = 100;
             };
             class UNSCI_PlasmaBurnMinor: UNSCI_PlasmaBurn {
-                effectiveness = 0.8;
+                effectiveness = 4;
             };
             class UNSCI_PlasmaBurnMedium: UNSCI_PlasmaBurn {
-                effectiveness = 0.6;
+                effectiveness = 3.5;
             };
             class UNSCI_PlasmaBurnLarge: UNSCI_PlasmaBurn {
-                effectiveness = 0.4;
+                effectiveness = 3;
             };
 
             class UNSCI_PlasmaAvulsion {
