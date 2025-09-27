@@ -37,14 +37,8 @@ private _canBandage = false;
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
 
-    if (GVAR(medkitFullHeals)) then {
-        if (_amountOf * _bleeding > 0) exitWith {
-            _canBandage = true;
-        };
-    } else {
-        if ((_className isNotEqualTo "UNSCI_BlamiteWound" && _className isNotEqualTo "UNSCI_SpikeWound") && (_amountOf * _bleeding > 0)) exitWith {
-            _canBandage = true;
-        };
+    if (_amountOf * _bleeding > 0) exitWith {
+        _canBandage = true;
     };
 } forEach (GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);
 
