@@ -130,16 +130,16 @@ class ACE_Medical_Injuries {
             selectionSpecific = 1;
             class UNSCI_PlasmaBurn {
                 weighting[] = {{1, 1}, {0.35, 0}};
-                sizeMultiplier = 0.6;
+                sizeMultiplier = 0.4;
             };
             class Contusion {
                 weighting[] = {{0.35, 0}, {0.35, 1}};
-                sizeMultiplier = 3.2;
-                painMultiplier = 2.2;
+                sizeMultiplier = 2.2;
+                painMultiplier = 1.2;
             };
             class UNSCI_PlasmaAvulsion {
                 weighting[] = {{1.5, 0}, {1.5, 1}, {0.35, 1}, {0.35, 0}};
-                sizeMultiplier = 0.8;
+                sizeMultiplier = 0.6;
             };
         };
         class UNSCI_PlasmaExplosive {
