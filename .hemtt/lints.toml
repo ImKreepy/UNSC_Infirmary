@@ -17,3 +17,8 @@ options.ignore = [
     "str_ace_medical_damage_unsci_plasmaburn_medium",
     "str_ace_medical_damage_unsci_plasmaburn_minor",
 ]
+
+[sqf.var_all_caps]
+options.ignore = [
+    "ACE_*",
+]
