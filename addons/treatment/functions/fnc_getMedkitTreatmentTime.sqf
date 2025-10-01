@@ -17,7 +17,7 @@
  * Public: No
  */
 
-params ["_medic","_patient", ""];
+params ["_medic","_patient", "_bodyPart"];
 TRACE_1("fnc_getMedkitTreatmentTime",_this);
 private _openWounds = GET_OPEN_WOUNDS(_patient) get _bodyPart;
 
