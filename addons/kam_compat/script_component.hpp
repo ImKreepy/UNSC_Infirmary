@@ -10,4 +10,5 @@
 #define KAMFUNC(module,var) TRIPLES(KAM_PREFIX,module,fnc_##var)
 #define KAMQGVAR(module,var) QUOTE(KAMGVAR(module,var))
 #define KAMQFUNC(module,var) QUOTE(KAMFUNC(module,var))
+#define KAMLSTRING(module,var) QUOTE(TRIPLES(STR,DOUBLES(KAM_PREFIX,module),var))
 #define KAMCSTRING(module,var) QUOTE(TRIPLES($STR,DOUBLES(KAM_PREFIX,module),var))
