@@ -27,7 +27,7 @@
 
 #define ACE_PREFIX ace
 #define ACEGVAR(module,var) TRIPLES(ACE_PREFIX,module,var)
-#define ACEFUNC(module,var) TRIPLES(ACE_PREFIX,module,fnc_##var)
+#define ACEFUNC(module,var) TRIPLES(ACE_PREFIX,module,DOUBLES(fnc,var))
 #define ACEQGVAR(module,var) QUOTE(ACEGVAR(module,var))
 #define ACEQFUNC(module,var) QUOTE(ACEFUNC(module,var))
 #define ACECSTRING(module,var) QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),var))
