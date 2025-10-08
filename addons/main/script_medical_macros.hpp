@@ -40,7 +40,12 @@
 #define VAR_TOURNIQUET        ACEQGVAR(medical,tourniquets)
 #define VAR_FRACTURES         ACEQGVAR(medical,fractures)
 
-#define KILL_WOUND_TYPES class UNSCI_BlamiteWound {};    \
+#define KILL_WOUND_TYPES class UNSCI_BlamiteWound { \
+    effectiveness = 0;    \
+    reopeningChance = 1;  \
+    reopeningMinDelay = 1; \
+    reopeningMaxDelay = 1;    \
+};    \
 class UNSCI_BlamiteWoundMinor : UNSCI_BlamiteWound {};  \
 class UNSCI_BlamiteWoundMedium : UNSCI_BlamiteWound {}; \
 class UNSCI_BlamiteWoundLarge : UNSCI_BlamiteWound {};  \
