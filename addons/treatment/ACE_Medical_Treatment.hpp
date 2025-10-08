@@ -1,10 +1,10 @@
 class ACE_Medical_Treatment {
     class Bandaging {
         class BasicBandage {
-            REMOVE_IMPALEMENTS;
+            KILL_WOUND_TYPES;
         };
         class FieldDressing {
-            REMOVE_IMPALEMENTS;
+            KILL_WOUND_TYPES;
         };
         class UNSCI_Biofoam : FieldDressing {
             // ----- UNSCI Wound Treatments -----
@@ -513,13 +513,13 @@ class ACE_Medical_Treatment {
         };
         
         class PackingBandage : FieldDressing {
-            REMOVE_IMPALEMENTS;
+            KILL_WOUND_TYPES;
         };
         class ElasticBandage : FieldDressing {
-            REMOVE_IMPALEMENTS;
+            KILL_WOUND_TYPES;
         };
         class QuikClot : FieldDressing {
-            REMOVE_IMPALEMENTS;
+            KILL_WOUND_TYPES;
         };
     };
     class IV {
