@@ -39,3 +39,12 @@
 #define VAR_IN_PAIN           ACEQGVAR(medical,inPain)
 #define VAR_TOURNIQUET        ACEQGVAR(medical,tourniquets)
 #define VAR_FRACTURES         ACEQGVAR(medical,fractures)
+
+#define KILL_WOUND_TYPES class UNSCI_BlamiteWound {};    \
+class UNSCI_BlamiteWoundMinor : UNSCI_BlamiteWound {};  \
+class UNSCI_BlamiteWoundMedium : UNSCI_BlamiteWound {}; \
+class UNSCI_BlamiteWoundLarge : UNSCI_BlamiteWound {};  \
+class UNSCI_SpikeWound : UNSCI_BlamiteWound {};  \
+class UNSCI_SpikeWoundMinor : UNSCI_SpikeWound {};  \
+class UNSCI_SpikeWoundMedium : UNSCI_SpikeWound {}; \
+class UNSCI_SpikeWoundLarge : UNSCI_SpikeWound {}
