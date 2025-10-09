@@ -12,7 +12,7 @@ class CfgWeapons {
         descriptionUse = "Used to treat gaping wounds and deep lacerations";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.6;
+            mass = 9;
         };
     };
     class UNSCI_Medigel: ACE_ItemCore {
@@ -25,7 +25,7 @@ class CfgWeapons {
         descriptionUse = "Used to treat surface level wounds.";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.6;
+            mass = 4;
         };
     };
     class UNSCI_Medkit: ACE_ItemCore {
@@ -38,7 +38,7 @@ class CfgWeapons {
         descriptionUse = "Medical Kit to treat all combat inflicted wounds and injuries";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.6;
+            mass = 50;
         };
     };
     class UNSCI_MedkitPlasmaIV: ACE_ItemCore {
@@ -51,7 +51,7 @@ class CfgWeapons {
         picture = "\z\ace\addons\medical_treatment\ui\plasmaIV_ca.paa";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 10;
+            mass = 2;
         };
     };
     class UNSCI_Injector_Stimulant: ACE_ItemCore {
@@ -66,7 +66,7 @@ class CfgWeapons {
         descriptionUse = "Also known as a 'Stim Pack,' contains a cocktail of drugs that are meant to wake up and energize the user.";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 1;
             hiddenSelections[] = {"camo","camo1","camo2"};
             hiddenSelectionsTextures[] = {QPATHTOF(data\injector\unsci_injector_base_co.paa),QPATHTOF(data\injector\unsci_injector_Cap_co.paa),QPATHTOF(data\injector\unsci_injector_stimulant_co.paa)};
         };
@@ -78,9 +78,6 @@ class CfgWeapons {
         displayName = "[UNSCI] Morphine Autoinjector";
         descriptionShort = "Used to combat moderate to severe pain experiences";
         descriptionUse = "An analgesic used to combat moderate to severe pain experiences.";
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
-        };
     };
     class UNSCI_Injector_Epinephrine: UNSCI_Injector_Stimulant {
         picture = QPATHTOF(data\injector\unsci_injector_Epinephrine_icon_ca.paa);
@@ -89,8 +86,5 @@ class CfgWeapons {
         displayName = "[UNSCI] Epinephrine Autoinjector";
         descriptionShort = "Increase heart rate and counter effects given by allergic reactions";
         descriptionUse = "A drug that works on a sympathetic response to dilate the bronchi, increase heart rate and counter such effects given by allergic reactions (anaphylaxis). Used in sudden cardiac arrest scenarios with decreasing positive outcomes.";
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
-        };
     };
 };
