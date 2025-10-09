@@ -66,7 +66,7 @@ class CfgWeapons {
         descriptionUse = "Contains a cocktail of drugs that are meant to wake up and energize the user.";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.6;
+            mass = 0.05;
             hiddenSelections[] = {"camo","camo1","camo2"};
             hiddenSelectionsTextures[] = {QPATHTOF(data\injector\unsci_injector_base_co.paa),QPATHTOF(data\injector\unsci_injector_Cap_co.paa),QPATHTOF(data\injector\unsci_injector_stimulant_co.paa)};
         };
@@ -79,9 +79,7 @@ class CfgWeapons {
         descriptionShort = "Used to combat moderate to severe pain experiences";
         descriptionUse = "An analgesic used to combat moderate to severe pain experiences.";
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.6;
-            hiddenSelections[] = {"camo","camo1","camo2"};
-            hiddenSelectionsTextures[] = {QPATHTOF(data\injector\unsci_injector_base_co.paa),QPATHTOF(data\injector\unsci_injector_Cap_co.paa),QPATHTOF(data\injector\unsci_injector_morphine_co.paa)};
+            mass = 0.05;
         };
     };
     class UNSCI_Injector_Epinephrine: UNSCI_Injector_Stimulant {
@@ -92,9 +90,7 @@ class CfgWeapons {
         descriptionShort = "Increase heart rate and counter effects given by allergic reactions";
         descriptionUse = "A drug that works on a sympathetic response to dilate the bronchi, increase heart rate and counter such effects given by allergic reactions (anaphylaxis). Used in sudden cardiac arrest scenarios with decreasing positive outcomes.";
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.6;
-            hiddenSelections[] = {"camo","camo1","camo2"};
-            hiddenSelectionsTextures[] = {QPATHTOF(data\injector\unsci_injector_base_co.paa),QPATHTOF(data\injector\unsci_injector_Cap_co.paa),QPATHTOF(data\injector\unsci_injector_morphine_co.paa)};
+            mass = 0.05;
         };
     };
 };
