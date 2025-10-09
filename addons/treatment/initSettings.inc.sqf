@@ -51,13 +51,13 @@
     {},
     false
 ] call CBA_fnc_addSetting;
-/* [
+[
     QGVAR(medkitFullHeals),
     "CHECKBOX",
     ["Full Heal Medical Kit", "If enabled, Medical Kits will fully heal the patient."],
     [QUOTE(PREFIX_BEAUTIFIED), "Medical Kits"],
-    true,
+    [true],
     true,
     {},
     true
-] call CBA_fnc_addSetting; */
+] call CBA_fnc_addSetting;
