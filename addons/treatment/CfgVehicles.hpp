@@ -5,7 +5,7 @@ class CfgVehicles
     class UNSCI_Biofoam_Item: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "[UNSCI] Biofoam";
+        displayName = "[UNSCI] Biomedical Foam";
         author = AUTHOR;
         vehicleClass = "Items";
         class TransportItems {
@@ -18,7 +18,7 @@ class CfgVehicles
     class UNSCI_Medigel_Item: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "[UNSCI] Medigel";
+        displayName = "[UNSCI] MediGel";
         author = AUTHOR;
         vehicleClass = "Items";
         class TransportItems {

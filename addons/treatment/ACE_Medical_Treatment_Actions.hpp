@@ -59,8 +59,8 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {{"UNSCI_Biofoam_Item"}};
     };
     class UNSCI_Medigel: BasicBandage {
-        displayName = "Medigel";
-        displayNameProgress = "Applying Medigel...";
+        displayName = "MediGel";
+        displayNameProgress = "Applying MediGel...";
         icon = "\OPTRE_weapons\items\icons\biofoam.paa";
         items[] = {"UNSCI_Medigel"};
 

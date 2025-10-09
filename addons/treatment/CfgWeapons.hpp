@@ -7,7 +7,7 @@ class CfgWeapons {
         author = AUTHOR;
         model = "\OPTRE_Weapons\items\Biofoam.p3d";
         picture = "\OPTRE_weapons\items\icons\biofoam.paa";
-        displayName = "[UNSCI] Biofoam";
+        displayName = "[UNSCI] Biomedical Foam";
         descriptionShort = "Used to treat gaping wounds and deep lacerations";
         descriptionUse = "Used to treat gaping wounds and deep lacerations";
         ACE_isMedicalItem = 1;
@@ -20,7 +20,7 @@ class CfgWeapons {
         author = AUTHOR;
         model = "\OPTRE_Weapons\items\Medigel.p3d";
         picture = "\OPTRE_weapons\items\icons\biofoam.paa";
-        displayName = "[UNSCI] Medigel";
+        displayName = "[UNSCI] MediGel";
         descriptionShort = "Used to treat surface level wounds.";
         descriptionUse = "Used to treat surface level wounds.";
         ACE_isMedicalItem = 1;
