@@ -31,4 +31,10 @@ class ACE_Medical_Treatment {
             KILL_WOUND_TYPES;
         };
     };
+    class Medication {
+        class UNSCI_Stimulant {
+            alphaFactor = -0.2;
+            opioidRelief = 0.1;
+        };
+    };
 };
