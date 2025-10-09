@@ -24,7 +24,7 @@ TRACE_1("fnc_medkit",_this);
 
 [_patient, "activity", QUOTE(%1 used a %2 on the patient), [[_medic, false, true] call ACEFUNC(common,getName), "[UNSCI] Medical Kit"]] call ACEFUNC(medical_treatment,addToLog);
 
-if (GVAR(medkitFullHeals)) then {
+if (EGVAR(treatment,medkitFullHeals)) then {
     [ACEQGVAR(medical_treatment,fullHealLocal), _patient, _patient] call CBA_fnc_targetEvent;
 } else {
     [ACEQGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, _classname, _bandageEffectiveness], _patient] call CBA_fnc_targetEvent;
