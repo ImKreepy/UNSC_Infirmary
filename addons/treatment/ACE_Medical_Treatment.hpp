@@ -533,6 +533,7 @@ class ACE_Medical_Treatment {
             maxDose = 4;
             dose = 1;
             incompatibleMedication[] = {};
+            viscosityChange = -5;
         };
     };
     class IV {
