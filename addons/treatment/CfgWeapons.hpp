@@ -42,7 +42,7 @@ class CfgWeapons {
         };
     };
     class UNSCI_MedkitPlasmaIV: ACE_ItemCore {
-        scope = 1;
+        scope = 0;
         author = AUTHOR;
         displayName = "[UNSCI] Plasma IV (2500ml)";
         model = "\z\ace\addons\medical_treatment\data\IVBag_1000ml.p3d";

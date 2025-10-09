@@ -42,8 +42,8 @@ class CfgVehicles
         };
     };
     class UNSCI_MedkitPlasmaIV_Item: Item_Base_F {
-        scope = 1;
-        scopeCurator = 1;
+        scope = 0;
+        scopeCurator = 0;
         displayName = "[UNSCI] Plasma IV (2500ml)";
         author = AUTHOR;
         vehicleClass = "Items";
