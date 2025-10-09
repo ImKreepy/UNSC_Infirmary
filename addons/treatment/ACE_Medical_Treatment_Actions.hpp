@@ -2,6 +2,22 @@ class ACE_Medical_Treatment_Actions {
     class BasicBandage {
         condition = QFUNC(canBandage);
     };
+    class FieldDressing: BasicBandage {};
+    class Morphine: FieldDressing {
+        items[] = {"ACE_morphine","UNSCI_Injector_Morphine"};
+        litter[] = {{"ACE_MedicalLitter_morphine"}};
+    };
+    class Epinephrine: Morphine {
+        items[] = {"ACE_Epinephrine","UNSCI_Injector_Epinephrine"};
+        litter[] = {{"ACE_MedicalLitter_Epinephrine"}};
+    };
+    class UNSCI_Stimulant: Morphine {
+        displayName = "Inject Stimulant";
+        displayNameProgress = "Injecting Stimulant...";
+
+        items[] = {"UNSCI_Injector_Stimulant"};
+        litter[] = {{"ACE_MedicalLitter_morphine"}};
+    };
     class UNSCI_RemoveBlamite: BasicBandage {
         displayName = "Remove Blamite";
         displayNameProgress = "Removing Blamite...";

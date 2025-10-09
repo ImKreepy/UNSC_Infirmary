@@ -54,6 +54,37 @@ class CfgVehicles
             };
         };
     };
+    class UNSCI_Injector_Stimulant_Item: Item_Base_F{
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[UNSCI] Stimulant Autoinjector";
+        author = AUTHOR;
+        vehicleClass = "Items";
+        class TransportItems {
+            class _xx_UNSCI_Injector_Stimulant {
+                name = "UNSCI_Injector_Stimulant";
+                count = 1;
+            };
+        };
+    };
+    class UNSCI_Injector_Morphine_Item: UNSCI_Injector_Stimulant_Item{
+        displayName = "[UNSCI] Morphine Autoinjector";
+        class TransportItems {
+            class _xx_UNSCI_Injector_Morphine {
+                name = "UNSCI_Injector_Morphine";
+                count = 1;
+            };
+        };
+    };
+    class UNSCI_Injector_Epinephrine_Item: UNSCI_Injector_Stimulant_Item{
+        displayName = "[UNSCI] Epinephrine Autoinjector";
+        class TransportItems {
+            class _xx_UNSCI_Injector_Epinephrine {
+                name = "UNSCI_Injector_Epinephrine";
+                count = 1;
+            };
+        };
+    };
 
     // ----- Litter -----
     class ACE_MedicalLitterBase;

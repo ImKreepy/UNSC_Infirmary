@@ -522,6 +522,19 @@ class ACE_Medical_Treatment {
             KILL_WOUND_TYPES;
         };
     };
+    class Medication {
+        class UNSCI_Stimulant {
+            painReduce = 0.4;
+            hrIncreaseLow[] = {10, 10};
+            hrIncreaseNormal[] = {10, 30};
+            hrIncreaseHigh[] = {10, 50};
+            timeInSystem = 1200;
+            timeTillMaxEffect = 5;
+            maxDose = 4;
+            dose = 1;
+            incompatibleMedication[] = {};
+        };
+    };
     class IV {
         class PlasmaIV;
         class UNSCI_MedkitPlasmaIV: PlasmaIV {
