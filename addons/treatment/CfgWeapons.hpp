@@ -62,8 +62,8 @@ class CfgWeapons {
         hiddenSelections[] = {"camo","camo1","camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\injector\unsci_injector_base_co.paa),QPATHTOF(data\injector\unsci_injector_Cap_co.paa),QPATHTOF(data\injector\unsci_injector_stimulant_co.paa)};
         displayName = "[UNSCI] Stimulant Autoinjector";
-        descriptionShort = "Stimulant Autoinjector, also known as a 'Stim Pack,' gives contains a cocktail of drugs that are meant to wake up and energize the user";
-        descriptionUse = "Contains a cocktail of drugs that are meant to wake up and energize the user.";
+        descriptionShort = "Contains a cocktail of drugs that are meant to wake up and energize the user";
+        descriptionUse = "Also known as a 'Stim Pack,' contains a cocktail of drugs that are meant to wake up and energize the user.";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
