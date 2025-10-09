@@ -1,5 +1,6 @@
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 
+// ----- ACE Macros Start -----
 #undef VAR_BLOOD_PRESS
 #undef VAR_BLOOD_VOL
 #undef VAR_WOUND_BLEEDING
@@ -19,6 +20,8 @@
 #undef VAR_IN_PAIN
 #undef VAR_TOURNIQUET
 #undef VAR_FRACTURES
+#undef GET_BLOOD_LOSS
+#undef GET_BLOOD_PRESSURE
 
 #define VAR_BLOOD_PRESS       ACEQGVAR(medical,bloodPressure)
 #define VAR_BLOOD_VOL         ACEQGVAR(medical,bloodVolume)
@@ -39,6 +42,9 @@
 #define VAR_IN_PAIN           ACEQGVAR(medical,inPain)
 #define VAR_TOURNIQUET        ACEQGVAR(medical,tourniquets)
 #define VAR_FRACTURES         ACEQGVAR(medical,fractures)
+#define GET_BLOOD_LOSS(unit)        ([unit] call ACEFUNC(medical_status,getBloodLoss))
+#define GET_BLOOD_PRESSURE(unit)    ([unit] call ACEFUNC(medical_status,getBloodPressure))
+// ----- ACE Macros End -----
 
 #define KILL_WOUND_TYPES class UNSCI_BlamiteWound { \
     effectiveness = 0;    \
