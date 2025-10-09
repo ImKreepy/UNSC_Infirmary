@@ -37,7 +37,7 @@
     [0.1, 60, 5, 1],
     true,
     {},
-    true
+    false
 ] call CBA_fnc_addSetting;
 
 // ----- Medical Kit Settings -----
@@ -49,7 +49,7 @@
     [0.1, 5, 1, 1],
     true,
     {},
-    true
+    false
 ] call CBA_fnc_addSetting;
 /* [
     QGVAR(medkitFullHeals),
