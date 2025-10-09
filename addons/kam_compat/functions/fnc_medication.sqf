@@ -22,8 +22,8 @@
 
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-[_patient, _usedItem] call ACEFUNC(addToTriageCard);
-[_patient, "activity", LSTRING(Activity_usedItem), [[_medic, false, true] call ACEFUNC(common,getName), "Stimulant Autoinjector"]] call ACEFUNC(addToLog);
+[_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
+[_patient, "activity", LSTRING(Activity_usedItem), [[_medic, false, true] call ACEFUNC(common,getName), "Stimulant Autoinjector"]] call ACEFUNC(medical_treatment,addToLog);
 
-[ACEQGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
-[QGVAR(stimulantLocal) [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+[ACEQGVAR(medical_treatment,medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+[QGVAR(stimulantLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
