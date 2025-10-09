@@ -57,3 +57,6 @@ class CfgMods
         overviewFootnote = "\ik\unsci\addons\main\logos\unsci_logo_ca.paa";
 	};
 };
+
+#include "CfgEventHandlers.hpp"
+#include "CfgFunctions.hpp"
