@@ -539,7 +539,7 @@ class ACE_Medical_Treatment {
     class IV {
         class PlasmaIV;
         class UNSCI_MedkitPlasmaIV: PlasmaIV {
-            volume = 2500;
+            volume = 1000;
         };
     };
 };
