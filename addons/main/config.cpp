@@ -30,6 +30,20 @@ class CfgAddons
     };
 };
 
+class CfgEditorCategories {
+    class EdCat_UNSCI {
+        displayName = QUOTE(PREFIX_BEAUTIFIED);
+    };
+};
+class CfgEditorSubcategories {
+    class EdSubCat_Bandages {
+        displayName = "Bandages";
+    };
+    class EdSubCat_Medication {
+        displayName = "Medication";
+    };
+};
+
 class CfgMods
 {
     class Mod_Base;
