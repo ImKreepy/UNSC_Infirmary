@@ -35,7 +35,7 @@ class CfgVehicles
     class UNSCI_Medkit_Item: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "[UNSCI] Medkit";
+        displayName = "[UNSCI] Medical Kit";
         author = AUTHOR;
         vehicleClass = "Items";
         editorCategory = "EdCat_UNSCI";
@@ -64,6 +64,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayName = "[UNSCI] Stimulant Autoinjector";
+        icon = QPATHTOF(icons\unsci_injector_icon_ca.paa);
         author = AUTHOR;
         vehicleClass = "Items";
         editorCategory = "EdCat_UNSCI";

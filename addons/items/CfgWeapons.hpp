@@ -57,8 +57,8 @@ class CfgWeapons {
     class UNSCI_Injector_Stimulant: ACE_ItemCore {
         scope = 2;
         author = AUTHOR;
-        picture = QPATHTOF(data\injector\unsci_injector_stimulant_icon_ca.paa);
-        model = QPATHTOF(data\injector\unsci_injector.p3d);
+        picture = QPATHTOF(pictures\unsci_injector_Stimulant_ca.paa);
+        model = QPATHTOF(data\unsci_injector.p3d);
         hiddenSelections[] = {"camo","camo1","camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\injector\unsci_injector_base_co.paa),QPATHTOF(data\injector\unsci_injector_Cap_co.paa),QPATHTOF(data\injector\unsci_injector_stimulant_co.paa)};
         displayName = "[UNSCI] Stimulant Autoinjector";
@@ -72,7 +72,7 @@ class CfgWeapons {
         };
     };
     class UNSCI_Injector_Morphine: UNSCI_Injector_Stimulant {
-        picture = QPATHTOF(data\injector\unsci_injector_Morphine_icon_ca.paa);
+        picture = QPATHTOF(pictures\unsci_injector_Morphine_ca.paa);
         hiddenSelections[] = {"camo","camo1","camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\injector\unsci_injector_base_co.paa),QPATHTOF(data\injector\unsci_injector_Cap_co.paa),QPATHTOF(data\injector\unsci_injector_morphine_co.paa)};
         displayName = "[UNSCI] Morphine Autoinjector";
@@ -80,7 +80,7 @@ class CfgWeapons {
         descriptionUse = "An analgesic used to combat moderate to severe pain experiences.";
     };
     class UNSCI_Injector_Epinephrine: UNSCI_Injector_Stimulant {
-        picture = QPATHTOF(data\injector\unsci_injector_Epinephrine_icon_ca.paa);
+        picture = QPATHTOF(pictures\unsci_injector_Epinephrine_ca.paa);
         hiddenSelections[] = {"camo","camo1","camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\injector\unsci_injector_base_co.paa),QPATHTOF(data\injector\unsci_injector_Cap_co.paa),QPATHTOF(data\injector\unsci_injector_epinephrine_co.paa)};
         displayName = "[UNSCI] Epinephrine Autoinjector";
