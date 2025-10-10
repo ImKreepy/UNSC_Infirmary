@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-    texture = "ik\unsci\addons\treatment\data\injector\unsci_injector_cap_nohq.paa";
+    texture = "ik\unsci\addons\items\data\injector\unsci_injector_cap_nohq.paa";
 	uvSource = "tex";
 };
 class Stage2
@@ -23,12 +23,12 @@ class Stage3
 };
 class Stage4
 {
-	texture = "ik\unsci\addons\treatment\data\injector\unsci_injector_cap_as.paa";
+	texture = "ik\unsci\addons\items\data\injector\unsci_injector_cap_as.paa";
 	uvSource = "tex";
 };
 class Stage5
 {
-	texture = "ik\unsci\addons\treatment\data\injector\unsci_injector_cap_smdi.paa";
+	texture = "ik\unsci\addons\items\data\injector\unsci_injector_cap_smdi.paa";
 	uvSource = "tex";
 };
 class Stage6

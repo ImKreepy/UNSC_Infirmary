@@ -8,6 +8,8 @@ class CfgVehicles
         displayName = "[UNSCI] Biomedical Foam";
         author = AUTHOR;
         vehicleClass = "Items";
+        editorCategory = "EdCat_UNSCI";
+        editorSubcategory = "EdSubCat_Bandages";
         class TransportItems {
             class _xx_UNSCI_Biofoam {
                 name = "UNSCI_Biofoam";
@@ -21,6 +23,8 @@ class CfgVehicles
         displayName = "[UNSCI] MediGel";
         author = AUTHOR;
         vehicleClass = "Items";
+        editorCategory = "EdCat_UNSCI";
+        editorSubcategory = "EdSubCat_Bandages";
         class TransportItems {
             class _xx_UNSCI_Medigel {
                 name = "UNSCI_Medigel";
@@ -34,6 +38,8 @@ class CfgVehicles
         displayName = "[UNSCI] Medkit";
         author = AUTHOR;
         vehicleClass = "Items";
+        editorCategory = "EdCat_UNSCI";
+        editorSubcategory = "EdSubCat_Bandages";
         class TransportItems {
             class _xx_UNSCI_Medkit {
                 name = "UNSCI_Medkit";
@@ -60,6 +66,8 @@ class CfgVehicles
         displayName = "[UNSCI] Stimulant Autoinjector";
         author = AUTHOR;
         vehicleClass = "Items";
+        editorCategory = "EdCat_UNSCI";
+        editorSubcategory = "EdSubCat_Medication";
         class TransportItems {
             class _xx_UNSCI_Injector_Stimulant {
                 name = "UNSCI_Injector_Stimulant";
