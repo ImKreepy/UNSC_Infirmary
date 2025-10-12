@@ -23,7 +23,7 @@
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
 [_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
-[_patient, "activity", "%1 used %2", [[_medic, false, true] call ACEFUNC(common,getName), _usedItem]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "activity", "%1 used %2", [[_medic, false, true] call ACEFUNC(common,getName), getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
 
 [ACEQGVAR(medical_treatment,medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
 [QGVAR(stimulantLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
