@@ -12,7 +12,7 @@ class CfgWeapons {
         descriptionUse = "Used to treat gaping wounds and deep lacerations";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 9;
+            mass = 2;
         };
     };
     class UNSCI_Medigel: ACE_ItemCore {
@@ -25,7 +25,7 @@ class CfgWeapons {
         descriptionUse = "Used to treat surface level wounds.";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 4;
+            mass = 2;
         };
     };
     class UNSCI_Medkit: ACE_ItemCore {
