@@ -6,5 +6,10 @@ class ACE_Medical_Injuries {
                 KAMGVAR(breathing,pulmoHit) = KAMQFUNC(breathing,woundsHandlerPulmoHit);
             };
         };
+        class UNSCI_Spike {
+            class woundHandlers: woundHandlers {
+                KAMGVAR(breathing,pulmoHit) = KAMQFUNC(breathing,woundsHandlerPulmoHit);
+            };
+        };
     };
 };
