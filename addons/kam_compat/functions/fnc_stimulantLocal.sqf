@@ -26,3 +26,4 @@ private _bloodPressureH = GET_BLOOD_PRESSURE(_patient) select 1;
 if ((floor (random 100) < ((linearConversion [50, 100, _bloodPressureH, 0, GVAR(stimulantChance), true]) min (linearConversion [140, 200, _bloodPressureH, GVAR(stimulantChance), 0, true]))) && {[_patient] call KAMFUNC(vitals,hasStableVitals)}) then {
     [_patient, false] call ACEFUNC(medical,setUnconscious);
 };
+_patient setVariable [KAMQGVAR(surgery,sedated), false, true];
