@@ -19,7 +19,7 @@ class CfgAddons
 {
     class PreloadAddons 
     {
-        class JaegerMain_Preload
+        class UNSCI_Preload
         {
             list[] = {
             "cba_main",
