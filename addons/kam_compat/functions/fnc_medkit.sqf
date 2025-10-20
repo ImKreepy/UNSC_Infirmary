@@ -28,6 +28,13 @@ if (EGVAR(treatment,medkitFullHeals)) then {
     [ACEQGVAR(medical_treatment,fullHealLocal), _patient, _patient] call CBA_fnc_targetEvent;
 } else {
     [ACEQGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, _classname, _bandageEffectiveness], _patient] call CBA_fnc_targetEvent;
-    [ACEQGVAR(medical_treatment,ivBagLocal), [_patient, _bodyPart, _classname, _medic, _itemUser, "UNSCI_MedkitPlasmaIV"], _patient] call CBA_fnc_targetEvent;
+
+    if (KAMGVAR(pharma,RequireInsIV)) then {
+        [_medic, _patient, _bodyPart, "", objNull, "kat_IV_16"] call KAMFUNC(pharma,applyIV);
+        [ACEQGVAR(medical_treatment,ivBagLocal), [_patient, _bodyPart, _classname, _medic, _itemUser, "UNSCI_MedkitPlasmaIV"], _patient] call CBA_fnc_targetEvent;
+    } else {
+        [ACEQGVAR(medical_treatment,ivBagLocal), [_patient, _bodyPart, _classname, _medic, _itemUser, "UNSCI_MedkitPlasmaIV"], _patient] call CBA_fnc_targetEvent;
+    };
+
     [KAMQGVAR(pharma,fluidLocal),[ _patient, -500, 20], _patient] call CBA_fnc_targetEvent;
 };
