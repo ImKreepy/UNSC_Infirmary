@@ -14,13 +14,12 @@
  * Can Bandage <BOOL>
  *
  * Example:
- * [player, cursorTarget, "Head", "FieldDressing"] call unsci_treatment_fnc_canBandage
- *
+ * [player, cursorTarget, "Head", "FieldDressing"] call unsci_treatment_fnc_canMedkit
  * Public: No
  */
 
 params ["_medic", "_patient", "_bodyPart", "_bandage"];
-TRACE_1("fnc_canBandage",_this);
+TRACE_1("fnc_canMedkit",_this);
 _bodyPart = toLowerANSI _bodyPart;
 
 // If patient is swimming, don't allow bandage actions.
@@ -31,15 +30,30 @@ if ((_bandage == "BasicBandage") isEqualTo (ACEGVAR(medical_treatment,advancedBa
 
 private _canBandage = false;
 
-{
-    _x params ["_woundClassID", "_amountOf", "_bleeding"];
+if (GVAR(medkitFullHeals)) then {
+    {
+        {
+            _x params ["_woundClassID", "_amountOf", "_bleeding"];
 
-    private _classIndex = _woundClassID / 10;
-    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+            private _classIndex = _woundClassID / 10;
+            private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
 
-    if (_amountOf * _bleeding > 0) exitWith {
-        _canBandage = true;
-    };
-} forEach (GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);
+            if (_amountOf * _bleeding > 0) exitWith {
+                _canBandage = true;
+            };
+        } forEach _x;
+    } forEach [(GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]), (GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]), (GET_STITCHED_WOUNDS(_patient) getOrDefault [_bodyPart, []])];
+} else {
+    {
+        _x params ["_woundClassID", "_amountOf", "_bleeding"];
+
+        private _classIndex = _woundClassID / 10;
+        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+
+        if ((_className isNotEqualTo "UNSCI_BlamiteWound" && _className isNotEqualTo "UNSCI_SpikeWound") && (_amountOf * _bleeding > 0)) exitWith {
+            _canBandage = true;
+        };
+    } forEach (GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);
+};
 
 _canBandage

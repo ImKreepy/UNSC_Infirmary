@@ -42,16 +42,6 @@
 
 // ----- Medical Kit Settings -----
 [
-    QGVAR(treatmentTime_medkit),
-    "SLIDER",
-    ["Medical Kit Treatment Time", "Time to treat a single wound with a Medical Kit."],
-    [QUOTE(PREFIX_BEAUTIFIED), "Medical Kits"],
-    [0.1, 5, 1, 1],
-    true,
-    {},
-    false
-] call CBA_fnc_addSetting;
-[
     QGVAR(medkitFullHeals),
     "CHECKBOX",
     ["Full Heal Medical Kit", "If enabled, Medical Kits will fully heal the patient."],
@@ -60,4 +50,24 @@
     true,
     {},
     true
+] call CBA_fnc_addSetting;
+[
+    QGVAR(timeCoefficient_medkitFull),
+    "SLIDER",
+    ["Full Heal Coefficient", "Coefficient for Medical Kits when Full Heal is enabled."],
+    [QUOTE(PREFIX_BEAUTIFIED), "Medical Kits"],
+    [0.1, 5, 1, 1],
+    true,
+    {},
+    false
+] call CBA_fnc_addSetting;
+[
+    QGVAR(timeCoefficient_medkitPartial),
+    "SLIDER",
+    ["Partial Heal Coefficient", "Coefficient for Medical Kits when Full Heal is disabled."],
+    [QUOTE(PREFIX_BEAUTIFIED), "Medical Kits"],
+    [0.1, 5, 1, 1],
+    true,
+    {},
+    false
 ] call CBA_fnc_addSetting;
