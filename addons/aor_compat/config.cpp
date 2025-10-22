@@ -15,6 +15,5 @@ class CfgPatches {
     };
 };
 
-#include "ACE_Medical_Injuries.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
 #include "\z\aor\addons\medical_ace\CfgAmmo.hpp"
