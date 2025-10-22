@@ -31,15 +31,18 @@ class CfgAddons
 };
 
 class CfgEditorCategories {
-    class EdCat_UNSCI {
-        displayName = QUOTE(PREFIX_BEAUTIFIED);
+    class UNSCI_EdCat_Items {
+        displayName = QUOTE(PREFIX_BEAUTIFIED Items);
+    };
+    class UNSCI_EdCat_Props {
+        displayName = QUOTE(PREFIX_BEAUTIFIED Props);
     };
 };
 class CfgEditorSubcategories {
-    class EdSubCat_Bandages {
+    class UNSCI_EdSubCat_Bandages {
         displayName = "Bandages";
     };
-    class EdSubCat_Medication {
+    class UNSCI_EdSubCat_Medication {
         displayName = "Medication";
     };
 };
