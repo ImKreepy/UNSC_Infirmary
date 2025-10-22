@@ -2,32 +2,40 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
-    class UNSCI_Biofoam: ACE_ItemCore {
+    // ----- Magazine Items -----
+    class UNSCI_BiofoamItem: ACE_ItemCore {
         scope = 2;
+        scopeArsenal = 0;
         author = AUTHOR;
         model = "\OPTRE_Weapons\items\Biofoam.p3d";
         picture = "\OPTRE_weapons\items\icons\biofoam.paa";
         displayName = "[UNSCI] Biomedical Foam";
         descriptionShort = "Used to treat gaping wounds and deep lacerations";
         descriptionUse = "Used to treat gaping wounds and deep lacerations";
-        ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 2;
+            mass = 10;
         };
     };
-    class UNSCI_Medigel: ACE_ItemCore {
-        scope = 2;
-        author = AUTHOR;
+    class UNSCI_MediGel_CanisterItem: UNSCI_BiofoamItem {
         model = "\OPTRE_Weapons\items\Medigel.p3d";
         picture = "\OPTRE_weapons\items\icons\biofoam.paa";
-        displayName = "[UNSCI] MediGel";
+        displayName = "[UNSCI] MediGel Canister";
         descriptionShort = "Used to treat surface level wounds.";
         descriptionUse = "Used to treat surface level wounds.";
-        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 22;
+        };
+    };
+    class UNSCI_MediGel_40mlItem: UNSCI_MediGel_CanisterItem {
+        model = "\ik\unsci\addons\items\data\unsci_medigel_tube.p3d";
+        picture = "\ik\unsci\addons\items\pictures\unsci_medigel_tube_ca.paa";
+        displayName = "[UNSCI] MediGel (40ml)";
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 2;
         };
     };
+
+    // ----- Normal Items -----
     class UNSCI_Medkit: ACE_ItemCore {
         scope = 2;
         author = AUTHOR;

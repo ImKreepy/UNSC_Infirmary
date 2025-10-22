@@ -208,7 +208,7 @@ class ACE_Medical_Treatment {
             };
         };
         // MediGel is average treatment, high reopen chance, shorter reopening delay
-        class UNSCI_Medigel : FieldDressing {
+        class UNSCI_MediGel : FieldDressing {
             // ----- UNSCI Wound Treatments -----
             class UNSCI_PlasmaBurn {
                 effectiveness = 5;

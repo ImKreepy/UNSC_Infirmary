@@ -50,24 +50,23 @@ class ACE_Medical_Treatment_Actions {
         displayName = "Biofoam";
         displayNameProgress = "Applying Biofoam...";
         icon = "\OPTRE_weapons\items\icons\biofoam.paa";
-        category = "bandage";
         items[] = {"UNSCI_Biofoam"};
         
         callbackSuccess = QFUNC(biofoam);
 
         //sounds[] = {{QPATHTO_R(sounds\Inject.ogg),1,1,50}};
-        litter[] = {{"UNSCI_Biofoam_Item"}};
+        litter[] = {{"UNSCI_Biofoam_litter"}};
     };
-    class UNSCI_Medigel: BasicBandage {
+    class UNSCI_MediGel: BasicBandage {
         displayName = "MediGel";
         displayNameProgress = "Applying MediGel...";
         icon = "\OPTRE_weapons\items\icons\biofoam.paa";
-        items[] = {"UNSCI_Medigel"};
+        items[] = {"UNSCI_MediGel_Canister","UNSCI_MediGel_40ml"};
 
         callbackSuccess = QFUNC(medigel);
 
         //sounds[] = {{QPATHTO_R(sounds\Inject.ogg),1,1,50}};
-        litter[] = {{"UNSCI_Medigel_Item"}};
+        //litter[] = {{"UNSCI_Medigel_Item"}};
     };
     class UNSCI_Medkit: BasicBandage {
         displayName = "Medical Kit";
@@ -80,6 +79,6 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medkit);
 
         sounds[] = {{"z\ace\addons\medical_treatment\sounds\Inject.ogg",1,1,50}};
-        litter[] = {{"UNSCI_Medkit_Item"}};
+        //litter[] = {{"UNSCI_Medkit_Item"}};
     };
 };
