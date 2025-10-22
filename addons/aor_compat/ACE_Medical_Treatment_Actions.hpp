@@ -12,7 +12,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"UNSCI_Biofoam"};
     };
     class AOR_Medigel: AOR_Biofoam {
-        items[] = {"UNSCI_MediGel"};
+        items[] = {"UNSCI_MediGel_Canister","UNSCI_MediGel_40ml"};
     };
     class AOR_Medkit: AOR_Biofoam {
         items[] = {"UNSCI_Medkit"};
