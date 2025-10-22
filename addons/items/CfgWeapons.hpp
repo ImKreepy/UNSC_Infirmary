@@ -13,7 +13,7 @@ class CfgWeapons {
         descriptionShort = "Used to treat gaping wounds and deep lacerations";
         descriptionUse = "Used to treat gaping wounds and deep lacerations";
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 10;
+            mass = 12;
         };
     };
     class UNSCI_MediGel_CanisterItem: UNSCI_BiofoamItem {
