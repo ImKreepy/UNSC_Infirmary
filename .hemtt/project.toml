@@ -26,3 +26,6 @@ presets = [
     "AoR", # .html presets from .hemtt/presets/
 ]
 mission = "Test.VR"
+file_patching = true # Default: true
+binarize = false # Default: false
+rapify = true # Default: true 
