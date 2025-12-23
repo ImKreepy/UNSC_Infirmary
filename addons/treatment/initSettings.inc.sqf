@@ -30,11 +30,21 @@
     true
 ] call CBA_fnc_addSetting;
 [
-    QGVAR(treatmentTime_Imapalement),
+    QGVAR(treatmentTime_Impalement),
     "SLIDER",
     ["Time To Remove a Impalement", "Time to remove a single Blamite and Spikes."],
     [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
     [0.1, 60, 5, 1],
+    true,
+    {},
+    false
+] call CBA_fnc_addSetting;
+[
+    QGVAR(damageCoefficient_Impalement),
+    "SLIDER",
+    ["Removed Impalement Damage Coefficient", "Coefficient for the damage dealt when removing Blamite and Spikes."],
+    [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
+    [0.1, 1, 1, 1],
     true,
     {},
     false
