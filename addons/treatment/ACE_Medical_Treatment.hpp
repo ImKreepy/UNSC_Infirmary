@@ -664,6 +664,7 @@ class ACE_Medical_Treatment {
             timeInSystem = 1200;
             timeTillMaxEffect = 5;
             maxDose = 4;
+            maxDoseDeviation = 3;
             dose = 1;
             incompatibleMedication[] = {};
             viscosityChange = -5;

@@ -34,7 +34,8 @@ class ACE_Medical_Treatment {
     class Medication {
         class UNSCI_Stimulant {
             alphaFactor = -0.2;
-            opioidRelief = 0.1;
+            opioidRelief = 0.4;
+            opioidEffect = 0.1;
         };
     };
 };
