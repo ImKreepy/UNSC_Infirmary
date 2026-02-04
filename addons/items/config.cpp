@@ -26,12 +26,6 @@ class CfgPatches {
             "UNSCI_Injector_Epinephrine_Prop"
         };
         weapons[] = {
-            // Magazines
-            "UNSCI_Biofoam",
-            "UNSCI_MediGel_Canister",
-            "UNSCI_MediGel_40ml",
-
-            // Weapons
             "UNSCI_BiofoamItem",
             "UNSCI_MediGel_CanisterItem",
             "UNSCI_MediGel_40mlItem",
@@ -40,6 +34,11 @@ class CfgPatches {
             "UNSCI_Injector_Stimulant",
             "UNSCI_Injector_Morphine",
             "UNSCI_Injector_Epinephrine"
+        };
+        magazines[] = {
+            "UNSCI_Biofoam",
+            "UNSCI_MediGel_Canister",
+            "UNSCI_MediGel_40ml"
         };
         VERSION_CONFIG;
 
