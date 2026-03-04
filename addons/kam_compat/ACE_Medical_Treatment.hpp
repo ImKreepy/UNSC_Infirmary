@@ -30,6 +30,10 @@ class ACE_Medical_Treatment {
         class BloodClotLargeEACA: BloodClotLarge {
             KILL_WOUND_TYPES;
         };
+
+        class Dressing: FieldDressing {
+            KILL_WOUND_TYPES;
+        };
     };
     class Medication {
         class UNSCI_Stimulant {

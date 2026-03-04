@@ -1,0 +1,38 @@
+#include "..\script_component.hpp"
+/*
+ * Author: MiszczuZPolski
+ * Calculates the Debride treatment time based on the amount of debridable wounds.
+ *
+ * Arguments:
+ * 0: Medic (not used) <OBJECT>
+ * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
+ *
+ * Return Value:
+ * Treatment Time <NUMBER>
+ *
+ * Example:
+ * [player, cursorObject, "head"] call kat_surgery_fnc_getNPWTTime
+ *
+ * Public: No
+ */
+
+params ["", "_patient", "_bodyPart"];
+
+private _woundCount = 0;
+{
+    _x params ["_woundClassID", "_amountOf", "_bleeding"];
+
+    private _classIndex = _woundClassID / 10;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+
+    if ((_className isNotEqualTo "UNSCI_BlamiteWound" && _className isNotEqualTo "UNSCI_SpikeWound") && (_amountOf * _bleeding > 0)) then {
+        _woundCount = _woundCount + 1;
+    };
+} forEach ((GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart, []]);
+
+if (_woundCount > 0) then {
+    _woundCount * KAMGVAR(surgery,npwtTime)
+} else {
+    count (GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) * KAMGVAR(surgery,npwtTime)
+};
