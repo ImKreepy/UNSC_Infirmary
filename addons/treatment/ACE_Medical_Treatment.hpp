@@ -564,6 +564,13 @@ class ACE_Medical_Treatment {
                 effectiveness = 0.5;
             };
         };
+
+        class OPTRE_Biofoam: ElasticBandage {
+            UNSCI_PLASMA_BIOFOAM;
+        };
+        class OPTRE_Medigel: ElasticBandage {
+            UNSCI_PLASMA_MEDIGEL;
+        };
     };
     class Medication {
         class UNSCI_Stimulant {
