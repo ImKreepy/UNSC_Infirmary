@@ -24,10 +24,5 @@ class ACE_Medical_Treatment {
             delete plasmaMedium;
             delete plasmaLarge;
         };
-        delete MEU_Biofoam;
-        delete FirstAidKit;
-        delete MEU_Medigel;
-        delete MEU_Biofoam_Light;
-        delete MEU_Medigel_Light;
     };
 };
