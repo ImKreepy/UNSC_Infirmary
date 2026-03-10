@@ -14,4 +14,4 @@
 
 #include "script_macros.hpp"
 
-#define ACE_Medical QUOTE(ace_medical_engine),QUOTE(ace_medical),QUOTE(ace_medical_status),QUOTE(ace_medical_vitals),QUOTE(ace_medical_statemachine)
+#define ACE_MEDICAL QUOTE(ace_medical_engine),QUOTE(ace_medical),QUOTE(ace_medical_status),QUOTE(ace_medical_vitals),QUOTE(ace_medical_statemachine)
