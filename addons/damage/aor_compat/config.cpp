@@ -1,12 +1,12 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON {
+    class SUBADDON {
         author = AUTHOR;
-        authors[] = {"Im Kreepy"};
         name = COMPONENT_NAME;
+        addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"unsci_main","unsci_damage","unsci_treatment","aor_medical_ace",};
+        requiredAddons[] = {QUOTE(ADDON),"aor_medical_ace"};
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
@@ -15,5 +15,4 @@ class CfgPatches {
     };
 };
 
-#include "ACE_Medical_Treatment_Actions.hpp"
-#include "\z\aor\addons\medical_ace\CfgAmmo.hpp"
+#include "ACE_Medical_Injuries.hpp"

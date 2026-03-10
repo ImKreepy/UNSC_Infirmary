@@ -3,11 +3,10 @@
 class CfgPatches {
     class SUBADDON {
         author = AUTHOR;
-        authors[] = {"Im Kreepy"};
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {QUOTE(ADDON),"unsci_kam_compat"};
+        requiredAddons[] = {QUOTE(ADDON),"aor_medical_ace"};
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
