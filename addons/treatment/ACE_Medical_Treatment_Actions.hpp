@@ -47,8 +47,8 @@ class ACE_Medical_Treatment_Actions {
         callbackProgress = QFUNC(removingSpikeProgress);
     };
     class UNSCI_Biofoam: BasicBandage {
-        displayName = "Biofoam";
-        displayNameProgress = "Applying Biofoam...";
+        displayName = "Biomedical Foam";
+        displayNameProgress = "Injecting Biomedical Foam...";
         icon = "\OPTRE_weapons\items\icons\biofoam.paa";
         items[] = {"UNSCI_Biofoam"};
         
@@ -70,7 +70,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class UNSCI_Medkit: BasicBandage {
         displayName = "Medical Kit";
-        displayNameProgress = "Applying Medical Kit...";
+        displayNameProgress = "Using Medical Kit...";
         icon = "\OPTRE_weapons\items\icons\medkit.paa";
         items[] = {"UNSCI_Medkit"};
 
