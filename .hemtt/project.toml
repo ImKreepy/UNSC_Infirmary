@@ -23,7 +23,7 @@ archive = true
 
 [hemtt.launch.default]
 presets = [
-    "AoR", # .html presets from .hemtt/presets/
+    "Infirmary Dev", # .html presets from .hemtt/presets/
 ]
 mission = "Test.VR"
 file_patching = true # Default: true
