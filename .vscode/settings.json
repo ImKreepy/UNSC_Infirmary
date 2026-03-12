@@ -4,5 +4,6 @@
 		"**/include": true,
 		"**/extras": true,
 		"**/releases": true,
-	},
+		"**/.github": true,
+	}
 }
