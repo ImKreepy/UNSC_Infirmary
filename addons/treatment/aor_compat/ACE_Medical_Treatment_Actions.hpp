@@ -1,6 +1,6 @@
 class ACE_Medical_Treatment_Actions {
     class BasicBandage {
-        condition = QUOTE(aor_medical_ace_compat_bandage);
+        condition = AORQFUNC(canBandage);
     };
     delete UNSCI_RemoveBlamite;
     delete UNSCI_RemoveSpike;
