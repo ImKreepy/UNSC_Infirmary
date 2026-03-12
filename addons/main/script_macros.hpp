@@ -14,8 +14,8 @@
 #ifdef DISABLE_COMPILE_CACHE
     #undef PREP
     #undef PREPMAIN
-    #define PREP(fncName) FUNC(fncName) = compile preProcessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName))
-    #define PREPMAIN(fncName) FUNCMAIN(fncName) = compile preProcessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName))
+    #define PREP(fncName) FUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName))
+    #define PREPMAIN(fncName) FUNCMAIN(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName))
 #else
     #undef PREP
     #undef PREPMAIN
