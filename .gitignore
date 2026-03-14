@@ -24,3 +24,4 @@ target/
 include
 *\pngs
 addons/medical
+.hemttprivatekey
