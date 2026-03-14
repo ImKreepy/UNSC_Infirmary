@@ -8,7 +8,7 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {{"ACE_MedicalLitter_morphine"}};
     };
     class Epinephrine: Morphine {
-        items[] = {"ACE_Epinephrine","UNSCI_Injector_Epinephrine"};
+        items[] = {"ACE_epinephrine","UNSCI_Injector_Epinephrine"};
         litter[] = {{"ACE_MedicalLitter_Epinephrine"}};
     };
     class UNSCI_Stimulant: Morphine {
