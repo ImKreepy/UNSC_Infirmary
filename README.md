@@ -6,7 +6,7 @@
     <a href="https://github.com/ImKreepy/UNSC_Infirmary/releases/Latest">
         <img src="https://img.shields.io/github/v/release/ImKreepy/UNSC_Infirmary?label=Version&color=00e6f6" alt="UNSC Infirmary Version">
     </a>
-    <a href="https://github.com/ImKreepy/UNSC_Infirmary/blob/master/LICENSE">
+    <a href="https://github.com/ImKreepy/UNSC_Infirmary/blob/master/COPYING">
         <img src="https://img.shields.io/github/license/ImKreepy/UNSC_Infirmary?style=flat-square&label=License&color=fdd700" alt="UNSC Infirmary License">
     </a><!-- 
     <a href="https://discord.gg/UmUrzBTxEn">
