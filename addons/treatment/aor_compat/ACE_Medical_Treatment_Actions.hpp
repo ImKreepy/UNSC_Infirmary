@@ -3,7 +3,6 @@ class ACE_Medical_Treatment_Actions {
         condition = AORQFUNC(canBandage);
     };
     delete UNSCI_RemoveBlamite;
-    delete UNSCI_RemoveSpike;
     delete UNSCI_Biofoam;
     delete UNSCI_Medigel;
     delete UNSCI_Medkit;
