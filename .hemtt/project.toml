@@ -11,6 +11,7 @@ include = [
 ]
 exclude = [
     "addons/main/logos/pngs/*.png",
+    "COPYING",
 ]
 
 [version]
