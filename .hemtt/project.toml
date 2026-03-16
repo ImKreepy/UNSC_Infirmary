@@ -5,9 +5,9 @@ author = "Im Kreepy"
 
 [files]
 include = [
-    "LICENSE",
-    "changelog",
-    "README",
+    "LICENSE.txt",
+    "changelog.md",
+    "README.md",
 ]
 exclude = [
     "addons/main/logos/pngs/*.png",
