@@ -84,7 +84,7 @@ class ACE_Medical_Injuries {
             };
             class UNSCI_SpikeWound {
                 weighting[] = {{1.5, 1}, {0.35, 1}};
-                sizeMultiplier = 0.5;
+                damageMultiplier = 1.3;
             };
         };
         class UNSCI_BlamiteExplosive {
