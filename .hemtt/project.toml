@@ -26,6 +26,7 @@ presets = [
     "Infirmary Dev", # .html presets from .hemtt/presets/
 ]
 mission = "Test.VR"
+executable = "arma3profiling_x64" # Default: "arma3_x64"
 file_patching = true # Default: true
 binarize = false # Default: false
 rapify = true # Default: true 
