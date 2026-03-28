@@ -30,7 +30,7 @@ private _woundIndex = _openWoundsOnPart findIf {
 };
 
 private _wound = _openWoundsOnPart select _woundIndex;
-_wound params ["","_amountOf","","_damage"];
+_wound params ["","_amountOf","_size","_damage"];
 _newWound = ["PunctureWound", _amountOf, _size, _damage];
 /* private _damageToAdd = _damage * GVAR(damageCoefficient_Impalement);
 private _amountToAdd = _amountOf; */
