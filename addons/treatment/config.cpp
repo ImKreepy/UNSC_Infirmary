@@ -4,6 +4,7 @@ class CfgPatches {
     class ADDON {
         author = AUTHOR;
         authors[] = {"Im Kreepy"};
+        url = ECSTRING(main,URL);
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"unsci_main","unsci_items","unsci_damage","ace_medical_treatment","OPTRE_ACE_Compat_Medical"};

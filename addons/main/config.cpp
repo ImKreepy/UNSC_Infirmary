@@ -4,6 +4,7 @@ class CfgPatches {
     class MAIN_ADDON {
         author = AUTHOR;
         authors[] = {"Im Kreepy"};
+        url = ECSTRING(main,URL);
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main","cba_xeh",ACE_MEDICAL,"OPTRE_ACE_Compat"};
@@ -57,8 +58,8 @@ class CfgMods
         author = "Im Kreepy";
         description = "UNSC Infirmary brings ACE Advanced Medical to the Halo enthusiast";
 
-        //action = "https://discord.gg/FqY9cNzB5n";
-        //actionName = "Join Jaeger Company";
+        action = "https://github.com/ImKreepy/UNSC_Infirmary";
+        actionName = "GitHub";
 
         tooltip = "UNSC Infirmary";
         tooltipOwned = "UNSC Infirmary Owned";

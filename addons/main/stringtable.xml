@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="UNSC Infirmary">
+    <Package name="Main">
+        <Key ID="STR_UNSCI_Main_URL">
+            <English>https://github.com/ImKreepy/UNSC_Infirmary</English>
+        </Key>
+    </Package>
+</Project>
