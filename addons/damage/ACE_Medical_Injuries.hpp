@@ -31,16 +31,6 @@ class ACE_Medical_Injuries {
     };
     class damageTypes {
         class woundHandlers;
-        class UNSCI_RemovedImpalement {
-            thresholds[] = {{1,1}};
-            selectionSpecific = 1;
-            class PunctureWound {
-                weighting[] = {{1, 1}};
-                sizeMultiplier = 0.6;
-                bleedingMultiplier = 12;
-                painMultiplier = 2;
-            };
-        };
         class UNSCI_Blamite {
             thresholds[] = {THRESHOLDS};
             selectionSpecific = 1;
