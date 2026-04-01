@@ -39,16 +39,6 @@
     {},
     false
 ] call CBA_fnc_addSetting;
-[
-    QGVAR(damageCoefficient_Impalement),
-    "SLIDER",
-    ["Removed Impalement Damage Coefficient", "Coefficient for the damage dealt when removing Blamite and Spikes."],
-    [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
-    [0.1, 1, 1, 1],
-    true,
-    {},
-    false
-] call CBA_fnc_addSetting;
 
 // ----- Medical Kit Settings -----
 [
