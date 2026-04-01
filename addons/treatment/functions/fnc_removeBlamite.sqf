@@ -31,17 +31,11 @@ private _woundIndex = _openWoundsOnPart findIf {
 
 private _wound = _openWoundsOnPart select _woundIndex;
 _wound params ["","_amountOf","_size","_damage"];
-_newWound = ["PunctureWound", _amountOf, _size, _damage];
-/* private _damageToAdd = _damage * GVAR(damageCoefficient_Impalement);
-private _amountToAdd = _amountOf; */
+_newWound = ["PunctureWound", _amountOf, _size+1, _damage];
 _openWoundsOnPart deleteAt _woundIndex;
 
 _patient setVariable [ACEQGVAR(medical,openWounds), _openWounds, true];
 
 [_patient, _bodyPart, _newWound] call ACEFUNC(medical,addWound);
-
-/* for "_i" from 1 to _amountToAdd do {
-    [_patient, _damageToAdd, _bodyPart, "UNSCI_RemovedImpalement"] call ACEFUNC(medical,addDamageToUnit);
-}; */
 
 true
