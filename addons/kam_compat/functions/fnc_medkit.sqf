@@ -38,3 +38,5 @@ if (EGVAR(treatment,medkitFullHeals)) then {
 
     [KAMQGVAR(pharma,fluidLocal),[ _patient, -500, 20], _patient] call CBA_fnc_targetEvent;
 };
+
+playSound3D ["ik\unsci\addons\treatment\sounds\unsci_medkit_use.wav", objNull, false, getPosASL _medic, 1.5, 1, 50];

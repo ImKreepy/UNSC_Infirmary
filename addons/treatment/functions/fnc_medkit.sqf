@@ -30,3 +30,5 @@ if (GVAR(medkitFullHeals)) then {
     [ACEQGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, _classname, _bandageEffectiveness], _patient] call CBA_fnc_targetEvent;
     [ACEQGVAR(medical_treatment,ivBagLocal), [_patient, _bodyPart, _classname, _medic, _itemUser, "UNSCI_MedkitPlasmaIV"], _patient] call CBA_fnc_targetEvent;
 };
+
+playSound3D [QPATHTO_R(sounds\unsci_medkit_use.wav), objNull, false, getPosASL _medic, 1.5, 1, 50];

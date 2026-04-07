@@ -54,7 +54,7 @@ class ACE_Medical_Treatment_Actions {
         
         callbackSuccess = QFUNC(biofoam);
 
-        //sounds[] = {{QPATHTO_R(sounds\Inject.ogg),1,1,50}};
+        sounds[] = {{QPATHTO_R(sounds\unsci_biofoam_use.wav),1,1,50}};
         litter[] = {{"UNSCI_Biofoam_litter"}};
     };
     class UNSCI_MediGel: BasicBandage {
@@ -65,7 +65,7 @@ class ACE_Medical_Treatment_Actions {
 
         callbackSuccess = QFUNC(medigel);
 
-        //sounds[] = {{QPATHTO_R(sounds\Inject.ogg),1,1,50}};
+        sounds[] = {{QPATHTO_R(sounds\unsci_medigel_use.wav),1,1,50}};
         //litter[] = {{"UNSCI_Medigel_Item"}};
     };
     class UNSCI_Medkit: BasicBandage {
@@ -78,7 +78,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QFUNC(getMedkitTreatmentTime);
         callbackSuccess = QFUNC(medkit);
 
-        sounds[] = {{"z\ace\addons\medical_treatment\sounds\Inject.ogg",1,1,50}};
+        //sounds[] = {{QPATHTO_R(sounds\unsci_medkit_use.wav),1,1,50}}; // sound moved to callBackSuccess function to ensure it plays after the treatment time, not at the start of the action
         //litter[] = {{"UNSCI_Medkit_Item"}};
     };
 };
