@@ -2,8 +2,8 @@
 
 ADDON = false;
 
-INFO("UNSC Infirmary - GUI Scripts Loading");
+INFO(QUOTE(COMPONENT_INFO Scripts Loading));
 #include "XEH_PREP.hpp"
-INFO("UNSC Infirmary - GUI Scripts Loaded");
+INFO(QUOTE(COMPONENT_INFO Scripts Loaded));
 
 ADDON = true;

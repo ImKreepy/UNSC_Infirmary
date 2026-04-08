@@ -15,3 +15,7 @@ class CfgPatches {
          
     };
 };
+
+#include "CfgEventHandlers.hpp"
+#include "CfgFunctions.hpp"
+#include "gui.hpp"
