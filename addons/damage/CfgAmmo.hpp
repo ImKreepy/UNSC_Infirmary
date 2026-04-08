@@ -11,6 +11,7 @@ class CfgAmmo {
     class M_70mm_SAAMI;
     class M_Air_AA;
     class ammo_Missile_LongRangeAABase;
+    class G_40mm_HE;
 
     // ----- Plasma Ammo Types -----
     // ----- Blue Plasma -----
@@ -58,7 +59,7 @@ class CfgAmmo {
     class OPTRE_FC_HeavyPlasma_Bolt_AAG : ammo_AAA_Gun35mm_AA {
         ACE_damageType = "UNSCI_PlasmaExplosive";
     };
-    class OPTRE_FC_HeavyPlasma_Bolt_AG : ammo_AAA_Gun35mm_AA {
+    class OPTRE_FC_HeavyPlasma_Bolt_AG : G_40mm_HE {
         ACE_damageType = "UNSCI_PlasmaExplosive";
     };
     class OPTRE_FC_C2_Cannon_Bolt : OPTRE_FC_T51_Repeater_Bolt {
