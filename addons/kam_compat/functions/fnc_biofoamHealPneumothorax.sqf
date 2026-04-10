@@ -21,3 +21,4 @@ TRACE_1("fnc_biofoamHealPneumothorax",_this);
 
 _patient setVariable [KAMQGVAR(breathing,deepPenetratingInjury), false];
 _patient setVariable [KAMQGVAR(breathing,pneumothorax), 0];
+_patient setVariable [QGVAR(biofoamHealDp), true, false];

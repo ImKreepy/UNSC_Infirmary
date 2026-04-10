@@ -7,3 +7,4 @@ PREP(medication);
 PREP(npwtTreatmentProgress);
 PREP(medkit);
 PREP(stimulantLocal);
+PREP(updateBodyImage);

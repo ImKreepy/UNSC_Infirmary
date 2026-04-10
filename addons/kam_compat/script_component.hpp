@@ -12,3 +12,5 @@
 #define KAMQFUNC(module,var) QUOTE(KAMFUNC(module,var))
 #define KAMLSTRING(module,var) QUOTE(TRIPLES(STR,DOUBLES(KAM_PREFIX,module),var))
 #define KAMCSTRING(module,var) QUOTE(TRIPLES($STR,DOUBLES(KAM_PREFIX,module),var))
+
+#define IDC_BODY_TORSO_BIOFOAM      70143
