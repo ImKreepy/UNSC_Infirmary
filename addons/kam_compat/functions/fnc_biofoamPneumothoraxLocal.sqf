@@ -11,13 +11,13 @@
  * None <NONE>
  *
  * Example:
- * [player, cursorObject] call unsci_kam_compat_fnc_biofoamHealPneumothorax
+ * [player, cursorObject] call unsci_kam_compat_fnc_biofoamPneumothoraxLocal
  *
  * Public: No
  */
 
 params ["_medic","_patient"];
-TRACE_1("fnc_biofoamHealPneumothorax",_this);
+TRACE_1("fnc_biofoamPneumothoraxLocal",_this);
 
 _patient setVariable [KAMQGVAR(breathing,deepPenetratingInjury), false];
 _patient setVariable [KAMQGVAR(breathing,pneumothorax), 0];

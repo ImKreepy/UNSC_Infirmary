@@ -1,0 +1,27 @@
+#include "..\script_component.hpp"
+/*
+ * Authors: Im Kreepy
+ * Uses biofoam on the patient.
+ *
+ * Arguments:
+ * 0: Medic <OBJECT>
+ * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
+ * 3: Treatment <STRING>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player, cursorObject, "Head", "FieldDressing"] call unsci_kam_compat_fnc_biofoamPneumothorax
+ *
+ * Public: No
+ */
+
+_this set [7, _this param [7, 1]];
+params ["_medic", "_patient", "_bodyPart", "_classname"];
+TRACE_1("fnc_biofoamPneumothorax",_this);
+
+[_patient, "activity", QUOTE(%1 healed Deep Penetration with %2), [[_medic, false, true] call ACEFUNC(common,getName), "Biomedical Foam"]] call ACEFUNC(medical_treatment,addToLog);
+
+[QGVAR(biofoamPneumothoraxLocal), [_medic,_patient], _patient] call CBA_fnc_targetEvent;
