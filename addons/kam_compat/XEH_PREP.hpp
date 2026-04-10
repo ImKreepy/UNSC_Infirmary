@@ -1,3 +1,6 @@
+PREP(biofoam);
+PREP(biofoamHealPneumothorax);
+PREP(canBiofoam);
 PREP(canNPWT);
 PREP(getNPWTTreatmentTime);
 PREP(medication);

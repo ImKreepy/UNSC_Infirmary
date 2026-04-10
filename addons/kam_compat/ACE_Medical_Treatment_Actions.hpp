@@ -1,5 +1,9 @@
 class ACE_Medical_Treatment_Actions {
     class BasicBandage;
+     class UNSCI_Biofoam: BasicBandage {
+        condition = QFUNC(canBiofoam);
+        callbackSuccess = QFUNC(biofoam);
+    };
     class UNSCI_Medkit: BasicBandage {
         callbackSuccess = QFUNC(medkit);
     };
