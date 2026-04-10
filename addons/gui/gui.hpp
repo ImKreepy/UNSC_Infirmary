@@ -6,7 +6,7 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
         class ArmLeftBL: Background {
             idc = IDC_BODY_ARMLEFT_BL;
             text = QPATHTOF(data\body_image\unsci_armLeft_bl.paa);
-            colorText[] = {0.8, 0.3, 0.8, 1};
+            colorText[] = {1, 0, 0.6, 1};
             show = 0;
         };
         class ArmRightBL: ArmLeftBL {
@@ -33,7 +33,7 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
         class ArmLeftSP: Background {
             idc = IDC_BODY_ARMLEFT_SP;
             text = QPATHTOF(data\body_image\unsci_armLeft_sp.paa);
-            colorText[] = {0.8, 0.3, 0.3, 1};
+            colorText[] = {1, 0, 0, 1};
             show = 0;
         };
         class ArmRightSP: ArmLeftSP {
