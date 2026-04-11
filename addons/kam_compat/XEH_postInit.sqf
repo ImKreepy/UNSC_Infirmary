@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 [QGVAR(stimulantLocal), FUNC(stimulantLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(biofoamPneumothoraxLocal), FUNC(biofoamPneumothoraxLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(biofoamPTXLocal), FUNC(biofoamPTXLocal)] call CBA_fnc_addEventHandler;
 
 // Only GUI items beyond this point
 if !(hasInterface) exitWith {};

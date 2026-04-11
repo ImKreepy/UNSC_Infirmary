@@ -22,8 +22,13 @@ TRACE_1("fnc_updateBodyImage",_this);
 
 private _ctrlBiofoam = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_BIOFOAM;
 
-if (_target getVariable [QGVAR(biofoamHealDp), false] && (_target getVariable [KAMQGVAR(breathing,activeChestSeal), false]) isEqualTo false) then {
+private _hasChestSeal = _target getVariable [KAMQGVAR(breathing,activeChestSeal), false];
+private _hasDP = _target getVariable [KAMQGVAR(breathing,deepPenetratingInjury), false];
+private _hasPTX = _target getVariable [KAMQGVAR(breathing,pneumothorax), 0];
+
+if (_target getVariable [QGVAR(biofoamHealPTX), false] && _hasChestSeal isEqualTo false && _hasDP isEqualTo false && _hasPTX isEqualTo 0) then {
     _ctrlBiofoam ctrlShow true;
 } else {
     _ctrlBiofoam ctrlShow false;
+    _target setVariable [QGVAR(biofoamHealPTX), false];
 };
