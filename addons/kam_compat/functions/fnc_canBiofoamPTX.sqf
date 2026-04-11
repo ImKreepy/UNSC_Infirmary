@@ -14,13 +14,13 @@
  * Can Bandage <BOOL>
  *
  * Example:
- * [player, cursorTarget, "Head", "FieldDressing"] call unsci_kam_compat_fnc_canBiofoamPneumothorax
+ * [player, cursorTarget, "Head", "FieldDressing"] call unsci_kam_compat_fnc_canBiofoamPTX
  *
  * Public: No
  */
 
 params ["_medic", "_patient", "_bodyPart", "_bandage"];
-TRACE_1("fnc_canBiofoamPneumothorax",_this);
+TRACE_1("fnc_canBiofoamPTX",_this);
 _bodyPart = toLowerANSI _bodyPart;
 
 // If patient is swimming, don't allow bandage actions.
@@ -31,9 +31,9 @@ if ((_bandage == "BasicBandage") isEqualTo (ACEGVAR(medical_treatment,advancedBa
 
 private _canHeal = false;
 private _hasDP = _patient getVariable [KAMQGVAR(breathing,deepPenetratingInjury), false];
-private _hasPneumothorax = _patient getVariable [KAMQGVAR(breathing,pneumothorax), 0] > 0;
+private _hasPTX = _patient getVariable [KAMQGVAR(breathing,pneumothorax), 0] > 0;
 
-if (_hasDP && _hasPneumothorax) then {
+if (_hasDP && _hasPTX) then {
     _canHeal = true;
 };
 

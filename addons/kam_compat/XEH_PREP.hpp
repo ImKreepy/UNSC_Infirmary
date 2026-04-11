@@ -1,6 +1,6 @@
-PREP(biofoamPneumothorax);
-PREP(biofoamPneumothoraxLocal);
-PREP(canBiofoamPneumothorax);
+PREP(biofoamPTX);
+PREP(biofoamPTXLocal);
+PREP(canBiofoamPTX);
 PREP(canNPWT);
 PREP(getNPWTTreatmentTime);
 PREP(medication);
