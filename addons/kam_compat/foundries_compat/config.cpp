@@ -7,7 +7,7 @@ class CfgPatches {
         url = ECSTRING(main,URL);
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {QUOTE(ADDON),"TCP_Compat_ACE_Medical_Treatment"};
+        requiredAddons[] = {QUOTE(ADDON),"DMNS_ACE_Compat"};
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
@@ -16,5 +16,4 @@ class CfgPatches {
     };
 };
 
-#include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"

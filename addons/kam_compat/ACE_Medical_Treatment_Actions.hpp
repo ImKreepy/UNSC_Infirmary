@@ -8,6 +8,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = "Biofoam PTX";
         category = "airway";
         allowedSelections[] = {"Body"};
+        items[] += {"OPTRE_Biofoam"};
         condition = QFUNC(canBiofoamPTX);
         treatmentTime = "5";
         callbackSuccess = QFUNC(biofoamPTX);
