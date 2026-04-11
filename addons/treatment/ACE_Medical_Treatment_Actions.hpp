@@ -60,7 +60,7 @@ class ACE_Medical_Treatment_Actions {
     class UNSCI_MediGel: BasicBandage {
         displayName = "MediGel";
         displayNameProgress = "Applying MediGel...";
-        icon = "\OPTRE_weapons\items\icons\biofoam.paa";
+        icon = "\ik\unsci\addons\items\pictures\unsci_medigel_canister_ca.paa";
         items[] = {"UNSCI_MediGel_Canister","UNSCI_MediGel_40ml"};
 
         callbackSuccess = QFUNC(medigel);

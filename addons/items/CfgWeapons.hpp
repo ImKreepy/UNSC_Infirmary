@@ -18,7 +18,7 @@ class CfgWeapons {
     };
     class UNSCI_MediGel_CanisterItem: UNSCI_BiofoamItem {
         model = "\OPTRE_Weapons\items\Medigel.p3d";
-        picture = "\OPTRE_weapons\items\icons\biofoam.paa";
+        picture = "\ik\unsci\addons\items\pictures\unsci_medigel_canister_ca.paa";
         displayName = "[UNSCI] MediGel Canister";
         descriptionShort = "Used to treat surface level wounds.";
         descriptionUse = "Used to treat surface level wounds.";
