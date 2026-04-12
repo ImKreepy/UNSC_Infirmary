@@ -56,7 +56,6 @@ class CfgVehicles
         editorSubcategory = "UNSCI_EdSubCat_Bandages";
         displayName = "[UNSCI] Medical Kit";
         class TransportItems {
-            delete _xx_UNSCI_Biofoam;
             class _xx_UNSCI_Medkit {
                 name = "UNSCI_Medkit";
                 count = 1;
@@ -120,12 +119,13 @@ class CfgVehicles
     };
 
     // ----- Props -----
-    class UNSCI_Prop_Base: Item_Base_F {
+    class ThingX;
+    class UNSCI_Prop_Base: ThingX  {
         scope = 0;
         scopeCurator = 0;
         displayName = "";
         author = AUTHOR;
-        vehicleClass = "Items";
+        vehicleClass = "Props";
         editorCategory = "UNSCI_EdCat_Props";
     };
 
@@ -164,7 +164,7 @@ class CfgVehicles
     class UNSCI_Injector_Stimulant_Prop: UNSCI_Prop_Base {
         scope = 2;
         scopeCurator = 2;
-        editorSubcategory = "UNSCI_EdSubCat_Medications";
+        editorSubcategory = "UNSCI_EdSubCat_Medication";
         displayName = "[UNSCI] Stimulant Autoinjector";
         model = QPATHTOF(data\unsci_injector.p3d);
     };

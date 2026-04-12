@@ -9,6 +9,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"unsci_main"};
         units[] = {
+            "UNSCI_Item_Base",
             "UNSCI_Biofoam_Item",
             "UNSCI_MediGel_Canister_Item",
             "UNSCI_MediGel_40ml_Item",
@@ -18,6 +19,7 @@ class CfgPatches {
             "UNSCI_Injector_Morphine_Item",
             "UNSCI_Injector_Epinephrine_Item",
             
+            "UNSCI_Prop_Base",
             "UNSCI_Biofoam_Prop",
             "UNSCI_MediGel_Canister_Prop",
             "UNSCI_MediGel_40ml_Prop",
