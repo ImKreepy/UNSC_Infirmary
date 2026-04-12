@@ -28,6 +28,12 @@
         <Key ID="STR_UNSCI_Treatment_Medkit_DisplayNameProgress">
             <English>Using Medical Kit...</English>
         </Key>
+        <Key ID="STR_UNSCI_Treatment_Polypseudomorphine_DisplayName">
+            <English>Inject Polypseudomorphine</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Polypseudomorphine_DisplayNameProgress">
+            <English>Injecting Polypseudomorphine...</English>
+        </Key>
         <Key ID="STR_UNSCI_Treatment_Spike_DisplayName">
             <English>Remove Spikes</English>
         </Key>
