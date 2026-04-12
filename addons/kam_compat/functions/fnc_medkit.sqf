@@ -22,7 +22,7 @@ _this set [7, _this param [7, 1]];
 params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "", "", "_bandageEffectiveness"];
 TRACE_1("fnc_medkit",_this);
 
-[_patient, "activity", ECSTRING(treatment,Activity), [[_medic, false, true] call ACEFUNC(common,getName), CSTRING(Medkit_DisplayName)]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "activity", ECSTRING(treatment,Activity), [[_medic, false, true] call ACEFUNC(common,getName), ECSTRING(treatment,Medkit_DisplayName)]] call ACEFUNC(medical_treatment,addToLog);
 
 if (EGVAR(treatment,medkitFullHeals)) then {
     [ACEQGVAR(medical_treatment,fullHealLocal), _patient, _patient] call CBA_fnc_targetEvent;
