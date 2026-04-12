@@ -586,6 +586,18 @@ class ACE_Medical_Treatment {
             incompatibleMedication[] = {};
             viscosityChange = -5;
         };
+        class UNSCI_Pollysue {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {-20, -30};
+            hrIncreaseNormal[] = {-20, -40};
+            hrIncreaseHigh[] = {-20, -45};
+            timeInSystem = 2500;
+            timeTillMaxEffect = 10;
+            maxDose = 2;
+            dose = 1;
+            incompatibleMedication[] = {};
+            viscosityChange = -10;
+        };
     };
     class IV {
         class PlasmaIV;

@@ -18,6 +18,13 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"UNSCI_Injector_Stimulant"};
         litter[] = {{"ACE_MedicalLitter_morphine"}};
     };
+    class UNSCI_Pollysue: Morphine {
+        displayName = CSTRING(Polypseudomorphine_DisplayName);
+        displayNameProgress = CSTRING(Polypseudomorphine_DisplayNameProgress);
+
+        items[] = {"UNSCI_Syringe_Pollysue"};
+        litter[] = {{"ACE_MedicalLitter_morphine"}};
+    };
     class UNSCI_RemoveBlamite: BasicBandage {
         displayName = CSTRING(Blamite_DisplayName);
         displayNameProgress = CSTRING(Blamite_DisplayNameProgress);

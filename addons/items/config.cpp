@@ -15,6 +15,7 @@ class CfgPatches {
             "UNSCI_MediGel_40ml_Item",
             "UNSCI_Medkit_Item",
             "UNSCI_MedkitPlasmaIV_Item",
+            "UNSCI_Syringe_Pollysue_Item",
             "UNSCI_Injector_Stimulant_Item",
             "UNSCI_Injector_Morphine_Item",
             "UNSCI_Injector_Epinephrine_Item",
@@ -24,6 +25,7 @@ class CfgPatches {
             "UNSCI_MediGel_Canister_Prop",
             "UNSCI_MediGel_40ml_Prop",
             "UNSCI_Medkit_Prop",
+            "UNSCI_Syringe_Pollysue_Prop",
             "UNSCI_Injector_Stimulant_Prop",
             "UNSCI_Injector_Morphine_Prop",
             "UNSCI_Injector_Epinephrine_Prop"
@@ -34,6 +36,7 @@ class CfgPatches {
             "UNSCI_MediGel_40mlItem",
             "UNSCI_Medkit",
             "UNSCI_MedkitPlasmaIV",
+            "UNSCI_Syringe_Pollysue",
             "UNSCI_Injector_Stimulant",
             "UNSCI_Injector_Morphine",
             "UNSCI_Injector_Epinephrine"

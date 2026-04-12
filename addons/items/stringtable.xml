@@ -58,6 +58,15 @@
         <Key ID="STR_UNSCI_Items_Morphine_DisplayName">
             <English>[UNSCI] Morphine Autoinjector</English>
         </Key>
+        <Key ID="STR_UNSCI_Items_Polypseudomorphine_DescriptionShort">
+            <English>A sedative that can be used as a painkiller in small dosages.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Polypseudomorphine_DescriptionUse">
+            <English>Polypseudomorphine, as known as 'polly-sue,' is a sedative that can be used as a painkiller in small dosages.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Polypseudomorphine_DisplayName">
+            <English>[UNSCI] Polypseudomorphine Syringe</English>
+        </Key>
         <Key ID="STR_UNSCI_Items_Stimulant_DescriptionShort">
             <English>Contains a cocktail of drugs that are meant to wake up and energize the user.</English>
         </Key>

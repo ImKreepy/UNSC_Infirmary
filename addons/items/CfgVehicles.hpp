@@ -76,6 +76,20 @@ class CfgVehicles
         };
     };
 
+    class UNSCI_Syringe_Pollysue_Item: UNSCI_Item_Base {
+        scope = 2;
+        scopeCurator = 2;
+        icon = QPATHTOF(icons\unsci_injector_icon_ca.paa);
+        editorSubcategory = "UNSCI_EdSubCat_Medication";
+        displayName = CSTRING(Polypseudomorphine_DisplayName);
+        class TransportItems {
+            class _xx_UNSCI_Syringe_Pollysue {
+                name = "UNSCI_Syringe_Pollysue";
+                count = 1;
+            };
+        };
+    };
+
     class UNSCI_Injector_Stimulant_Item: UNSCI_Item_Base {
         scope = 2;
         scopeCurator = 2;
@@ -180,6 +194,14 @@ class CfgVehicles
                 typeName = "NUMBER";
 			};
 		};
+    };
+
+    class UNSCI_Syringe_Pollysue_Prop: UNSCI_Prop_Base {
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "UNSCI_EdSubCat_Medication";
+        displayName = CSTRING(Polypseudomorphine_DisplayName);
+        model = QPATHTOF(data\unsci_syringe.p3d);
     };
 
     class UNSCI_Injector_Stimulant_Prop: UNSCI_Prop_Base {

@@ -62,6 +62,19 @@ class CfgWeapons {
             mass = 2;
         };
     };
+    class UNSCI_Syringe_Pollysue: ACE_ItemCore {
+        scope = 2;
+        author = AUTHOR;
+        model = QPATHTOF(data\unsci_syringe.p3d);
+        picture = QPATHTOF(pictures\unsci_syringe_polypseudomorphine_ca.paa);
+        displayName = CSTRING(Polypseudomorphine_DisplayName);
+        descriptionShort = CSTRING(Polypseudomorphine_DescriptionShort);
+        descriptionUse = CSTRING(Polypseudomorphine_DescriptionUse);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
     class UNSCI_Injector_Stimulant: ACE_ItemCore {
         scope = 2;
         author = AUTHOR;

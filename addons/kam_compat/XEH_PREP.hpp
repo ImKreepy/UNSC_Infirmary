@@ -6,5 +6,6 @@ PREP(getNPWTTreatmentTime);
 PREP(medication);
 PREP(npwtTreatmentProgress);
 PREP(medkit);
+PREP(pollysueOverDose);
 PREP(stimulantLocal);
 PREP(updateBodyImage);
