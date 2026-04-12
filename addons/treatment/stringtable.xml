@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="UNSC Infirmary">
+    <Package name="Treatment">
+        <Key ID="STR_UNSCI_Treatment_Activity">
+            <English>%1 used %2 on the patient</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Biofoam_DisplayName">
+            <English>Biomedical Foam</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Biofoam_DisplayNameProgress">
+            <English>Injecting Biomedical Foam...</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Blamite_DisplayName">
+            <English>Remove Blamite</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Blamite_DisplayNameProgress">
+            <English>Removing Blamite...</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_MediGel_DisplayName">
+            <English>MediGel</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_MediGel_DisplayNameProgress">
+            <English>Applying MediGel...</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Medkit_DisplayName">
+            <English>Medical Kit</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Medkit_DisplayNameProgress">
+            <English>Using Medical Kit...</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Spike_DisplayName">
+            <English>Remove Spikes</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Spike_DisplayNameProgress">
+            <English>Removing Spikes...</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Stimulant_DisplayName">
+            <English>Inject Stimulant</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Stimulant_DisplayNameProgress">
+            <English>Injecting Stimulant...</English>
+        </Key>
+    </Package>
+</Project>

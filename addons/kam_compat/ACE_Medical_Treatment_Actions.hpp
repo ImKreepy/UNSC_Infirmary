@@ -5,7 +5,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class UNSCI_Biofoam;
     class UNSCI_Biofoam_Pneumothorax: UNSCI_Biofoam {
-        displayName = "Biofoam PTX";
+        displayName = CSTRING(BiofoamPTX_DisplayName);
         category = "airway";
         allowedSelections[] = {"Body"};
         items[] += {"OPTRE_Biofoam"};

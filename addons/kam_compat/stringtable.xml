@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="UNSC Infirmary">
+    <Package name="KAM Compat">
+        <Key ID="STR_UNSCI_KAM_Compat_BiofoamPTX_Activity">
+            <English>%1 healed Deep Penetration with %2</English>
+        </Key>
+        <Key ID="STR_UNSCI_KAM_Compat_BiofoamPTX_DisplayName">
+            <English>Biofoam PTX</English>
+        </Key>
+    </Package>
+</Project>

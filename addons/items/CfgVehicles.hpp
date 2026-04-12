@@ -15,7 +15,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         editorSubcategory = "UNSCI_EdSubCat_Bandages";
-        displayName = "[UNSCI] Biomedical Foam";
+        displayName = CSTRING(Biofoam_DisplayName);
         class TransportMagazines {
             class _xx_UNSCI_Biofoam {
                 magazine = "UNSCI_Biofoam";
@@ -28,7 +28,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         editorSubcategory = "UNSCI_EdSubCat_Bandages";
-        displayName = "[UNSCI] MediGel Canister";
+        displayName = CSTRING(MediGel_DisplayName);
         class TransportMagazines {
             class _xx_UNSCI_Medigel_Canister {
                 magazine = "UNSCI_Medigel_Canister";
@@ -41,7 +41,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         editorSubcategory = "UNSCI_EdSubCat_Bandages";
-        displayName = "[UNSCI] MediGel (40ml)";
+        displayName = CSTRING(MediGel_40ml_DisplayName);
         class TransportMagazines {
             class _xx_UNSCI_Medigel_40ml {
                 magazine = "UNSCI_Medigel_40ml";
@@ -54,7 +54,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         editorSubcategory = "UNSCI_EdSubCat_Bandages";
-        displayName = "[UNSCI] Medical Kit";
+        displayName = CSTRING(Medkit_DisplayName);
         class TransportItems {
             class _xx_UNSCI_Medkit {
                 name = "UNSCI_Medkit";
@@ -81,7 +81,7 @@ class CfgVehicles
         scopeCurator = 2;
         icon = QPATHTOF(icons\unsci_injector_icon_ca.paa);
         editorSubcategory = "UNSCI_EdSubCat_Medication";
-        displayName = "[UNSCI] Stimulant Autoinjector";
+        displayName = CSTRING(Stimulant_DisplayName);
         class TransportItems {
             class _xx_UNSCI_Injector_Stimulant {
                 name = "UNSCI_Injector_Stimulant";
@@ -95,7 +95,7 @@ class CfgVehicles
         scopeCurator = 2;
         icon = QPATHTOF(icons\unsci_injector_icon_ca.paa);
         editorSubcategory = "UNSCI_EdSubCat_Medication";
-        displayName = "[UNSCI] Morphine Autoinjector";
+        displayName = CSTRING(Morphine_DisplayName);
         class TransportItems {
             class _xx_UNSCI_Injector_Morphine {
                 name = "UNSCI_Injector_Morphine";
@@ -109,7 +109,7 @@ class CfgVehicles
         scopeCurator = 2;
         icon = QPATHTOF(icons\unsci_injector_icon_ca.paa);
         editorSubcategory = "UNSCI_EdSubCat_Medication";
-        displayName = "[UNSCI] Epinephrine Autoinjector";
+        displayName = CSTRING(Epinephrine_DisplayName);
         class TransportItems {
             class _xx_UNSCI_Injector_Epinephrine {
                 name = "UNSCI_Injector_Epinephrine";
@@ -133,7 +133,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         editorSubcategory = "UNSCI_EdSubCat_Bandages";
-        displayName = "[UNSCI] Biomedical Foam";
+        displayName = CSTRING(Biofoam_DisplayName);
         model = "\OPTRE_Weapons\items\Biofoam.p3d";
     };
 
@@ -141,7 +141,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         editorSubcategory = "UNSCI_EdSubCat_Bandages";
-        displayName = "[UNSCI] MediGel Canister";
+        displayName = CSTRING(MediGel_DisplayName);
         model = "\OPTRE_Weapons\items\Medigel.p3d";
     };
 
@@ -149,7 +149,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         editorSubcategory = "UNSCI_EdSubCat_Bandages";
-        displayName = "[UNSCI] MediGel (40ml)";
+        displayName = CSTRING(MediGel_40ml_DisplayName);
         model = "\ik\unsci\addons\items\data\unsci_medigel_tube.p3d";
     };
 
@@ -157,11 +157,11 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         editorSubcategory = "UNSCI_EdSubCat_Bandages";
-        displayName = "[UNSCI] Medical Kit";
+        displayName = CSTRING(Medkit_DisplayName);
         model = "\OPTRE_Weapons\items\MedKit.p3d";
         class ACE_Actions {
             class ACE_MainActions  {
-                displayName = "Use Medical Kit";
+                displayName = CSTRING(Medkit_Action);
                 distance = 4;
                 condition = "true";
                 statement = QUOTE([ARR_2(_player,_target)] call FUNC(fullHealAction));
@@ -170,8 +170,8 @@ class CfgVehicles
         };
         class Attributes {
 			class UNSCI_Medkit_RespawnTime {
-                displayName = "Respawn Timer";
-                tooltip = "Sets the time for the Medical Kit to respawn after use.";
+                displayName = CSTRING(Medkit_RepawnAttribute);
+                tooltip = CSTRING(Medkit_RepawnAttribute_ToolTip);
                 property = QGVAR(medkitRepawnAttribute);
                 control = "Edit";
 	            expression = "missionNamespace setVariable ['unsci_items_medkitRepawnTimer', _value]";
@@ -186,18 +186,18 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         editorSubcategory = "UNSCI_EdSubCat_Medication";
-        displayName = "[UNSCI] Stimulant Autoinjector";
+        displayName = CSTRING(Stimulant_DisplayName);
         model = QPATHTOF(data\unsci_injector.p3d);
     };
 
     class UNSCI_Injector_Morphine_Prop: UNSCI_Injector_Stimulant_Prop {
-        displayName = "[UNSCI] Morphine Autoinjector";
+        displayName = CSTRING(Morphine_DisplayName);
         hiddenSelections[] = {"camo","camo1","camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\injector\unsci_injector_base_co.paa),QPATHTOF(data\injector\unsci_injector_Cap_co.paa),QPATHTOF(data\injector\unsci_injector_morphine_co.paa)};
     };
 
     class UNSCI_Injector_Epinephrine_Prop: UNSCI_Injector_Stimulant_Prop {
-        displayName = "[UNSCI] Epinephrine Autoinjector";
+        displayName = CSTRING(Epinephrine_DisplayName);
         hiddenSelections[] = {"camo","camo1","camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\injector\unsci_injector_base_co.paa),QPATHTOF(data\injector\unsci_injector_Cap_co.paa),QPATHTOF(data\injector\unsci_injector_epinephrine_co.paa)};
     };

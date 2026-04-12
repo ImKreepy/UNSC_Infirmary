@@ -12,15 +12,15 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {{"ACE_MedicalLitter_Epinephrine"}};
     };
     class UNSCI_Stimulant: Morphine {
-        displayName = "Inject Stimulant";
-        displayNameProgress = "Injecting Stimulant...";
+        displayName = CSTRING(Stimulant_DisplayName);
+        displayNameProgress = CSTRING(Stimulant_DisplayNameProgress);
 
         items[] = {"UNSCI_Injector_Stimulant"};
         litter[] = {{"ACE_MedicalLitter_morphine"}};
     };
     class UNSCI_RemoveBlamite: BasicBandage {
-        displayName = "Remove Blamite";
-        displayNameProgress = "Removing Blamite...";
+        displayName = CSTRING(Blamite_DisplayName);
+        displayNameProgress = CSTRING(Blamite_DisplayNameProgress);
         icon = "";
         category = "bandage";
         items[] = {};
@@ -39,16 +39,16 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {{""}};
     };
     class UNSCI_RemoveSpike: UNSCI_RemoveBlamite {
-        displayName = "Remove Spike";
-        displayNameProgress = "Removing Spike...";
+        displayName = CSTRING(Spike_DisplayName);
+        displayNameProgress = CSTRING(Spike_DisplayNameProgress);
 
         treatmentTime = QFUNC(getSpikeTreatmentTime);
         condition = QFUNC(canRemoveSpike);
         callbackProgress = QFUNC(removingSpikeProgress);
     };
     class UNSCI_Biofoam: BasicBandage {
-        displayName = "Biomedical Foam";
-        displayNameProgress = "Injecting Biomedical Foam...";
+        displayName = CSTRING(Biofoam_DisplayName);
+        displayNameProgress = CSTRING(Biofoam_DisplayNameProgress);
         icon = "\OPTRE_weapons\items\icons\biofoam.paa";
         items[] = {"UNSCI_Biofoam"};
         
@@ -58,8 +58,8 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {{"UNSCI_Biofoam_litter"}};
     };
     class UNSCI_MediGel: BasicBandage {
-        displayName = "MediGel";
-        displayNameProgress = "Applying MediGel...";
+        displayName = CSTRING(MediGel_DisplayName);
+        displayNameProgress = CSTRING(MediGel_DisplayNameProgress);
         icon = "\ik\unsci\addons\items\pictures\unsci_medigel_canister_ca.paa";
         items[] = {"UNSCI_MediGel_Canister","UNSCI_MediGel_40ml"};
 
@@ -69,8 +69,8 @@ class ACE_Medical_Treatment_Actions {
         //litter[] = {{"UNSCI_Medigel_Item"}};
     };
     class UNSCI_Medkit: BasicBandage {
-        displayName = "Medical Kit";
-        displayNameProgress = "Using Medical Kit...";
+        displayName = CSTRING(Medkit_DisplayName);
+        displayNameProgress = CSTRING(Medkit_DisplayNameProgress);
         icon = "\OPTRE_weapons\items\icons\medkit.paa";
         items[] = {"UNSCI_Medkit"};
 

@@ -22,6 +22,6 @@ _this set [7, _this param [7, 1]];
 params ["_medic", "_patient", "_bodyPart", "_classname"];
 TRACE_1("fnc_biofoamPTX",_this);
 
-[_patient, "activity", QUOTE(%1 healed Deep Penetration with %2), [[_medic, false, true] call ACEFUNC(common,getName), "Biomedical Foam"]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "activity", CSTRING(BiofoamPTX_Activity), [[_medic, false, true] call ACEFUNC(common,getName), CSTRING(Biofoam_DisplayName)]] call ACEFUNC(medical_treatment,addToLog);
 
 [QGVAR(biofoamPTXLocal), [_medic,_patient], _patient] call CBA_fnc_targetEvent;

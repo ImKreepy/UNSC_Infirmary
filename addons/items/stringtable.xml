@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="UNSC Infirmary">
+    <Package name="Items">
+        <Key ID="STR_UNSCI_Items_Biofoam_DescriptionShort">
+            <English>Used to treat gaping wounds and deep lacerations.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Biofoam_DescriptionUse">
+            <English>Used to treat gaping wounds and deep lacerations.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Biofoam_DisplayName">
+            <English>[UNSCI] Biomedical Foam</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Epinephrine_DescriptionShort">
+            <English>Increase heart rate and counter effects given by allergic reactions.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Epinephrine_DescriptionUse">
+            <English>A drug that works on a sympathetic response to dilate the bronchi, increase heart rate and counter such effects given by allergic reactions (anaphylaxis). Used in sudden cardiac arrest scenarios with decreasing positive outcomes.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Epinephrine_DisplayName">
+            <English>[UNSCI] Epinephrine Autoinjector</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_MediGel_40ml_DisplayName">
+            <English>[UNSCI] MediGel (40ml)</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_MediGel_DescriptionShort">
+            <English>Used to treat surface level wounds.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_MediGel_DescriptionUse">
+            <English>Used to treat surface level wounds.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_MediGel_DisplayName">
+            <English>[UNSCI] MediGel Canister</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Medkit_Action">
+            <English>Use Medical Kit</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Medkit_DescriptionShort">
+            <English>Medical Kit to treat all combat inflicted wounds and injuries.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Medkit_DescriptionUse">
+            <English>Medical Kit to treat all combat inflicted wounds and injuries.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Medkit_DisplayName">
+            <English>[UNSCI] Medical Kit</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Medkit_RepawnAttribute">
+            <English>Respawn Timer</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Medkit_RepawnAttribute_ToolTip">
+            <English>Sets the time for the Medical Kit to respawn after use.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Morphine_DescriptionShort">
+            <English>Used to combat moderate to severe pain experiences.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Morphine_DescriptionUse">
+            <English>An analgesic used to combat moderate to severe pain experiences.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Morphine_DisplayName">
+            <English>[UNSCI] Morphine Autoinjector</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Stimulant_DescriptionShort">
+            <English>Contains a cocktail of drugs that are meant to wake up and energize the user.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Stimulant_DescriptionUse">
+            <English>Also known as a 'Stim Pack,' contains a cocktail of drugs that are meant to wake up and energize the user.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Items_Stimulant_DisplayName">
+            <English>[UNSCI] Stimulant Autoinjector</English>
+        </Key>
+    </Package>
+</Project>
