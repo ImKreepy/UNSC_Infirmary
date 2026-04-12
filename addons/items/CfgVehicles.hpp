@@ -159,6 +159,27 @@ class CfgVehicles
         editorSubcategory = "UNSCI_EdSubCat_Bandages";
         displayName = "[UNSCI] Medical Kit";
         model = "\OPTRE_Weapons\items\MedKit.p3d";
+        class ACE_Actions {
+            class ACE_MainActions  {
+                displayName = "Use Medical Kit";
+                distance = 4;
+                condition = "true";
+                statement = QUOTE([ARR_2(_player,_target)] call FUNC(fullHealAction));
+                icon = "\a3\ui_f\data\IGUI\Cfg\Actions\heal_ca.paa";
+            };
+        };
+        class Attributes {
+			class UNSCI_Medkit_RespawnTime {
+                displayName = "Respawn Timer";
+                tooltip = "Sets the time for the Medical Kit to respawn after use.";
+                property = QGVAR(medkitRepawnAttribute);
+                control = "Edit";
+	            expression = "missionNamespace setVariable ['unsci_items_medkitRepawnTimer', _value]";
+                defaultValue = 5;
+                validate = "number";
+                typeName = "NUMBER";
+			};
+		};
     };
 
     class UNSCI_Injector_Stimulant_Prop: UNSCI_Prop_Base {
