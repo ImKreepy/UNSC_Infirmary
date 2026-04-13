@@ -1,25 +1,21 @@
 class ACE_Medical_Treatment {
     class Bandaging {
         class FieldDressing {
-            delete plasma;
             delete plasmaMinor;
             delete plasmaMedium;
             delete plasmaLarge;
         };
         class PackingBandage : FieldDressing {
-            delete plasma;
             delete plasmaMinor;
             delete plasmaMedium;
             delete plasmaLarge;
         };
         class ElasticBandage : FieldDressing {
-            delete plasma;
             delete plasmaMinor;
             delete plasmaMedium;
             delete plasmaLarge;
         };
         class QuikClot : FieldDressing {
-            delete plasma;
             delete plasmaMinor;
             delete plasmaMedium;
             delete plasmaLarge;
@@ -27,21 +23,18 @@ class ACE_Medical_Treatment {
 
         class OPTRE_Biofoam;
         class MEU_Biofoam: OPTRE_Biofoam {
-            delete plasma;
             delete plasmaMinor;
             delete plasmaMedium;
             delete plasmaLarge;
             UNSCI_PLASMA_BIOFOAM;
         };
         class MEU_Biofoam_Light: OPTRE_Biofoam {
-            delete plasma;
             delete plasmaMinor;
             delete plasmaMedium;
             delete plasmaLarge;
             UNSCI_PLASMA_BIOFOAM;
         };
         class MEU_Emergency_Medkit: OPTRE_Biofoam {
-            delete plasma;
             delete plasmaMinor;
             delete plasmaMedium;
             delete plasmaLarge;
@@ -50,14 +43,12 @@ class ACE_Medical_Treatment {
 
         class OPTRE_Medigel;
         class MEU_Medigel: OPTRE_Medigel {
-            delete plasma;
             delete plasmaMinor;
             delete plasmaMedium;
             delete plasmaLarge;
             UNSCI_PLASMA_MEDIGEL;
         };
         class MEU_Medigel_Light: OPTRE_Medigel {
-            delete plasma;
             delete plasmaMinor;
             delete plasmaMedium;
             delete plasmaLarge;
