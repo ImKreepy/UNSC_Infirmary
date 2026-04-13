@@ -7,8 +7,8 @@
         <Key ID="STR_UNSCI_KAM_Compat_BiofoamPTX_DisplayName">
             <English>Biofoam PTX</English>
         </Key>
-        <Key ID="STR_UNSCI_KAM_Compat_Polypseudomorphine_30u_ItemDisplayName">
-            <English>[UNSCI] Polypseudomorphine (30u)</English>
+        <Key ID="STR_UNSCI_KAM_Compat_Polypseudomorphine_100u_ActionDisplayName">
+            <English>Polypseudomorphine (100u)</English>
         </Key>
         <Key ID="STR_UNSCI_KAM_Compat_Polypseudomorphine_100u_ItemDisplayName">
             <English>[UNSCI] Polypseudomorphine (100u)</English>
@@ -16,8 +16,8 @@
         <Key ID="STR_UNSCI_KAM_Compat_Polypseudomorphine_30u_ActionDisplayName">
             <English>Polypseudomorphine (30u)</English>
         </Key>
-        <Key ID="STR_UNSCI_KAM_Compat_Polypseudomorphine_100u_ActionDisplayName">
-            <English>Polypseudomorphine (100u)</English>
+        <Key ID="STR_UNSCI_KAM_Compat_Polypseudomorphine_30u_ItemDisplayName">
+            <English>[UNSCI] Polypseudomorphine (30u)</English>
         </Key>
     </Package>
 </Project>
