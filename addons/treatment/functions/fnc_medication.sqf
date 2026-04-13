@@ -23,6 +23,7 @@
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
 [_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
-[_patient, "activity", ECSTRING(treatment,Activity), [[_medic, false, true] call ACEFUNC(common,getName), getText (configFile >> "ACE_Medical_Treatment_Actions" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
+private _cfg = ["CfgWeapons", "CfgMagazines"] select (isClass (configFile >> "CfgMagazines" >> _usedItem));
+[_patient, "activity", ELSTRING(treatment,Activity), [[_medic, false, true] call ACEFUNC(common,getName), getText (configFile >> _cfg >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
 
 [ACEQGVAR(medical_treatment,medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
