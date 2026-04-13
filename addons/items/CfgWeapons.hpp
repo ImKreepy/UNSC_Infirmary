@@ -62,7 +62,7 @@ class CfgWeapons {
             mass = 2;
         };
     };
-    class UNSCI_Syringe_Pollysue: ACE_ItemCore {
+    class UNSCI_Syringe_Pollysue_30u: ACE_ItemCore {
         scope = 2;
         author = AUTHOR;
         model = QPATHTOF(data\unsci_syringe.p3d);

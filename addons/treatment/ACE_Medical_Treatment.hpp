@@ -578,7 +578,7 @@ class ACE_Medical_Treatment {
             hrIncreaseLow[] = {10, 10};
             hrIncreaseNormal[] = {10, 30};
             hrIncreaseHigh[] = {10, 50};
-            timeInSystem = 1200;
+            timeInSystem = 600;
             timeTillMaxEffect = 5;
             maxDose = 4;
             maxDoseDeviation = 3;
@@ -586,14 +586,14 @@ class ACE_Medical_Treatment {
             incompatibleMedication[] = {};
             viscosityChange = -5;
         };
-        class UNSCI_Pollysue {
-            painReduce = 0.8;
-            hrIncreaseLow[] = {-20, -30};
-            hrIncreaseNormal[] = {-20, -40};
-            hrIncreaseHigh[] = {-20, -45};
-            timeInSystem = 2500;
+        class UNSCI_Pollysue_30u {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 60;
             timeTillMaxEffect = 10;
-            maxDose = 2;
+            maxDose = 6;
             dose = 1;
             incompatibleMedication[] = {};
             viscosityChange = -10;

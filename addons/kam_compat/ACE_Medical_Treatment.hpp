@@ -41,12 +41,16 @@ class ACE_Medical_Treatment {
             opioidRelief = 0.4;
             opioidEffect = 0.1;
         };
-        class UNSCI_Pollysue {
+        class UNSCI_Pollysue_30u {
             alphaFactor = -0.2;
             opioidRelief = 0.2;
-            opioidEffect = 0.12;
+            opioidEffect = 0.4;
             maxDoseDeviation = 1;
-            onOverDose = QUOTE(_patient call FUNC(pollysueOverDose));
+        };
+        class UNSCI_Pollysue_100u: UNSCI_Pollysue_30u {
+            maxDoseDeviation = 0;
+            maxDose = 3;
+            dose = 1;
         };
     };
 };

@@ -14,8 +14,12 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(biofoamPTX);
     };
     class Morphine;
-    class UNSCI_Stimulant: Morphine {
-        callbackSuccess = QFUNC(medication);
+    class UNSCI_Pollysue_30u: Morphine {
+        displayName = CSTRING(Polypseudomorphine_30u_ActionDisplayName);
+    };
+    class UNSCI_Pollysue_100u: UNSCI_Pollysue_30u {
+        displayName = CSTRING(Polypseudomorphine_100u_ActionDisplayName);
+        items[] = {"UNSCI_Syringe_Pollysue_100u"};
     };
     class NPWT: BasicBandage {
         condition = QFUNC(canNPWT);

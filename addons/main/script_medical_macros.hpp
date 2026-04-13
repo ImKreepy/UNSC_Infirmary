@@ -59,3 +59,6 @@ class UNSCI_SpikeWound : UNSCI_BlamiteWound {};  \
 class UNSCI_SpikeWoundMinor : UNSCI_SpikeWound {};  \
 class UNSCI_SpikeWoundMedium : UNSCI_SpikeWound {}; \
 class UNSCI_SpikeWoundLarge : UNSCI_SpikeWound {}
+
+#define STIMULANT_PAIN_SUPPRESSION 0.4
+#define POLLYSUE_PAIN_SUPPRESSION 0.6

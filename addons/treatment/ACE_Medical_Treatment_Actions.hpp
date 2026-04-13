@@ -4,6 +4,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class FieldDressing: BasicBandage {};
     class Morphine: FieldDressing {
+        callbackSuccess = QFUNC(medication);
         items[] = {"ACE_morphine","UNSCI_Injector_Morphine"};
         litter[] = {{"ACE_MedicalLitter_morphine"}};
     };
@@ -18,11 +19,11 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"UNSCI_Injector_Stimulant"};
         litter[] = {{"ACE_MedicalLitter_morphine"}};
     };
-    class UNSCI_Pollysue: Morphine {
+    class UNSCI_Pollysue_30u: Morphine {
         displayName = CSTRING(Polypseudomorphine_DisplayName);
         displayNameProgress = CSTRING(Polypseudomorphine_DisplayNameProgress);
 
-        items[] = {"UNSCI_Syringe_Pollysue"};
+        items[] = {"UNSCI_Syringe_Pollysue_30u"};
         litter[] = {{"ACE_MedicalLitter_morphine"}};
     };
     class UNSCI_RemoveBlamite: BasicBandage {

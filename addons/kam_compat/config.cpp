@@ -7,8 +7,14 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"unsci_main","unsci_treatment","kat_breathing","kat_pharma","kat_surgery"};
-        units[] = {};
-        weapons[] = {};
+        units[] = {
+            "UNSCI_Syringe_Pollysue_30u_Item",
+            "UNSCI_Syringe_Pollysue_100u_Item"
+        };
+        weapons[] = {
+            "UNSCI_Syringe_Pollysue_30u",
+            "UNSCI_Syringe_Pollysue_100u"
+        };
         VERSION_CONFIG;
 
         skipWhenMissingDependencies = 1;
@@ -20,3 +26,5 @@ class CfgPatches {
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
 #include "gui.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"

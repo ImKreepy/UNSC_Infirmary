@@ -76,7 +76,7 @@ class CfgVehicles
         };
     };
 
-    class UNSCI_Syringe_Pollysue_Item: UNSCI_Item_Base {
+    class UNSCI_Syringe_Pollysue_30u_Item: UNSCI_Item_Base {
         scope = 2;
         scopeCurator = 2;
         icon = QPATHTOF(icons\unsci_injector_icon_ca.paa);
@@ -84,7 +84,7 @@ class CfgVehicles
         displayName = CSTRING(Polypseudomorphine_DisplayName);
         class TransportItems {
             class _xx_UNSCI_Syringe_Pollysue {
-                name = "UNSCI_Syringe_Pollysue";
+                name = "UNSCI_Syringe_Pollysue_30u";
                 count = 1;
             };
         };

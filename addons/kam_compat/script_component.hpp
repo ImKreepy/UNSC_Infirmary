@@ -14,3 +14,4 @@
 #define KAMCSTRING(module,var) QUOTE(TRIPLES($STR,DOUBLES(KAM_PREFIX,module),var))
 
 #define IDC_BODY_TORSO_BIOFOAM      70143
+#define POLLYSUE_MAX_TO_SEDATE      5

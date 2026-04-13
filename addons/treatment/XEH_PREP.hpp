@@ -6,6 +6,8 @@ PREP(canRemoveSpike);
 PREP(getBlamiteTreatmentTime);
 PREP(getMedkitTreatmentTime);
 PREP(getSpikeTreatmentTime);
+PREP(medication);
+PREP(medicationLocal);
 PREP(medigel);
 PREP(medkit);
 PREP(removeBlamite);
