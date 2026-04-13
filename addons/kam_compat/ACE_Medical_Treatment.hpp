@@ -44,7 +44,7 @@ class ACE_Medical_Treatment {
         class UNSCI_Pollysue_30u {
             alphaFactor = -0.2;
             opioidRelief = 0.2;
-            opioidEffect = 0.4;
+            opioidEffect = 0.3;
             maxDoseDeviation = 1;
         };
         class UNSCI_Pollysue_100u: UNSCI_Pollysue_30u {
