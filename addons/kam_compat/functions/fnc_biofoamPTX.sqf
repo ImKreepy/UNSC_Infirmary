@@ -25,3 +25,4 @@ TRACE_1("fnc_biofoamPTX",_this);
 [_patient, "activity", CSTRING(BiofoamPTX_Activity), [[_medic, false, true] call ACEFUNC(common,getName), ECSTRING(treatment,Biofoam_DisplayName)]] call ACEFUNC(medical_treatment,addToLog);
 
 [QGVAR(biofoamPTXLocal), [_medic,_patient], _patient] call CBA_fnc_targetEvent;
+[_patient,0.2] call ACEFUNC(medical,adjustPainLevel);

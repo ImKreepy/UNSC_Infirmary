@@ -25,3 +25,4 @@ TRACE_1("fnc_biofoam",_this);
 [_patient, "activity", CSTRING(Activity), [[_medic, false, true] call ACEFUNC(common,getName), CSTRING(Biofoam_DisplayName)]] call ACEFUNC(medical_treatment,addToLog);
 
 [ACEQGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, _classname, _bandageEffectiveness], _patient] call CBA_fnc_targetEvent;
+[_patient,0.1] call ACEFUNC(medical,adjustPainLevel);
