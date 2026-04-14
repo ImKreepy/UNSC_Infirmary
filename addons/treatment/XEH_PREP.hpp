@@ -14,3 +14,4 @@ PREP(removeBlamite);
 PREP(removeSpike);
 PREP(removingBlamiteProgress);
 PREP(removingSpikeProgress);
+PREP(stimulantLocal);

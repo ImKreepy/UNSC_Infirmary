@@ -35,3 +35,11 @@ if (!ACEGVAR(medical_treatment,advancedMedication)) exitWith {
         };
     };
 };
+
+if (_className in ["UNSCI_Stimulant"]) then {
+    switch (_className) do {
+        case "UNSCI_Stimulant": {
+            [QGVAR(stimulantLocal), [_patient], _patient] call CBA_fnc_targetEvent;
+        };
+    };
+};
