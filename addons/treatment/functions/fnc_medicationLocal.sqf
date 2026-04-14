@@ -32,7 +32,6 @@ if (!ACEGVAR(medical_treatment,advancedMedication)) exitWith {
         case "UNSCI_Pollysue_30u": {
             private _painSuppress = GET_PAIN_SUPPRESS(_patient);
             _patient setVariable [VAR_PAIN_SUPP, (_painSuppress + POLLYSUE_PAIN_SUPPRESSION) min 1, true];
-            [ACEQGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
         };
     };
 };
