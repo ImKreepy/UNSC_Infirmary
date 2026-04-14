@@ -3,7 +3,6 @@ PREP(biofoamPTXLocal);
 PREP(canBiofoamPTX);
 PREP(canNPWT);
 PREP(getNPWTTreatmentTime);
-PREP(medicationLocal);
 PREP(npwtTreatmentProgress);
 PREP(medkit);
 PREP(polypseudomorphineLocal);
