@@ -44,10 +44,10 @@ if (!ACEGVAR(medical_treatment,advancedMedication)) exitWith {
     };
 };
 
-if (_className in ["UNSCI_Pollysue_30u","UNSCI_Pollysue_100u"]) then {
+if (_className in ["UNSCI_Stimulant","UNSCI_Pollysue_30u","UNSCI_Pollysue_100u"]) then {
     switch (_className) do {
         case "UNSCI_Stimulant": {
-            [QGVAR(stimulantLocal), [_patient], _patient] call CBA_fnc_targetEvent;
+            [QEGVAR(treatment,stimulantLocal), [_patient], _patient] call CBA_fnc_targetEvent;
         };
         case "UNSCI_Pollysue_30u": {
             [QGVAR(polypseudomorphineLocal), [_patient, _className], _patient] call CBA_fnc_targetEvent;

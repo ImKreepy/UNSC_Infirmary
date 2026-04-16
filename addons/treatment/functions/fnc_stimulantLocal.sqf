@@ -18,7 +18,10 @@
 params ["_patient"];
 
 private _bloodPressureH = GET_BLOOD_PRESSURE(_patient) select 1;
-if ((floor (random 100) < ((linearConversion [50, 100, _bloodPressureH, 0, GVAR(stimulantChance), true]) min (linearConversion [140, 200, _bloodPressureH, GVAR(stimulantChance), 0, true]))) && {[_patient] call ACEFUNC(medical_status,hasStableVitals)}) then {
+private _value1 = (linearConversion [50, 100, _bloodPressureH, 0, GVAR(stimulantChance), true]);
+private _value2 = (linearConversion [140, 200, _bloodPressureH, GVAR(stimulantChance), 0, true]);
+
+if ((floor (random 100) < (_value1 min _value2)) && {[_patient] call ACEFUNC(medical_status,hasStableVitals)}) then {
     [_patient, false] call ACEFUNC(medical,setUnconscious);
 };
 

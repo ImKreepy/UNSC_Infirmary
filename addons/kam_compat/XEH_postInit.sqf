@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 [QGVAR(polypseudomorphineLocal), FUNC(polypseudomorphineLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(stimulantLocal), FUNC(stimulantLocal)] call CBA_fnc_addEventHandler;
+[QEGVAR(treatment,stimulantLocal), FUNC(stimulantLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(biofoamPTXLocal), FUNC(biofoamPTXLocal)] call CBA_fnc_addEventHandler;
 
 // Only GUI items beyond this point
