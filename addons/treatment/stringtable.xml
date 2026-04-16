@@ -4,11 +4,20 @@
         <Key ID="STR_UNSCI_Treatment_Activity">
             <English>%1 used %2 on the patient</English>
         </Key>
+        <Key ID="STR_UNSCI_Treatment_AllowSelfTreat_Impalement_Description">
+            <English>Can a unit remove their own Blamite and Spikes.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_AllowSelfTreat_Impalement_DisplayName">
+            <English>Allow Self Impalement Removal</English>
+        </Key>
         <Key ID="STR_UNSCI_Treatment_Biofoam_DisplayName">
             <English>Biomedical Foam</English>
         </Key>
         <Key ID="STR_UNSCI_Treatment_Biofoam_DisplayNameProgress">
             <English>Injecting Biomedical Foam...</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_BlamiteAndSpikes_Category">
+            <English>Blamite and Spikes</English>
         </Key>
         <Key ID="STR_UNSCI_Treatment_Blamite_DisplayName">
             <English>Remove Blamite</English>
@@ -16,17 +25,41 @@
         <Key ID="STR_UNSCI_Treatment_Blamite_DisplayNameProgress">
             <English>Removing Blamite...</English>
         </Key>
+        <Key ID="STR_UNSCI_Treatment_LocationTreat_Impalement_Description">
+            <English>Areas where Blamite and Spikes can be removed.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_LocationTreat_Impalement_DisplayName">
+            <English>Remove Impalement Locations</English>
+        </Key>
         <Key ID="STR_UNSCI_Treatment_MediGel_DisplayName">
             <English>MediGel</English>
         </Key>
         <Key ID="STR_UNSCI_Treatment_MediGel_DisplayNameProgress">
             <English>Applying MediGel...</English>
         </Key>
+        <Key ID="STR_UNSCI_Treatment_MedicRequired_Impalement_Description">
+            <English>Is a medic required to remove Blamite and Spikes.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_MedicRequired_Impalement_DisplayName">
+            <English>Medic Required</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Medications_Category">
+            <English>Medications</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_MedkitFullHeals_Description">
+            <English>If enabled, Medical Kits will fully heal the patient.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_MedkitFullHeals_DisplayName">
+            <English>Full Heal Medical Kit</English>
+        </Key>
         <Key ID="STR_UNSCI_Treatment_Medkit_DisplayName">
             <English>Medical Kit</English>
         </Key>
         <Key ID="STR_UNSCI_Treatment_Medkit_DisplayNameProgress">
             <English>Using Medical Kit...</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_Medkits_Category">
+            <English>Medical Kits</English>
         </Key>
         <Key ID="STR_UNSCI_Treatment_Polypseudomorphine_DisplayName">
             <English>Inject Polypseudomorphine</English>
@@ -40,11 +73,35 @@
         <Key ID="STR_UNSCI_Treatment_Spike_DisplayNameProgress">
             <English>Removing Spikes...</English>
         </Key>
+        <Key ID="STR_UNSCI_Treatment_StimulantChance_Description">
+            <English>Maximum success chance to wake up a patient with a Stimulant.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_StimulantChance_DisplayName">
+            <English>Maximum Stimulant Success Chance</English>
+        </Key>
         <Key ID="STR_UNSCI_Treatment_Stimulant_DisplayName">
             <English>Inject Stimulant</English>
         </Key>
         <Key ID="STR_UNSCI_Treatment_Stimulant_DisplayNameProgress">
             <English>Injecting Stimulant...</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_TimeCoefficient_MedkitFull_Description">
+            <English>Coefficient for Medical Kits when Full Heal is enabled.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_TimeCoefficient_MedkitFull_DisplayName">
+            <English>Full Heal Coefficient</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_TimeCoefficient_MedkitPartial_Description">
+            <English>Coefficient for Medical Kits when Partial Heal is enabled.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_TimeCoefficient_MedkitPartial_DisplayName">
+            <English>Partial Heal Coefficient</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_TreatmentTime_Impalement_Description">
+            <English>Time to remove a single Blamite and Spikes.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Treatment_TreatmentTime_Impalement_DisplayName">
+            <English>Time To Remove a Impalement</English>
         </Key>
     </Package>
 </Project>

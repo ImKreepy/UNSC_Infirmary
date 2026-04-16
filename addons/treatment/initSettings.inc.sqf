@@ -2,9 +2,9 @@
 [
     QGVAR(locationTreat_Impalement),
     "LIST",
-    ["Remove Impalement Locations", "Areas where Blamite and Spikes can be removed"],
-    [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
-    [[0, 1, 2, 3, 4], ["Anywhere", "Vehicle", "Medical Facilities", "Vehicles And Facilities", "Disabled"], 0],
+    [CSTRING(LocationTreat_Impalement_DisplayName), CSTRING(LocationTreat_Impalement_Description)],
+    [QUOTE(PREFIX_BEAUTIFIED), CSTRING(BlamiteAndSpikes_Category)],
+    [[0, 1, 2, 3, 4], [ACECSTRING(common,Anywhere), ACECSTRING(common,Vehicle), ACECSTRING(medical_treatment,MedicalFacilities), ACECSTRING(medical_treatment,VehiclesAndFacilities), ACECSTRING(common,Disabled)], 0],
     true,
     {},
     true
@@ -12,9 +12,9 @@
 [
     QGVAR(allowSelfTreat_Impalement),
     "LIST",
-    ["Allow Self Impalement Removal", "Can a unit remove their own Blamite and Spikes."],
-    [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
-    [[0, 1, 2], ["No", "Yes", "Doctors"], 1],
+    [CSTRING(AllowSelfTreat_Impalement_DisplayName), CSTRING(AllowSelfTreat_Impalement_Description)],
+    [QUOTE(PREFIX_BEAUTIFIED), CSTRING(BlamiteAndSpikes_Category)],
+    [[0, 1, 2], [ACECSTRING(common,No), ACECSTRING(common,Yes), ACECSTRING(medical_treatment,Doctors)], 1],
     true,
     {},
     true
@@ -22,9 +22,9 @@
 [
     QGVAR(medicRequired_Impalement),
     "LIST",
-    ["Medic Required", "Is a medic required to remove Blamite and Spikes."],
-    [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    [CSTRING(MedicRequired_Impalement_DisplayName), CSTRING(MedicRequired_Impalement_Description)],
+    [QUOTE(PREFIX_BEAUTIFIED), CSTRING(BlamiteAndSpikes_Category)],
+    [[0, 1, 2], [ACECSTRING(medical_treatment,Anyone), ACECSTRING(medical_treatment,Medics), ACECSTRING(medical_treatment,Doctors)], 0],
     true,
     {},
     true
@@ -32,8 +32,8 @@
 [
     QGVAR(treatmentTime_Impalement),
     "SLIDER",
-    ["Time To Remove a Impalement", "Time to remove a single Blamite and Spikes."],
-    [QUOTE(PREFIX_BEAUTIFIED), "Blamite and Spikes"],
+    [CSTRING(TreatmentTime_Impalement_DisplayName), CSTRING(TreatmentTime_Impalement_Description)],
+    [QUOTE(PREFIX_BEAUTIFIED), CSTRING(BlamiteAndSpikes_Category)],
     [0.1, 60, 5, 1],
     true,
     {},
@@ -44,8 +44,8 @@
 [
     QGVAR(medkitFullHeals),
     "CHECKBOX",
-    ["Full Heal Medical Kit", "If enabled, Medical Kits will fully heal the patient."],
-    [QUOTE(PREFIX_BEAUTIFIED), "Medical Kits"],
+    [CSTRING(MedkitFullHeals_DisplayName), CSTRING(MedkitFullHeals_Description)],
+    [QUOTE(PREFIX_BEAUTIFIED), CSTRING(Medkits_Category)],
     [true],
     true,
     {},
@@ -54,8 +54,8 @@
 [
     QGVAR(timeCoefficient_medkitFull),
     "SLIDER",
-    ["Full Heal Coefficient", "Coefficient for Medical Kits when Full Heal is enabled."],
-    [QUOTE(PREFIX_BEAUTIFIED), "Medical Kits"],
+    [CSTRING(TimeCoefficient_MedkitFull_DisplayName), CSTRING(TimeCoefficient_MedkitFull_Description)],
+    [QUOTE(PREFIX_BEAUTIFIED), CSTRING(Medkits_Category)],
     [0.1, 5, 1, 1],
     true,
     {},
@@ -64,8 +64,8 @@
 [
     QGVAR(timeCoefficient_medkitPartial),
     "SLIDER",
-    ["Partial Heal Coefficient", "Coefficient for Medical Kits when Full Heal is disabled."],
-    [QUOTE(PREFIX_BEAUTIFIED), "Medical Kits"],
+    [CSTRING(TimeCoefficient_MedkitPartial_DisplayName), CSTRING(TimeCoefficient_MedkitPartial_Description)],
+    [QUOTE(PREFIX_BEAUTIFIED), CSTRING(Medkits_Category)],
     [0.1, 5, 1, 1],
     true,
     {},
@@ -76,8 +76,8 @@
 [
     QGVAR(stimulantChance),
     "SLIDER",
-    ["Maximum Stimulant Success Chance", "Maximum success chance to wake up a patient with a Stimulant"],
-    [QUOTE(PREFIX_BEAUTIFIED), "Medications"],
+    [CSTRING(StimulantChance_DisplayName), CSTRING(StimulantChance_Description)],
+    [QUOTE(PREFIX_BEAUTIFIED), CSTRING(Medications_Category)],
     [0, 100, 100, 0],
     true,
     {},
