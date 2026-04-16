@@ -71,3 +71,15 @@
     {},
     false
 ] call CBA_fnc_addSetting;
+
+// ----- Medication Settings -----
+[
+    QGVAR(stimulantChance),
+    "SLIDER",
+    ["Maximum Stimulant Success Chance", "Maximum success chance to wake up a patient with a Stimulant"],
+    [QUOTE(PREFIX_BEAUTIFIED), "Medications"],
+    [0, 100, 100, 0],
+    true,
+    {},
+    false
+] call CBA_fnc_addSetting;
