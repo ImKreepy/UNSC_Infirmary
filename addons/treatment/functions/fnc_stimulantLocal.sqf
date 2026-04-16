@@ -21,3 +21,6 @@ private _bloodPressureH = GET_BLOOD_PRESSURE(_patient) select 1;
 if ((floor (random 100) < ((linearConversion [50, 100, _bloodPressureH, 0, GVAR(stimulantChance), true]) min (linearConversion [140, 200, _bloodPressureH, GVAR(stimulantChance), 0, true]))) && {[_patient] call ACEFUNC(medical_status,hasStableVitals)}) then {
     [_patient, false] call ACEFUNC(medical,setUnconscious);
 };
+
+[{_this setAnimSpeedCoef 1.5;}, _patient, GVAR(Stim_TimeToEffect)] call CBA_fnc_waitAndExecute;
+[{_this setAnimSpeedCoef 1;}, _patient, GVAR(Stim_TimeInSystem)] call CBA_fnc_waitAndExecute;
