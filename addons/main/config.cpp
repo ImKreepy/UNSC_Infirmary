@@ -33,18 +33,18 @@ class CfgAddons
 
 class CfgEditorCategories {
     class UNSCI_EdCat_Items {
-        displayName = QUOTE(PREFIX_BEAUTIFIED Items);
+        displayName = QUOTE(PREFIX_BEAUTIFIED STRING(EdCat_Items));
     };
     class UNSCI_EdCat_Props {
-        displayName = QUOTE(PREFIX_BEAUTIFIED Props);
+        displayName = QUOTE(PREFIX_BEAUTIFIED STRING(EdCat_Props));
     };
 };
 class CfgEditorSubcategories {
     class UNSCI_EdSubCat_Bandages {
-        displayName = "Bandages";
+        displayName = CSTRING(EdSubCat_Bandages);
     };
     class UNSCI_EdSubCat_Medication {
-        displayName = "Medication";
+        displayName = CSTRING(EdSubCat_Medication);
     };
 };
 
@@ -56,7 +56,7 @@ class CfgMods
 		dir="@UNSC Infirmary";
 		name = "UNSC Infirmary";
         author = "Im Kreepy";
-        description = "UNSC Infirmary brings ACE Advanced Medical to the Halo enthusiast";
+        description = CSTRING(Mod_Description);
 
         action = "https://github.com/ImKreepy/UNSC_Infirmary";
         actionName = "GitHub";
@@ -69,7 +69,7 @@ class CfgMods
         logoOver = "\ik\unsci\addons\main\logos\unsci_logoover_ca.paa"; // Image displayed when the mouse hovers over the image on the main menu (128x)
         logoSmall = "\ik\unsci\addons\main\logos\unsci_logo_small_ca.paa"; // Image displayed in Arsenal or 3DEN (32x)
 
-        overview = "UNSC Infirmary is a mod for ACE 3 that expands medical injuries, treatments, and items that represent the world of Halo.";
+        overview = CSTRING(Mod_Overview);
         overviewText = "UNSC Infirmary";
         overviewPicture = "\ik\unsci\addons\main\logos\unsci_logo_ca.paa";
         overviewFootnote = "\ik\unsci\addons\main\logos\unsci_logo_ca.paa";

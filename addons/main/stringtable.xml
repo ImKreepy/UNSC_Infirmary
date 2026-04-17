@@ -4,5 +4,23 @@
         <Key ID="STR_UNSCI_Main_URL">
             <English>https://github.com/ImKreepy/UNSC_Infirmary</English>
         </Key>
+        <Key ID="STR_UNSCI_Main_EdCat_Items">
+            <English>Items</English>
+        </Key>
+        <Key ID="STR_UNSCI_Main_EdCat_Props">
+            <English>Props</English>
+        </Key>
+        <Key ID="STR_UNSCI_Main_EdSubCat_Bandages">
+            <English>Bandages</English>
+        </Key>
+        <Key ID="STR_UNSCI_Main_EdSubCat_Medication">
+            <English>Medication</English>
+        </Key>
+        <Key ID="STR_UNSCI_Main_Mod_Description">
+            <English>UNSC Infirmary brings ACE Advanced Medical to the Halo enthusiast</English>
+        </Key>
+        <Key ID="STR_UNSCI_Main_Mod_Overview">
+            <English>UNSC Infirmary is a mod for ACE 3 that expands medical injuries, treatments, and items that represent the world of Halo.</English>
+        </Key>
     </Package>
 </Project>
