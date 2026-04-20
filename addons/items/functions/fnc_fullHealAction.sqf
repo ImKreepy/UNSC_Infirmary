@@ -18,7 +18,7 @@
 params ["_player","_target"];
 TRACE_1("fnc_fullHealAction",_this);
 
-private _timer = missionNamespace getVariable [QGVAR(medkitRepawnTimer), 5];
+private _timer = _target getVariable [QGVAR(medkitRepawnTimer), 5];
 
 [ACEQGVAR(medical_treatment,fullHealLocal), _player, _player] call CBA_fnc_targetEvent;
 playSound3D ["ik\unsci\addons\treatment\sounds\unsci_medkit_use.wav", objNull, false, getPosASL _player, 1.5, 1, 50];

@@ -188,7 +188,7 @@ class CfgVehicles
                 tooltip = CSTRING(Medkit_RepawnAttribute_ToolTip);
                 property = QGVAR(medkitRepawnAttribute);
                 control = "Edit";
-	            expression = "missionNamespace setVariable ['unsci_items_medkitRepawnTimer', _value]";
+	            expression = QUOTE(_this setVariable [ARR_2('unsci_items_medkitRepawnTimer',_value)];);
                 defaultValue = 5;
                 validate = "number";
                 typeName = "NUMBER";
