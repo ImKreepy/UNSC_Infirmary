@@ -1,7 +1,7 @@
 class ACE_Medical_Treatment_Actions {
-    class BasicBandage;
-    class AOR_Medkit: BasicBandage {
-        callbackSuccess = QEFUNC(kam_compat,medkit);
+    class AOR_Biofoam;
+    class AOR_Medkit: AOR_Biofoam {
+        callbackSuccess = QFUNC(medkit);
     };
     class UNSCI_Biofoam;
     class UNSCI_Biofoam_Pneumothorax: UNSCI_Biofoam {
