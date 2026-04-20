@@ -26,7 +26,7 @@ private _array = [0,0,0,0,0,0];
         private _woundClassID = _x select 0;
         private _classIndex = _woundClassID / 10;
         private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-        if (_className isEqualTo "UNSCI_BlamiteWound" && _className isEqualTo "AOR_BlamiteWound") exitWith {
+        if (_className isEqualTo "UNSCI_BlamiteWound" || _className isEqualTo "AOR_BlamiteWound") exitWith {
             _hasWound = 1
         };
 
