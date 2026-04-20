@@ -33,10 +33,10 @@ class CfgAddons
 
 class CfgEditorCategories {
     class UNSCI_EdCat_Items {
-        displayName = QUOTE(PREFIX_BEAUTIFIED STRING(EdCat_Items));
+        displayName = CSTRING(EdCat_Items);
     };
     class UNSCI_EdCat_Props {
-        displayName = QUOTE(PREFIX_BEAUTIFIED STRING(EdCat_Props));
+        displayName = CSTRING(EdCat_Props);
     };
 };
 class CfgEditorSubcategories {
