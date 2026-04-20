@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="UNSC Infirmary">
     <Package name="Main">
-        <Key ID="STR_UNSCI_Main_URL">
-            <English>https://github.com/ImKreepy/UNSC_Infirmary</English>
-        </Key>
         <Key ID="STR_UNSCI_Main_EdCat_Items">
             <English>UNSC Infirmary Items</English>
         </Key>
@@ -21,6 +18,9 @@
         </Key>
         <Key ID="STR_UNSCI_Main_Mod_Overview">
             <English>UNSC Infirmary is a mod for ACE 3 that expands medical injuries, treatments, and items that represent the world of Halo.</English>
+        </Key>
+        <Key ID="STR_UNSCI_Main_URL">
+            <English>https://github.com/ImKreepy/UNSC_Infirmary</English>
         </Key>
     </Package>
 </Project>
