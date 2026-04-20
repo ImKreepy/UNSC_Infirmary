@@ -26,6 +26,9 @@ archive = true
 presets = [
     "Infirmary Dev", # .html presets from .hemtt/presets/
 ]
+workshop = [
+    "3683921847", # AoR
+]
 mission = "Test.VR"
 executable = "arma3profiling_x64" # Default: "arma3_x64"
 file_patching = true # Default: true
