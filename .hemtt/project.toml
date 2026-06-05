@@ -19,7 +19,7 @@ path = "addons/main/script_version.hpp"
 git_hash = 0
 
 [hemtt.release]
-sign = false
+sign = true
 archive = true
 
 [hemtt.launch.default]
